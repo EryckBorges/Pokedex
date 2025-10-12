@@ -1,0 +1,163 @@
+.sobre {
+    align-items: left !important;
+    height: 85vh;
+    padding: 5px 5px;
+    gap: 10px;
+}
+
+.sobre > img {
+    opacity: 0;
+    background-color: gray;
+    width: 90%;
+    height: 40%;
+    border-radius: 20px;
+}
+
+.contentDesc { 
+    width: 95%;
+    height: 60%;
+    justify-content: left !important;
+    gap: 10px;
+}
+
+.contentDesc > h1 {
+    opacity: 0;
+    color: var(--vermelhoPokeball);
+    font-size: 1.6em;
+}
+
+.contentDesc > p {
+    opacity: 0;
+    font-size: 1em;
+}
+
+/*  */
+
+.devImages {
+    height: 60vh;
+}
+
+.devImages > h1 {
+    opacity: 0;
+    color: var(--vermelhoPokeball);
+    font-size: 1.6em;
+    text-align: center;
+    padding-block: 10px;
+}
+
+.images {
+    height: 90%;
+    padding: 5px 5px;
+    position: relative;
+}
+
+.images > img {
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: gray;
+    opacity: 0;
+}
+
+.images > img:first-child {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    background-color: yellowgreen;
+}
+
+.images > img:last-child {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+    background-color: yellowgreen;
+}
+
+/* Inicio Estilos do Contact */
+
+.contact {
+    height: 70vh;
+    position: relative;
+}
+
+.imgAnimationContact {
+    width: 100%;
+}
+
+.imgAnimationContact > img {
+    object-fit: cover;
+    width: auto;
+    height: 80%;
+}
+
+.contentContacts {
+    padding: 10px 10px;
+    position: absolute;
+    height: 80%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 90%;
+    gap: 10px;
+}
+
+.logoContact {
+    height: 20%;
+    padding: 10px;
+    gap: 10px;
+    opacity: 0;
+}
+
+.logoContact > img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.logoContact > h1 {
+    font-size: 1.6em;
+    color: var(--branco);
+}
+
+.contentContacts > a {
+    width: 90%;
+    height: 6vh;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--branco);
+    text-decoration: none;
+    opacity: 0;
+}
+
+.contentContacts > a > img {
+    position: absolute;
+    left: 4vw;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+#linkedin {
+    background-color: var(--linkedin);
+}
+
+#github {
+    background-color: var(--github);
+}
+
+#whatsapp {
+    background-color: var(--whatsapp);
+}
+
+#instagram {
+    background-color: var(--instagram);
+}
+
+#gmail {
+    background-color: var(--gmail);
+}
+
+.animate-on-scroll {
+    opacity: 1;
+}

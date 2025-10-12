@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "PokemonFont";
+    src: url('../font/Pokemon\ Solid.ttf');
+}
+
+main {
+    background: url('../image/backgroundSupport.svg') center / cover no-repeat;
+}
+
+.formSupport {
+    height: auto;
+    justify-content: left !important;
+}
+
+.formSupport > h1 {
+    font-size: 2em;
+    font-family: "PokemonFont";
+}
+
+.formSupport > form {
+    gap: 10px;
+    justify-content: left !important;
+    align-items: baseline !important;
+    height: auto;
+    padding: 40px 20px;
+}
+
+.formSupport > form > label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.formSupport > form > input {
+    padding: 5px 10px;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid var(--preto);
+}
+
+.formSupport > form > textarea {
+    padding: 10px 10px;
+    height: 25vh;
+    border-radius: 20px;
+    border: 2px solid var(--preto);
+    resize: none;
+}
+
+.buttonForm {
+    margin-block: 20px;
+    width: 85%;
+    height: 50px;
+    padding: 5px 5px;
+    border-radius: 50px;
+    background: var(--preto);
+    color: var(--branco);
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.buttonForm > img {
+    object-fit: cover;
+    width: auto;
+    height: 80%;
+    position: absolute;
+    left: 1vw;
+}
+
+.buttonForm.rotateAnimation > img {
+    rotate: 0deg;
+    animation: rotateAnimation 1s infinite linear;
+}
+
