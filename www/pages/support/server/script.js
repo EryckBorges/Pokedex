@@ -1,6 +1,6 @@
-const buttonForm = document.querySelector('.buttonForm');
+const form = document.querySelector('form');
 
-  buttonForm.addEventListener('click', async (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const nome = document.querySelector('.name').value;
