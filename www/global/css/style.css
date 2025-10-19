@@ -73,6 +73,10 @@
     height: 100%;
 }
 
+.rotate {
+    animation: 1s rotate infinite;
+}
+
 .width {
     width: 100% !important;
 }
@@ -264,4 +268,12 @@ header {
     width: 90%;
     height: 90%;
     object-fit: cover;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }to {
+        rotate: 360deg;
+    }
 }

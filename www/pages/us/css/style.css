@@ -1,16 +1,18 @@
 .sobre {
     align-items: left !important;
-    height: 85vh;
+    height: auto;
     padding: 5px 5px;
     gap: 10px;
 }
 
 .sobre > img {
     opacity: 0;
-    background-color: gray;
-    width: 90%;
-    height: 40%;
+    object-fit: contain;
+    width: auto;
+    height: 40vh;
     border-radius: 20px;
+    border:8px solid var(--preto);
+    box-shadow: 10px 8px 10px 1px gray;
 }
 
 .contentDesc { 
@@ -34,7 +36,7 @@
 /*  */
 
 .devImages {
-    height: 60vh;
+    height: auto;
 }
 
 .devImages > h1 {
@@ -42,35 +44,45 @@
     color: var(--vermelhoPokeball);
     font-size: 1.6em;
     text-align: center;
-    padding-block: 10px;
+    padding: 10px;
 }
 
 .images {
-    height: 90%;
+    height: 70vh;
     padding: 5px 5px;
     position: relative;
 }
 
 .images > img {
+    object-fit: cover;
     width: 60%;
-    height: 60%;
+    height: 40%;
     border-radius: 20px;
     background-color: gray;
     opacity: 0;
+    border:8px solid var(--preto);
+    box-shadow: 10px 8px 10px 1px gray;
 }
 
-.images > img:first-child {
+.imageDev1 {
     position: absolute;
     top: 2vh;
     left: 2vw;
-    background-color: yellowgreen;
+    z-index: 1;
 }
 
-.images > img:last-child {
+.imageDev2 {
     position: absolute;
-    bottom: 2vh;
+    top: 15vh;
     right: 2vw;
-    background-color: yellowgreen;
+    z-index: 2;
+}
+
+.imageDev3 {
+    position: absolute;
+    top:32vh;
+    left: 2vw;
+    z-index: 3;
 }
 
 /* Inicio Estilos do Contact */

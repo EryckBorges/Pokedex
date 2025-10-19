@@ -13,6 +13,7 @@ main {
 }
 
 .formSupport > h1 {
+    padding: 10px;
     font-size: 2em;
     font-family: "PokemonFont";
 }
@@ -22,7 +23,7 @@ main {
     justify-content: left !important;
     align-items: baseline !important;
     height: auto;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 .formSupport > form > label {

@@ -123,5 +123,86 @@ document.addEventListener('deviceready', () => {
   });
 });
 
+// Funcionalidade do caixas de aviso
 
+export class Notification {
+  createMsg (body) {
+    this.body = body;
+    const content = document.createElement('div');
+    const logoMsg = document.createElement('img');
+    const msg = document.createElement('p');
 
+    this.msg = msg;
+    this.logoMsg = logoMsg;
+
+    this.content = content;
+
+    // Estilos do content
+    content.style.height = '60px';
+    content.style.display = 'flex';
+    content.style.justifyContent = 'left';
+    content.style.overflow = 'hidden';
+    content.style.alignItems = 'center';
+    content.style.width = '200px';
+    content.style.borderRadius = '50px'
+    content.style.padding = '10px 20px';
+    content.style.gap = '15px';
+    content.style.position = 'fixed';
+    content.style.top = '10vh';
+    content.style.right = '2vw';
+    content.style.background = '#DB2323';
+    content.style.zIndex = '99';
+    content.classList.add('animate__animated', 'opacity')
+
+    // Estilos do logo da mensagem do content
+    logoMsg.style.height = "90%";
+    logoMsg.style.width = "auto";
+    
+    // Estilos da mensagem do content
+    msg.style.fontSize = "1em";
+    msg.style.color = "#ffffff";
+    msg.style.textAlign = "center";
+
+    content.appendChild(logoMsg)
+    content.appendChild(msg)
+
+    this.body.appendChild(content)
+  }
+
+  error() {
+    this.content.classList.remove('animate__fadeOutRight');
+    this.content.classList.add('animate__fadeInRight');
+    this.logoMsg.src = 'https://cdn-icons-png.flaticon.com/512/3416/3416079.png';
+    this.msg.innerHTML = "Email Not Set";
+    setTimeout(() => {
+      this.content.classList.remove('animate__fadeInRight');
+      this.content.classList.add('animate__fadeOutRight');
+    }, 4000)
+  }
+
+  warning() {
+    this.content.classList.remove('animate__fadeOutRight');
+    this.content.classList.add('animate__fadeInRight');
+    this.logoMsg.src = 'https://cdn-icons-png.flaticon.com/512/552/552744.png';
+    this.msg.innerHTML = "Wrong Data";
+    setTimeout(() => {
+      this.content.classList.remove('animate__fadeInRight');
+      this.content.classList.add('animate__fadeOutRight');
+    }, 4000)
+  }
+
+  success() {
+    this.content.classList.remove('animate__fadeOutRight');
+    this.content.classList.add('animate__fadeInRight');
+    this.logoMsg.src = 'https://cdn-icons-png.flaticon.com/512/18452/18452147.png';
+    this.msg.innerHTML = "Email Sent";
+    setTimeout(() => {
+      this.content.classList.remove('animate__fadeInRight');
+      this.content.classList.add('animate__fadeOutRight');
+    }, 4000)
+  }
+}
+
+const notification = new Notification();
+
+notification.createMsg(document.querySelector('body'))
