@@ -1,3 +1,8 @@
+import { Notification } from '../../../global/js/script.js'
+
+const notification = new Notification();
+notification.ignorar()
+
 // Carrega as informações do localstorage e preenche na tela base
 
 function carregaData () {

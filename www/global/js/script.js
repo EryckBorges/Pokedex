@@ -201,6 +201,11 @@ export class Notification {
       this.content.classList.add('animate__fadeOutRight');
     }, 4000)
   }
+
+  ignorar() {
+    console.log("Ignorado");
+    
+  }
 }
 
 const notification = new Notification();

@@ -1,3 +1,8 @@
+import { Notification } from '../../../global/js/script.js'
+
+const notification = new Notification();
+notification.ignorar()
+
 // Array com os dados dos jogos dos pokemons
 const dadosJogosPokemon = [
     // Pokemon Z-A
@@ -679,7 +684,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/friends.jpg',
         descricao: `Relax with puzzles in Pokémon™ Friends! Solve sets of three randomly selected puzzles to unwind your mind, then place the yarn you’ve collected into the Plush-O-Matic: a special machine that creates Pokémon plush in the game! As you try to make them all, keep track of every plush you’ve already created with the catalog. You can also follow your progress by marking a stamp in your calendar for each day you played, and later go back to practice the puzzles you played on those days.`,
         logoPokemon: './logos/friends.webp',
-        trailer: './videos/friends.mp4',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/arceus.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000102052/c5f2e3f5a5432679d3618afed006a4e146ca8a38ccc795e6253a6fa722e77d17', 
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000102052/5e0a2a6a8e82dffd394cd484c499971c21a7ea85a0ad7a539d6c84a8e59a412c', 
@@ -696,7 +701,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/detectivePikachuReturns.webp',
         descricao: `Unravel a series of mysteries in Ryme City with a talkative, coffee-loving Pikachu and his human partner, Tim Goodman. When a jewelry theft occurs, the case sets this dynamic detective duo on a path full of mystery. Why did Tim’s father, Harry, disappear? What’s causing the Pokémon-related incidents in Ryme City? Answer these and other questions by searching for clues, investigating scenes, and using your notebook to draw your conclusions.`,
         logoPokemon: './logos/detectivePikachuReturn.png',
-        trailer: './videos/detectivePikachuReturn.mp4',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000068693/96c03211ef6317f41f9dd48c191c522594e5a120567993a2e44d32594e53bef6', 
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000068693/22fbff592842f429909d2fab9ce2461b4fe8000aea29156bc3a9af60483344ce', 
@@ -707,18 +712,77 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: 'https://www.google.com/search?tbm=shop&q=Pokemon+Detective+Pikachu+Returns',
         linkNintendo: 'https://www.nintendo.com/pt-br/store/products/detective-pikachu-returns-switch/?srsltid=AfmBOoowE1Czkud3SzzVd4DL_Xo1QTu-I4lapZRg59dQ4DTFM4qoYJwT',
     },
-
-    // Pokemon Camp
-
-    // Pokemon Smile
-
-    // Pokemon Sleep
-
-    // Pokemon Master
-
+    // Pokemon Camp - 
+    {
+        id: 2,
+        capasPokemon: './capas/camp.jpg',
+        descricao: `Pokémon Camp is an interactive space where Trainers can relax and bond with their Pokémon. Play, feed, cook, and strengthen your friendship to make your team happier and more ready for battles. Explore different environments, discover each Pokémon’s unique reactions, and make your journey even more fun and immersive!`,
+        logoPokemon: './logos/camp.webp',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        galeryPhotos: [
+            'https://t2.tudocdn.net/168354?w=1920',
+            'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e882a30a-012e-476b-be99-5af57eaba6bd/dg7oajj-468a5b80-51fb-4515-85d4-d661a4413187.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4ODJhMzBhLTAxMmUtNDc2Yi1iZTk5LTVhZjU3ZWFiYTZiZFwvZGc3b2Fqai00NjhhNWI4MC01MWZiLTQ1MTUtODVkNC1kNjYxYTQ0MTMxODcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.76DIjeH-PuGVLg2StuFW6fOGP_vwaJuX_ERePMhiqxI',
+            'https://s2-techtudo.glbimg.com/3D37xao_kQ7eOcudSJTecXVTA2Y=/400x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2014/10/24/camp-pokemon-2.jpeg', 
+            'https://s2-techtudo.glbimg.com/Uuyg8DmzkkSmrmMbN8zHVE_7XWk=/400x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2014/10/24/camp-pokemon-4.jpeg', 
+            'https://s2-techtudo.glbimg.com/PlGzv9EvEG--m3RUEBnsF1BYa7E=/400x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2014/10/24/camp-pokemon-1.jpeg',
+        ],
+        linkGoogle: 'https://www.google.com/search?q=Pokemon+Camp',
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOool_SXvXsNQhG-ifX2CM8MmTSujQcqlPpgaxnToDpPz9gzN7yFz&slug=detective-pikachu-returns-switch#q=Pokemon+Camp&p=1&cat=all&sort=df',
+    },
+    // Pokemon Smile -
+    {
+        id: 3,
+        capasPokemon: './capas/smile.jpg',
+        descricao: `Pokémon Smile is a mobile spin-off game from the Pokémon franchise. The game uses an augmented reality system to teach children how to brush their teeth. It was released in June 2020 by The Pokémon Company and is available as a free app for Android and iOS devices.`,
+        logoPokemon: './logos/smile.png',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        galeryPhotos: [
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/misc/pokemon-smile/pokemon-smile-169.jpg',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_smile/screenshots/01.jpg',
+            'https://play-lh.googleusercontent.com/8iEke2yzF8FYzoMIw_VLdjwb0JC0x3fyuPqEXMfu4R6dZ5keyroJtCHgWSrV0rVXww=w526-h296-rw', 
+            'https://play-lh.googleusercontent.com/lZ7xzAl9JINIEUHvauWTcHhVBnf4vpO5Eb9b5i_kNLkkiGbUl4gT_d0vesM-r2BV2_w=w526-h296-rw', 
+            'https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2020/06/pokemon-smile-pick-pokemon-brush-faster-062220.png',
+        ],
+        linkGoogle: 'https://www.google.com/search?q=Pokemon+Smile',
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOool_SXvXsNQhG-ifX2CM8MmTSujQcqlPpgaxnToDpPz9gzN7yFz&slug=detective-pikachu-returns-switch#q=Pokemon+Smile&p=1&cat=all&sort=df',
+    },
+    // Pokemon Sleep -
+    {
+        id: 4,
+        capasPokemon: './capas/sleep.webp',
+        descricao: `Pokémon Sleep is a mobile game for Android and iOS that rewards players with Pokémon based on the quality of their sleep.`,
+        logoPokemon: './logos/sleep.webp',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        galeryPhotos: [
+            'https://i.scdn.co/image/ab67616d0000b273aa3a06503e00761a045fa062', 
+            'https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24772876/Pokemon_Sleep_Styles_EN.jpg?q=50&fit=crop&w=825&dpr=1.5',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_sleep/inline/01.png',
+            'https://play-lh.googleusercontent.com/brVSYX5NpKY_mJSp_O8cmQX0Ki1dUcm79LTD5z4qc7_3zlBcPN0_z5TQRdsC2g3PKA=w526-h296-rw', 
+            'https://www.nightwater.email/content/images/2024/01/https-3a-2f-2fsubstack-post-media-s3-amazonaws-com-2fpublic-2fimages-2fba2ded7f-ab0f-4186-b3b8-88ecb6610a91_3510x2532-jpeg.jpg',
+        ],
+        linkGoogle: 'https://www.google.com/search?q=Pokemon+Sleep',
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+Sleep&p=1&cat=all&sort=df',
+    },
+    // Pokemon Master -
+    {
+        id: 5,
+        capasPokemon: './capas/master.webp',
+        descricao: `Pokémon Masters EX is a free mobile game for Android and iOS developed and published by DeNA. It is based on the Pokémon media franchise. Set on the artificial island of Pasio, the game allows players to battle and recruit various prominent Pokémon Trainers from the main series games.`,
+        logoPokemon: './logos/master.webp',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        galeryPhotos: [
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_masters/pokemon-masters-ex-169.jpg', 
+            'https://s2-techtudo.glbimg.com/2U4Q2tEF_J-eeWT7wH07DMeGMXA=/400x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2019/09/02/captura-de-tela-2019-08-30-as-09.10.59.png',
+            'https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-masters/e/e1/Pokemon_masters_coop.jpg',
+            'https://blog.uptodown.com/wp-content/uploads/pokemon-mastesr-screenshots-673x600.jpg', 
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRErpg2wLabTOnOIsOw2MtCPo2adZbjNVf-w&s',
+        ],
+        linkGoogle: 'https://www.google.com/search?q=Pokemon+Master',
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+Master&p=1&cat=all&sort=df',
+    },
     // Pokemon Duel
     {
-        id: 7,
+        id: 6,
         capasPokemon: './capas/duel.jpg',
         descricao: `Pokémon Duel is a free digital board game developed by Heroz and published by The Pokémon Company. It was initially released for Android and iOS devices in Japan under the title Pokémon Comaster in April 2016. It was later released in other regions in January 2017.`,
         logoPokemon: './logos/duel.png',
@@ -735,7 +799,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Magikarp Jump
     {
-        id: 6,
+        id: 7,
         capasPokemon: './capas/jump.jpg',
         descricao: `Magikarp Jump is a free mobile game developed by Select Button and published by The Pokémon Company. It was released in May 2017 for iOS and Android platforms. Players train Magikarp to compete in jumping contests.`,
         logoPokemon: './logos/jump.png',
@@ -767,18 +831,45 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+Go",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Go&p=1&cat=all&sort=df',
     },
-
-    // Pokemon TCG Pocket
-
-    // Pokemon TCG Live
-
+    // Pokemon TCG Pocket -
+    {
+        id: 9,
+        capasPokemon: './capas/pocket.png',
+        descricao: `Pokémon GO is a free-to-play augmented reality mobile game. It is developed and published by Niantic, Inc., in collaboration with Nintendo and The Pokémon Company for iOS and Android platforms.`,
+        logoPokemon: './logos/pocket.png',
+        trailer: './videos/go.mp4',
+        galeryPhotos: [
+            'https://storage.googleapis.com/dena-com-official-prod-gcp.appspot.com/upload/CnyrtA8tT93_rytF-YZHi.png', 
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/tcg-pocket/2025/10/13/pokemon-tcg-pocket-169-en.png', 
+            'https://tcgpocket.pokemon.com/_images/announcement/cardspread_header.png',
+            'https://assets-prd.ignimgs.com/2024/11/07/poke-swag-1730983015863.jpg',
+            'https://www.pokebeach.com/news/2024/02/Charizard-ex-3D-Card.gif'
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+TCG+Pocket",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+TCG+Pocket&p=1&cat=all&sort=df',
+    },
+    // Pokemon TCG Live -
+    {
+        id: 10,
+        capasPokemon: './capas/live.jpg',
+        descricao: `Pokémon TCG Live is the official digital version of the Pokémon Trading Card Game. Players can collect, trade, and battle with hundreds of Pokémon cards online. Build your decks, test strategies against opponents worldwide, and experience the excitement of the TCG in a dynamic digital format.`,
+        logoPokemon: './logos/live.png',
+        trailer: './videos/go.mp4',
+        galeryPhotos: [
+            'https://www.pokemon.com/static-assets/content-assets/cms2-pt-br/img/video-games/video-games/pokemon_tcg_live/pokemon-tcg-live-169-br.png',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/tcgl/pokemon-tcg-live-169-us.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCj5kGAc3cOS_ec5k2Nn5D7nlPweDiBEURoA&s', 
+            'https://i.ytimg.com/vi/JAf4yoKcgUk/maxresdefault.jpg', 
+            'https://static0.srcdn.com/wordpress/wp-content/uploads/2022/02/Pokemon-TCG-Live-Gameplay-Screenshot.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+TCG+Live",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+TCG+Live&p=1&cat=all&sort=df',
+    },
     // Pokemon TCG Online
 
     // Pokemon Rumble Rush
 
     // Pokemon Shuffle Mobile
-
-    // Pokemon IOS
 
     // Pokemon Tretta
 

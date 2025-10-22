@@ -275,30 +275,33 @@ select {
     color: var(--preto);
 }
 
-.infoPokemon {
-    display: none !important;
-}
-
-.infoPokemon, .evolutionPokemon {
-    height: 90%;
+.infoPokemon, .evolutionPokemon, .forms, .statistic {
+    display: none;
+    height: 80%;
     flex-direction: column;
     justify-content: left !important;
 }
 
-.desc {
+.forms {
+    background-color: blue;
+}
+
+.descPokemons {
     margin-top: 10px;
     height: 40%;
     padding: 10px 10px;
     gap: 10px;
 }
 
-.desc > h1, .mov > h1 {
+.descPokemons > h1, .mov > h1 {
     color: var(--cinzaText);
     font-size: 1.2em;
 }
 
-.desc > p {
+.descPokemons > p {
+    overflow-y: auto;
     font-size: 1em;
+    height: 80px;
 }
 
 .mov {
@@ -321,7 +324,48 @@ select {
 }
 
 .actived {
-    display: flex;
+    display: flex ;
+}
+
+.activedDados {
+    display: flex !important;
+}
+
+/* Statistics */
+
+.statistic {
+    display: none;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center !important;
+    align-items: baseline !important;
+    font-size: 1em;
+    color: var(--preto);
+    font-weight: bold;
+}
+
+.statusStatistics > progress{
+    position: absolute;
+    right: 2vw;
+    height: 4vh;
+}
+
+/* Evolutions */
+
+.evolutionPokemon {
+    position: relative;
+    padding: 5px;
+}
+
+.evolutions {
+    gap: 10px;
+    padding-block: 20px;
+}
+
+.evo-card > img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
 }
 
 /* Animações */
