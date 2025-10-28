@@ -5,9 +5,26 @@ notification.ignorar()
 
 // Array com os dados dos jogos dos pokemons
 const dadosJogosPokemon = [
-    // Pokemon Z-A
+    // Pokemon Pokopia
     {
         id: 0,
+        capasPokemon: './capas/pokopia.jpg',
+        descricao: `Play as a Ditto who has taken on the appearance of a human! Meet and befriend other Pokémon as you shape a life for yourself by learning moves to modify the environment. Use Bulbasaur’s Leafage to make wild grass grow, water it with Squirtle’s Water Gun, and more. The more nature flourishes, the more Pokémon will appear for you to meet and learn from!<br><br>Build houses, grow crops, and more in a world with changing days, nights, and weather.`,
+        logoPokemon: './logos/pokopia.png',
+        trailer: './videos/pokopia.mp4',
+        galeryPhotos: [
+            'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/store/software/switch2/70010000107421/a13a61db0b2925c21209bec2a4d7d78b6ecf2c06fe691e927d4d9fbc49db4968', 
+            'https://portaldogamer.com.br/wp-content/uploads/2025/09/pokemon-pokopio.png', 
+            'https://blackcompany.com.br/wp-content/uploads/2025/09/pokemon-pokopia_n279.png',
+            'https://img.particlenews.com/image.php?type=thumbnail_580x000&url=09suMH_14ftQekR00',
+            'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/09/pokemon-pokopia-switch-2-nintendo-direct-game-rant-4.jpg?q=49&fit=crop&w=825&dpr=2'
+        ],
+        linkGoogle: 'https://www.google.com/search?q=Pokemon+Pokopia',
+        linkNintendo: 'https://www.nintendo.com/pt-br/store/products/pokemon-pokopia-switch-2/',
+    },
+    // Pokemon Z-A
+    {
+        id: 1,
         capasPokemon: './capas/z-a.webp',
         descricao: `Pokémon Legends: Z-A is an action RPG that takes you into the iconic Lumiose City in the Kalos region, completely redesigned to support humans and Pokémon living together.<br><br>
                     You’ll experience real-time battles: no more turns — Pokémon attack as soon as you give the command, with positioning, dodges, and range management.<br><br>
@@ -30,7 +47,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Scarlet
     {
-        id: 1,
+        id: 2,
         capasPokemon: './capas/scarlet.png',
         descricao: `Catch, battle, and train Pokémon in the Paldea region, a vast area full of lakes, towering peaks, deserts, villages, and expanding cities. Explore the open world at your own pace and travel across land, water, and air riding the legendary Pokémon that changes forms (Koraidon in Pokémon Scarlet and Miraidon in Pokémon Violet). Choose Sprigatito, Fuecoco, or Quaxly as your first Pokémon partner before starting your journey through Paldea.`,
         logoPokemon: './logos/scarlet.webp',
@@ -47,7 +64,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Violet
     {
-        id: 2,
+        id: 3,
         capasPokemon: './capas/violet.png',
         descricao: `Catch, battle, and train Pokémon in the Paldea region, a vast area full of lakes, towering peaks, deserts, villages, and expanding cities. Explore the open world at your own pace and travel across land, water, and air riding the legendary Pokémon that changes forms (Koraidon in Pokémon Scarlet and Miraidon in Pokémon Violet). Choose Sprigatito, Fuecoco, or Quaxly as your first Pokémon partner before starting your journey through Paldea.`,
         logoPokemon: './logos/violet.webp',
@@ -64,7 +81,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Arceus
     {
-        id: 3,
+        id: 4,
         capasPokemon: './capas/arceus.jpg',
         descricao: `Get ready for a brand-new Pokémon adventure in Pokémon™ Legends: Arceus, an all-new game from Game Freak that blends action and exploration with the RPG roots of the Pokémon series. Embark on research missions in the ancient Hisui region. Explore vast natural landscapes to capture wild Pokémon, learning their behavior, sneaking up on them, and throwing a well-aimed Poké Ball™. You can also toss a Poké Ball containing your partner Pokémon near a wild Pokémon to seamlessly enter battle. Travel across land, sea, and sky on the backs of Pokémon to explore every corner of the Hisui region.<br><br>Your adventure takes place in the vast natural expanse of the Hisui region, where you are tasked with studying Pokémon to complete the region’s very first Pokédex. Mount Coronet rises from the center, surrounded on all sides by areas with distinct environments. In this era—long before the events of Pokémon Brilliant Diamond and Pokémon Shining Pearl—you can encounter newly discovered Pokémon like Wyrdeer, an evolution of Stantler, as well as new regional forms such as Hisuian Growlithe, Hisuian Zorua, and Hisuian Zoroark! Along the way, uncover the mystery surrounding the Mythical Pokémon known as Arceus.`,
         logoPokemon: './logos/arceus.png',
@@ -81,7 +98,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Brilliant Diamond
     {
-        id: 4,
+        id: 5,
         capasPokemon: './capas/brilliantDiamond.png',
         descricao: `Welcome to the Sinnoh region! Rich in nature and with the mighty Mount Coronet at its core, Sinnoh is a land of many myths passed down through generations. You will be able to choose Turtwig, Chimchar, or Piplup as your first partner Pokémon and then set off on your journey to become the Champion of the Pokémon League. Along the way, you will encounter the mysterious Team Galactic and may come across the Legendary Pokémon Dialga.<br><br>Use the Explorer Kit you’ll receive during your adventure to visit the Grand Underground! Here, you can unearth Pokémon Fossils and valuable treasures, including statues for your very own Secret Base. You can also visit areas called Pokémon Hideaways, where you’ll encounter Pokémon living in a variety of different environments—some Pokémon can only be found in these Hideaways. Set off on an adventure in the Grand Underground with other players through local or online* communication on your Nintendo Switch system`,
         logoPokemon: './logos/diamond.png',
@@ -98,7 +115,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Shining Pearl
     {
-        id: 5,
+        id: 6,
         capasPokemon: './capas/shiningPearl.png',
         descricao: `Welcome to the Sinnoh region! Rich in nature and with the mighty Mount Coronet at its core, Sinnoh is a land of many myths passed down through generations. You will be able to choose Turtwig, Chimchar, or Piplup as your first partner Pokémon and then set off on your journey to become the Champion of the Pokémon League. Along the way, you will encounter the mysterious Team Galactic and may come across the Legendary Pokémon Dialga.<br><br>Use the Explorer Kit you’ll receive during your adventure to visit the Grand Underground! Here, you can unearth Pokémon Fossils and valuable treasures, including statues for your very own Secret Base. You can also visit areas called Pokémon Hideaways, where you’ll encounter Pokémon living in a variety of different environments—some Pokémon can only be found in these Hideaways. Set off on an adventure in the Grand Underground with other players through local or online* communication on your Nintendo Switch system`,
         logoPokemon: './logos/shiningPearl.png',
@@ -115,7 +132,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Sword
     {
-        id: 6,
+        id: 7,
         capasPokemon: './capas/sword.png',
         descricao: `A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then, set out on a journey across the new Galar region, where you’ll challenge the troublemakers of Team Yell while uncovering the mysteries behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where players can freely control the camera. Join up with three other players locally or online in the new cooperative multiplayer mode, Max Raid Battles, where players take on Pokémon that are truly gigantic in size and strength thanks to the Dynamax phenomenon.<br><br>Some Pokémon can even undergo Gigantamax transformations, changing their appearance and gaining access to powerful G-Max Moves. But becoming a Champion isn’t just about honing your battle skills: by visiting shops in town, you can pick your own outfits and hairstyles to become exactly the Trainer you want to be. On your journey, you’ll encounter newly discovered Pokémon, as well as some you already know—though a bit different in their unique Galarian forms! You’ll also have new ways to level up your Pokémon by assigning them Poké Jobs; and just for fun, you can spend time with them at Pokémon Camp!`,
         logoPokemon: './logos/sword.png',
@@ -132,7 +149,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Shield
     {
-        id: 7,
+        id: 8,
         capasPokemon: './capas/shield.png',
         descricao: `A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then, set out on a journey across the new Galar region, where you’ll challenge the troublemakers of Team Yell while uncovering the mysteries behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where players can freely control the camera. Join up with three other players locally or online in the new cooperative multiplayer mode, Max Raid Battles, where players take on Pokémon that are truly gigantic in size and strength thanks to the Dynamax phenomenon.<br><br>Some Pokémon can even undergo Gigantamax transformations, changing their appearance and gaining access to powerful G-Max Moves. But becoming a Champion isn’t just about honing your battle skills: by visiting shops in town, you can pick your own outfits and hairstyles to become exactly the Trainer you want to be. On your journey, you’ll encounter newly discovered Pokémon, as well as some you already know—though a bit different in their unique Galarian forms! You’ll also have new ways to level up your Pokémon by assigning them Poké Jobs; and just for fun, you can spend time with them at Pokémon Camp!`,
         logoPokemon: './logos/shield.webp',
@@ -149,7 +166,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Let's Go Pikachu
     {
-        id: 8,
+        id: 9,
         capasPokemon: './capas/pikachu.jpg',
         descricao: `Partner up with Pikachu to capture and collect Pokémon in a diverse and vibrant adventure in Pokémon™: Let’s Go, Pikachu!, now available on the Nintendo Switch™ system! Become the best Pokémon Trainer you can be as you battle other Trainers, Gym Leaders, and the sinister Team Rocket. Use the throwing motion to catch Pokémon in the wild with a Joy-Con controller or a Poké Ball™ Plus accessory (sold separately), which lights up, vibrates, and makes sounds to bring your adventure to life. You can also use button controls in handheld mode. Share your adventure with friends and family using an additional Joy-Con or Poké Ball Plus. You can even connect the game to the Pokémon™ GO app on a compatible smart device to transfer Pokémon originally discovered in the Kanto region!<br><br>Explore the vibrant Kanto region, home to beloved characters like Brock, Misty, and the infamous trio Jessie, James, and Meowth! Throughout the story, your bond with your partner Pokémon grows stronger as you travel together. Journey in style by customizing Pikachu and your Trainer with a variety of outfits. Wild Pokémon roam the game world in natural sizes—catch them like a true Pokémon Trainer by using a Poké Ball™ at just the right place and time. Battle and trade Pokémon with other players who own the game via local wireless or online connections. Take your favorite Pokémon for a stroll in your Poké Ball Plus to help it gain levels and receive rewards when it returns to the game. Connect with Pokémon GO* to transfer Pokémon caught in the Kanto region into this game, including Shiny and Alolan forms, as well as the newly discovered Pokémon Meltan!`,
         logoPokemon: './logos/pikachu.png',
@@ -166,7 +183,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Let's Go Eevee
     {
-        id: 9,
+        id: 10,
         capasPokemon: './capas/eevee.jpg',
         descricao: `Partner up with Pikachu to capture and collect Pokémon in a diverse and vibrant adventure in Pokémon™: Let’s Go, Pikachu!, now available on the Nintendo Switch™ system! Become the best Pokémon Trainer you can be as you battle other Trainers, Gym Leaders, and the sinister Team Rocket. Use the throwing motion to catch Pokémon in the wild with a Joy-Con controller or a Poké Ball™ Plus accessory (sold separately), which lights up, vibrates, and makes sounds to bring your adventure to life. You can also use button controls in handheld mode. Share your adventure with friends and family using an additional Joy-Con or Poké Ball Plus. You can even connect the game to the Pokémon™ GO app on a compatible smart device to transfer Pokémon originally discovered in the Kanto region!<br><br>Explore the vibrant Kanto region, home to beloved characters like Brock, Misty, and the infamous trio Jessie, James, and Meowth! Throughout the story, your bond with your partner Pokémon grows stronger as you travel together. Journey in style by customizing Pikachu and your Trainer with a variety of outfits. Wild Pokémon roam the game world in natural sizes—catch them like a true Pokémon Trainer by using a Poké Ball™ at just the right place and time. Battle and trade Pokémon with other players who own the game via local wireless or online connections. Take your favorite Pokémon for a stroll in your Poké Ball Plus to help it gain levels and receive rewards when it returns to the game. Connect with Pokémon GO* to transfer Pokémon caught in the Kanto region into this game, including Shiny and Alolan forms, as well as the newly discovered Pokémon Meltan!`,
         logoPokemon: './logos/eevee.png',
@@ -183,7 +200,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Ultra Sun
     {
-        id: 10,
+        id: 11,
         capasPokemon: './capas/ultra.jpg',
         descricao: `Sinister black clouds are forming in the sky, over the Alola region: the setting of Pokémon Ultra Sun and Pokémon Ultra Moon. In Pokémon Ultra Sun and Pokémon Ultra Moon, a large-scale story unfolds, featuring the Legendary Pokémon Solgaleo, Lunala, and Necrozma. The secrets about Necrozma and the Alola region, well kept in the previous games, will be revealed here.<br><br>In Pokémon Ultra Sun and Pokémon Ultra Moon, you will be able to venture into the various worlds that exist beyond these Ultra Wormholes. Inside an Ultra Wormhole, there are countless temporal passages that lead to different worlds. Explore different worlds by crossing through these passages! You may even visit the home worlds of those Pokémon known as Ultra Beasts!`,
         logoPokemon: './logos/ultra.webp',
@@ -200,7 +217,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Ultra Moon
     {
-        id: 11,
+        id: 12,
         capasPokemon: './capas/ultraMoon.jpg',
         descricao: `Sinister black clouds are forming in the sky, over the Alola region: the setting of Pokémon Ultra Sun and Pokémon Ultra Moon. In Pokémon Ultra Sun and Pokémon Ultra Moon, a large-scale story unfolds, featuring the Legendary Pokémon Solgaleo, Lunala, and Necrozma. The secrets about Necrozma and the Alola region, well kept in the previous games, will be revealed here.<br><br>In Pokémon Ultra Sun and Pokémon Ultra Moon, you will be able to venture into the various worlds that exist beyond these Ultra Wormholes. Inside an Ultra Wormhole, there are countless temporal passages that lead to different worlds. Explore different worlds by crossing through these passages! You may even visit the home worlds of those Pokémon known as Ultra Beasts!`,
         logoPokemon: './logos/ultraMoon.webp',
@@ -217,7 +234,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Sun
     {
-        id: 12,
+        id: 13,
         capasPokemon: './capas/sun.jpg',
         descricao: `The Pokémon Sun and Pokémon Moon video games take place in an archipelago of tropical islands: four islands full of nature and one artificial island. The Alola region is known as a resort that attracts tourists from all over the world.<br><br>It is surrounded by the sea and features great ecological diversity, with Pokémon native to the region as well as Pokémon that have only recently arrived in Alola from other regions. In Alola, humans and Pokémon coexist in a very close relationship, having developed a culture different from that of other regions.`,
         logoPokemon: './logos/sun.webp',
@@ -234,7 +251,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Moon
     {
-        id: 13,
+        id: 14,
         capasPokemon: './capas/moon.png',
         descricao: `The Pokémon Sun and Pokémon Moon video games take place in an archipelago of tropical islands: four islands full of nature and one artificial island. The Alola region is known as a resort that attracts tourists from all over the world.<br><br>It is surrounded by the sea and features great ecological diversity, with Pokémon native to the region as well as Pokémon that have only recently arrived in Alola from other regions. In Alola, humans and Pokémon coexist in a very close relationship, having developed a culture different from that of other regions.`,
         logoPokemon: './logos/moon.png',
@@ -251,7 +268,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Omega Ruby
     {
-        id: 14,
+        id: 15,
         capasPokemon: './capas/ruby.webp',
         descricao: `Enter the Hoenn region and explore this land, where two major organizations, Team Magma and Team Aqua, stand in opposition. The former seeks to expand the landmass of the Hoenn region and wields more power, while Team Aqua aims to raise the oceans and plays a more prominent role in Pokémon Alpha Sapphire. In either version, you will find yourself immersed in the heart of the conflict!<br><br>The story begins when you move to Littleroot Town, where you have the chance to choose one of three Pokémon to accompany you on your adventure: Treecko, the Grass type, Torchic, the Fire type, and Mudkip, the Water type. Regardless of which you choose, raising your Pokémon with care is always important for anyone who wants a strong partner. Under the right circumstances, it may even be able to perform a stunning Mega Evolution, allowing it to unleash even greater strength. Keep an eye out for two newly revealed Legendary Pokémon called Groudon and Kyogre, the creators of land and sea respectively. Each of them possesses a newly discovered transformation known as "Primal Reversion."`,
         logoPokemon: './logos/omega.webp',
@@ -268,7 +285,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Alpha Sapphire
     {
-        id: 15,
+        id: 16,
         capasPokemon: './capas/alphaSapphire.png',
         descricao: `Enter the Hoenn region and explore this land, where two major organizations, Team Magma and Team Aqua, stand in opposition. The former seeks to expand the landmass of the Hoenn region and wields more power, while Team Aqua aims to raise the oceans and plays a more prominent role in Pokémon Alpha Sapphire. In either version, you will find yourself immersed in the heart of the conflict!<br><br>The story begins when you move to Littleroot Town, where you have the chance to choose one of three Pokémon to accompany you on your adventure: Treecko, the Grass type, Torchic, the Fire type, and Mudkip, the Water type. Regardless of which you choose, raising your Pokémon with care is always important for anyone who wants a strong partner. Under the right circumstances, it may even be able to perform a stunning Mega Evolution, allowing it to unleash even greater strength. Keep an eye out for two newly revealed Legendary Pokémon called Groudon and Kyogre, the creators of land and sea respectively. Each of them possesses a newly discovered transformation known as "Primal Reversion."`,
         logoPokemon: './logos/alpha.webp',
@@ -285,7 +302,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon X
     {
-        id: 16,
+        id: 17,
         capasPokemon: './capas/x.png',
         descricao: `In Pokémon X, your Pokémon adventure takes on a new dimension, as in 3D every corner of the Kalos region comes to life—from the cobblestone streets of Lumiose City to the most secluded parts of the forests. This city is a bustling metropolis, and whether it’s at the iconic tower at its center or in the lively shops full of customers, you’ll surely find plenty to discover.<br><br>There are many newly discovered Pokémon to encounter, including Gogoat, a Grass-type Pokémon so large it can carry people on its back; Sylveon, an Evolution of Eevee; and the Legendary Pokémon Xerneas. There is also a mysterious Pokémon somehow connected to Mewtwo.`,
         logoPokemon: './logos/x.webp',
@@ -302,7 +319,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Y
     {
-        id: 17,
+        id: 18,
         capasPokemon: './capas/y.jpeg',
         descricao: `In Pokémon Y, your Pokémon adventure takes on a new dimension, as in 3D every corner of the Kalos region comes to life—from the cobblestone streets of Lumiose City to the most secluded parts of the forests. This city is a bustling metropolis, and whether it’s at the iconic tower at its center or in the lively shops full of customers, you’ll surely find plenty to discover.<br><br>There are many newly discovered Pokémon to encounter, including Gogoat, a Grass-type Pokémon so large it can carry people on its back; Sylveon, an Evolution of Eevee; and the Legendary Pokémon Yveltal. There is also a mysterious Pokémon somehow connected to Mewtwo.`,
         logoPokemon: './logos/y.webp',
@@ -319,7 +336,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Black Version 2
     {
-        id: 18,
+        id: 19,
         capasPokemon: './capas/black2.webp',
         descricao: `Pokémon Black Version 2 takes players back to the Unova region, two years after Pokémon Black Version and Pokémon White Version. Although this game takes place in a familiar region, there are many new areas to discover and changes to places you already know. One new area is Virbank City, home to the Pokéstar Studios, which you can visit. You’ll even have the chance to create and star in your own movie with your favorite Pokémon and premiere it in the in-game theater. The audience will then rate it based on your storyline choices and the sequences of moves used in battle. If the movie is a success, you can shoot more films or even create sequels to existing ones. Film categories include, among many others, “romantic comedy” and “horror.”<br><br>Pokémon Black Version 2 will also give fans of the original games the chance to reunite with some old friends, as Cheren and Bianca return. Bianca is now Professor Juniper’s assistant, helping her with her Pokémon research, while Cheren has become a Gym Leader and a teacher at a school in Aspertia City, the starting point of this new adventure.`,
         logoPokemon: './logos/black2.webp',
@@ -336,7 +353,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon White Version 2
     {
-        id: 19,
+        id: 20,
         capasPokemon: './capas/white2.webp',
         descricao: `Pokémon White Version 2 also gives fans of the original games the chance to reunite with some old friends, as Cheren and Bianca return. Bianca is now Professor Juniper’s assistant, helping her with her Pokémon research, while Cheren has become a Gym Leader and a teacher at a school in Aspertia City, the starting point of this adventure.<br><br>In Pokémon White Version 2, you’ll also have the opportunity to catch certain Pokémon from outside the Unova region right from the start of the game, such as Eevee, Riolu, Tyranitar, Arcanine, and Mareep. The game also includes rare Pokémon such as the new Therian Formes of Legendary Pokémon: Tornadus, Thundurus, and Landorus.<br><br>You’ll also encounter two new Legendary Pokémon: Black Kyurem and White Kyurem, which appear on the covers of Pokémon Black Version 2 and Pokémon White Version 2. These powerful Legendary Pokémon boast devastating Ice-type moves: Black Kyurem uses Freeze Shock, while White Kyurem comes equipped with Ice Burn. Black Kyurem is only available in Pokémon Black Version 2, while White Kyurem appears exclusively in Pokémon White Version 2.`,
         logoPokemon: './logos/white2.webp',
@@ -353,7 +370,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Black Version
     {
-        id: 20,
+        id: 21,
         capasPokemon: './capas/black.webp',
         descricao: `New Legendary Pokémon, new heroes, a new region, and many ways for players to have fun and communicate locally are just some of the exciting and innovative surprises offered by Pokémon Black Version and Pokémon White Version for the Nintendo DS.<br><br>Redefining the Pokémon series, Pokémon Black Version and Pokémon White Version provide both fans and newcomers with a completely different adventure to discover. And, for the very first time in the series, the two games feature their own individual areas to explore! Both games take place in Unova, a region far from the familiar Kanto and Johto regions beloved by fans, and introduce new, action-packed locations such as the vibrant urban setting of Castelia City.`,
         logoPokemon: './logos/black.webp',
@@ -370,7 +387,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon White Version
     {
-        id: 21,
+        id: 22,
         capasPokemon: './capas/white.jpeg',
         descricao: `New Legendary Pokémon, new heroes, a new region, and many ways for players to have fun and communicate locally are just some of the exciting and innovative surprises offered by Pokémon Black Version and Pokémon White Version for the Nintendo DS.<br><br>Redefining the Pokémon series, Pokémon Black Version and Pokémon White Version provide both fans and newcomers with a completely different adventure to discover. And, for the very first time in the series, the two games feature their own individual areas to explore! Both games take place in Unova, a region far from the familiar Kanto and Johto regions beloved by fans, and introduce new, action-packed locations such as the vibrant urban setting of Castelia City.`,
         logoPokemon: './logos/white.webp',
@@ -387,7 +404,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Heart Gold Version
     {
-        id: 22,
+        id: 23,
         capasPokemon: './capas/heartGold.jpg',
         descricao: `Get ready for an exciting adventure with Pokémon HeartGold Version and Pokémon SoulSilver Version for the Nintendo DS! Play as a male or female Trainer and battle across the Johto region with your Pokémon to become a Champion!<br><br>Pokémon HeartGold Version and Pokémon SoulSilver Version are enhanced remakes of the original Pokémon Gold Version and Pokémon Silver Version from 2001. Your mission begins in New Bark Town, where you answer the call of the local Pokémon Professor. He will send you on an epic journey where you’ll learn all about the sinister Team Rocket, who will cause all kinds of trouble for Pokémon. Team Rocket was defeated in Pokémon FireRed Version and Pokémon LeafGreen Version, but they have regrouped in the Johto region. What could they be plotting this time? One thing’s for sure—nothing good can be expected from this devious gang...`,
         logoPokemon: './logos/heartGold.webp',
@@ -404,7 +421,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Soul Silver Version 
     {
-        id: 23,
+        id: 24,
         capasPokemon: './capas/soulSilver.jpg',
         descricao: `Get ready for an exciting adventure with Pokémon HeartGold Version and Pokémon SoulSilver Version for the Nintendo DS! Play as a male or female Trainer and battle across the Johto region with your Pokémon to become a Champion!<br><br>Pokémon HeartGold Version and Pokémon SoulSilver Version are enhanced remakes of the original Pokémon Gold Version and Pokémon Silver Version from 2001. Your mission begins in New Bark Town, where you answer the call of the local Pokémon Professor. He will send you on an epic journey where you’ll learn all about the sinister Team Rocket, who will cause all kinds of trouble for Pokémon. Team Rocket was defeated in Pokémon FireRed Version and Pokémon LeafGreen Version, but they have regrouped in the Johto region. What could they be plotting this time? One thing’s for sure—nothing good can be expected from this devious gang...`,
         logoPokemon: './logos/silver.webp',
@@ -421,7 +438,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Platinum Version
     {
-        id: 24,
+        id: 25,
         capasPokemon: './capas/platinum.jpg',
         descricao: `A thrilling new adventure set in the Sinnoh region of the Pokémon world, full of new features—such as new ways to play online in the Wi-Fi Plaza via the Nintendo Wi-Fi Connection and the ability to save your greatest victories in the Vs. Recorder—will electrify Pokémon fans. An all-new Distortion World, where the laws of space and time do not apply, also emerges, providing an entirely new challenge for the game!<br><br>The epic story of Pokémon Platinum Version revolves around the legendary Renegade Pokémon, Giratina, which appears in its new Forme, the Origin Forme. Many other Legendary Pokémon can also be captured in Pokémon Platinum Version—from Dialga and Palkia to the powerful Lake Trio of Uxie, Azelf, and Mesprit.`,
         logoPokemon: './logos/platinum.png',
@@ -438,7 +455,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Diamond Version
     {
-        id: 25,
+        id: 26,
         capasPokemon: './capas/diamond.jpeg',
         descricao: `Exclusively for the Nintendo DS, the new generation of Pokémon is taking the world by storm with Pokémon Diamond and Pokémon Pearl! With over 100 new Pokémon, the ability to play on a Touch Screen, and online play via the Nintendo Wi-Fi Connection, this is the biggest Pokémon adventure ever! Pokémon Diamond and Pokémon Pearl challenge players to explore the Sinnoh region in an incredibly exciting RPG adventure. New Pokémon are everywhere! This marks the debut of Mime Jr., Lucario, and Weavile, and the three starter Pokémon are also new. Players can choose Chimchar (Fire type), Piplup (Water type), or Turtwig (Grass type) to begin their adventure.<br><br>One of the best features of Pokémon games is the ability to trade and battle with other Trainers. The Nintendo DS allows players to connect with other Pokémon fans through a local wireless network or via the Nintendo Wi-Fi Connection. Players can now trade and battle with Trainers from around the world! Pokémon Diamond and Pokémon Pearl also include a voice chat feature so players can communicate online. In Pokémon Diamond and Pokémon Pearl, Trainers can even gain the opportunity to use a Pokémon obtained in previous Game Boy Advance games: Pokémon Emerald, Pokémon FireRed, Pokémon LeafGreen, Pokémon Ruby, and Pokémon Sapphire. The new Pokémon adventure is grand, impressive, and, being on the DS, you can take it anywhere!`,
         logoPokemon: './logos/diamond.webp',
@@ -455,7 +472,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Pearl Version
     {
-        id: 26,
+        id: 27,
         capasPokemon: './capas/pearl.jpg',
         descricao: `Exclusively for the Nintendo DS, the new generation of Pokémon is taking the world by storm with Pokémon Diamond and Pokémon Pearl! With over 100 new Pokémon, the ability to play on a Touch Screen, and online play via the Nintendo Wi-Fi Connection, this is the biggest Pokémon adventure ever! Pokémon Diamond and Pokémon Pearl challenge players to explore the Sinnoh region in an incredibly exciting RPG adventure. New Pokémon are everywhere! This marks the debut of Mime Jr., Lucario, and Weavile, and the three starter Pokémon are also new. Players can choose Chimchar (Fire type), Piplup (Water type), or Turtwig (Grass type) to begin their adventure.<br><br>One of the best features of Pokémon games is the ability to trade and battle with other Trainers. The Nintendo DS allows players to connect with other Pokémon fans through a local wireless network or via the Nintendo Wi-Fi Connection. Players can now trade and battle with Trainers from around the world! Pokémon Diamond and Pokémon Pearl also include a voice chat feature so players can communicate online. In Pokémon Diamond and Pokémon Pearl, Trainers can even gain the opportunity to use a Pokémon obtained in previous Game Boy Advance games: Pokémon Emerald, Pokémon FireRed, Pokémon LeafGreen, Pokémon Ruby, and Pokémon Sapphire. The new Pokémon adventure is grand, impressive, and, being on the DS, you can take it anywhere!`,
         logoPokemon: './logos/pearl.png',
@@ -472,7 +489,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Emerald Version
     {
-        id: 27,
+        id: 28,
         capasPokemon: './capas/esmerald.jpg',
         descricao: `Face the powerful Team Magma and Team Aqua in this latest Pokémon adventure! In Pokémon Emerald, protect the Hoenn region from the mysterious land and sea forces, Groudon and Kyogre, who threaten to take control. Fortunately, the power of Rayquaza—the sky—can help you. Even the most experienced Pokémon Trainers will have to give it their all, as Pokémon Emerald contains some of the toughest battles they will ever face. Seek out the seven new Frontier Brains to collect all the symbols in the Battle Frontier. Completely new areas of Hoenn are revealed in this exciting extension of Pokémon Ruby and Pokémon Sapphire. Additionally, using the Game Boy Advance wireless adapter, you can trade and battle with Pokémon Emerald, Pokémon Ruby and Sapphire, and Pokémon FireRed and LeafGreen. It’s even possible to connect with Pokémon Colosseum using the Game Boy Advance cable for the Nintendo GameCube!`,
         logoPokemon: './logos/esmerald.webp',
@@ -489,7 +506,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Fire Red Version
     {
-        id: 28,
+        id: 29,
         capasPokemon: './capas/fireRed.webp',
         descricao: `Travel through the Kanto region to battle, catch, and train wild Pokémon, as well as to face off against other Trainers and the evil Team Rocket. While trying to catch all 200 Pokémon, including ten exclusive to Pokémon FireRed, visit one of the eight Gyms in an attempt to prove your worth and strive to become a Pokémon Master. With the Nintendo Game Boy Advance Link Cable, you can battle friends in two-on-two matches, with a variety of setup options that will offer you many hours of fun.`,
         logoPokemon: './logos/fireRed.webp',
@@ -506,7 +523,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Leaf Green Version
     {
-        id: 29,
+        id: 30,
         capasPokemon: './capas/leafGreen.png',
         descricao: `With new islands to explore, new Pokémon that can be transferred to Pokémon Colosseum, hidden extras, and much more, Pokémon LeafGreen is sure to delight all Pokémon fans. There’s even something special about the multiplayer options! Whether you’ve played every Pokémon title released to date or haven’t yet discovered the magic of this universe, Pokémon LeafGreen is an adventure you can’t miss!`,
         logoPokemon: './logos/leafGreen.webp',
@@ -523,7 +540,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Ruby Version
     {
-        id: 30,
+        id: 31,
         capasPokemon: './capas/rubyVersion.jpg',
         descricao: `Pokémon have evolved! Pokémon Ruby and Pokémon Sapphire, the first in the series for the Game Boy Advance, combine the power of the world’s most advanced handheld console with the gameplay of Pokémon to deliver an unmissable experience.<br><br>With an all-new storyline, a new world to explore, and a wide variety of new (alongside classic!) Pokémon to catch, train, and battle, Pokémon Ruby and Pokémon Sapphire offer everything fans expect from a game in the series. Both titles take place in the Hoenn region, a land full of towns, caves, lakes, and, above all, secrets. At the start of your adventure, you must decide whether you want to play as a male or female character—both equipped with fantastic new Pokémon gear—before setting off on a quest to become the best Pokémon Trainer in Hoenn. Before beginning your mission, however, you must choose one of three new Pokémon: Treecko, the Grass type, Torchic, the Fire type, or Mudkip, the Water type.`,
         logoPokemon: './logos/ruby.png',
@@ -540,7 +557,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Sapphire Version
     {
-        id: 31,
+        id: 32,
         capasPokemon: './capas/sapphire.png',
         descricao: `With an all-new storyline, a new world to explore, and a variety of new (alongside classic!) Pokémon to catch, train, and battle, Pokémon Ruby and Pokémon Sapphire offer everything Pokémon fans expect from a game in the series. Both titles take place in the Hoenn region, a land full of towns, caves, lakes, and, above all, secrets. At the start of your adventure, you must decide whether to play as a male or female character—both equipped with fantastic new Pokémon gear—before setting off on a mission to become the best Pokémon Trainer in Hoenn. Before beginning your journey, however, you must choose one of three new Pokémon: Treecko, the Grass type, Torchic, the Fire type, or Mudkip, the Water type.`,
         logoPokemon: './logos/sapphire.webp',
@@ -557,7 +574,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Crystal Version
     {
-        id: 32,
+        id: 33,
         capasPokemon: './capas/crystal.jpeg',
         descricao: `When it debuted on the Game Boy Color, Pokémon Crystal Version introduced many new elements to the Pokémon series. This game, an expanded version of Pokémon Gold Version and Pokémon Silver Version, was the first to allow players to choose a male or female character. It was also the first game to feature animations during Pokémon battles.<br><br>In this version of Pokémon Crystal Version, you also have the opportunity to encounter the mythical Pokémon Celebi in an event after completing the game. In the original Pokémon Crystal Version, Celebi could only be obtained with a special accessory.`,
         logoPokemon: './logos/crystal.webp',
@@ -574,7 +591,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Gold Version
     {
-        id: 33,
+        id: 34,
         capasPokemon: './capas/gold.jpg',
         descricao: `Pokémon Gold Version and Pokémon Silver Version are now available on the Nintendo 3DS! These games, originally released as Game Boy Color titles in Japan, have been recreated in the Virtual Console versions so that the screens appear just as they did on the Game Boy Color.<br><br>You will start the game as a beginner Trainer and explore the Johto region, embarking on an adventure to catch as many Pokémon as possible. There are many Pokémon in the game, including the Legendary trio composed of Raikou, Entei, and Suicune. These games also introduced new types of Pokémon to accompany you on your adventures: Steel-type and Dark-type Pokémon.`,
         logoPokemon: './logos/gold.webp',
@@ -591,7 +608,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Silver Version
     {
-        id: 34,
+        id: 35,
         capasPokemon: './capas/silver.png',
         descricao: `When it debuted on the Game Boy Color, Pokémon Crystal Version introduced many new elements to the Pokémon series. This game, an expanded version of Pokémon Gold Version and Pokémon Silver Version, was the first to allow players to choose a male or female character. It was also the first game to feature animations during Pokémon battles.<br><br>In this version of Pokémon Crystal Version, you also have the opportunity to encounter the mythical Pokémon Celebi in an event after completing the game. In the original Pokémon Crystal Version, Celebi could only be obtained with a special accessory.`,
         logoPokemon: './logos/silverVersion.webp',
@@ -608,7 +625,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Red Version
     {
-        id: 35,
+        id: 36,
         capasPokemon: './capas/red.jpg',
         descricao: `Pokémon Red Version and Pokémon Blue Version feature the Kanto region, home to creatures such as Charmander, Pikachu, and Mewtwo. Through exciting battles and trades, Trainers have the opportunity to access 150 Pokémon.<br><br>You begin your adventure in Pallet Town as a young Trainer. After a dangerous encounter with wild Pokémon, Professor Oak teaches you how to catch Pokémon and introduces you to the world of Trainers. During your journey in Kanto, you must catch Pokémon to record their data in your Pokédex, as well as to become a better Trainer by competing in Gyms across the region. After proving your worth as a Pokémon Trainer, it’s time to face the Elite Four: a group of Trainers who will put your skills to the ultimate test.`,
         logoPokemon: './logos/red.webp',
@@ -625,7 +642,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Blue Version
     {
-        id: 36,
+        id: 37,
         capasPokemon: './capas/blue.jpg',
         descricao: `Pokémon Red Version and Pokémon Blue Version feature the Kanto region, home to creatures such as Charmander, Pikachu, and Mewtwo. Through exciting battles and trades, Trainers have the opportunity to access 150 Pokémon.<br><br>You begin your adventure in Pallet Town as a young Trainer. After a dangerous encounter with wild Pokémon, Professor Oak teaches you how to catch Pokémon and introduces you to the world of Trainers. During your journey in Kanto, you must catch Pokémon to record their data in your Pokédex, as well as to become a better Trainer by competing in Gyms across the region. After proving your worth as a Pokémon Trainer, it’s time to face the Elite Four: a group of Trainers who will put your skills to the ultimate test.`,
         logoPokemon: './logos/blue.webp',
@@ -642,7 +659,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Green Version
     {
-        id: 37,
+        id: 38,
         capasPokemon: './capas/green.jpg',
         descricao: `Pokémon Green Version takes players on an exciting journey through the Kanto region, where Trainers can catch, train, and battle a variety of Pokémon. Alongside familiar favorites like Bulbasaur, Charmander, and Squirtle, players can encounter many unique Pokémon exclusive to this version.<br><br>As a new Trainer starting your adventure in Pallet Town, you’ll explore towns, forests, and caves while challenging Gym Leaders to earn badges and prove your skills. Your ultimate goal is to complete the Pokédex by capturing as many Pokémon as possible and to face the Elite Four, testing your abilities against the strongest Trainers in Kanto. Pokémon Green Version offers a classic RPG experience full of strategy, discovery, and adventure for both new players and longtime fans of the series.`,
         logoPokemon: './logos/green.png',
@@ -659,7 +676,7 @@ const dadosJogosPokemon = [
     },
     // Pokemon Yellow Version
     {
-        id: 38,
+        id: 39,
         capasPokemon: './capas/yellow.png',
         descricao: `After the huge success of Pokémon Red Version and Pokémon Blue Version came Pokémon Yellow Version: Special Pikachu Edition. In this game, Trainers return to Kanto for more fun and adventures… with Pikachu by their side!<br><br>The graphics of Pokémon Yellow were slightly redesigned compared to Pokémon Red and Pokémon Blue. Pokémon Yellow introduces battle modes that let you compete in exciting new ways and also offers fun minigames such as Surfing Pikachu.`,
         logoPokemon: './logos/yellow.png',
@@ -684,7 +701,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/friends.jpg',
         descricao: `Relax with puzzles in Pokémon™ Friends! Solve sets of three randomly selected puzzles to unwind your mind, then place the yarn you’ve collected into the Plush-O-Matic: a special machine that creates Pokémon plush in the game! As you try to make them all, keep track of every plush you’ve already created with the catalog. You can also follow your progress by marking a stamp in your calendar for each day you played, and later go back to practice the puzzles you played on those days.`,
         logoPokemon: './logos/friends.webp',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/friends.mp4',
+        trailer: './videos/friends.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000102052/c5f2e3f5a5432679d3618afed006a4e146ca8a38ccc795e6253a6fa722e77d17', 
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000102052/5e0a2a6a8e82dffd394cd484c499971c21a7ea85a0ad7a539d6c84a8e59a412c', 
@@ -701,7 +718,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/detectivePikachuReturns.webp',
         descricao: `Unravel a series of mysteries in Ryme City with a talkative, coffee-loving Pikachu and his human partner, Tim Goodman. When a jewelry theft occurs, the case sets this dynamic detective duo on a path full of mystery. Why did Tim’s father, Harry, disappear? What’s causing the Pokémon-related incidents in Ryme City? Answer these and other questions by searching for clues, investigating scenes, and using your notebook to draw your conclusions.`,
         logoPokemon: './logos/detectivePikachuReturn.png',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        trailer: './videos/detectivePikachuReturn.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000068693/96c03211ef6317f41f9dd48c191c522594e5a120567993a2e44d32594e53bef6', 
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000068693/22fbff592842f429909d2fab9ce2461b4fe8000aea29156bc3a9af60483344ce', 
@@ -718,7 +735,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/camp.jpg',
         descricao: `Pokémon Camp is an interactive space where Trainers can relax and bond with their Pokémon. Play, feed, cook, and strengthen your friendship to make your team happier and more ready for battles. Explore different environments, discover each Pokémon’s unique reactions, and make your journey even more fun and immersive!`,
         logoPokemon: './logos/camp.webp',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        trailer: './videos/camp.mp4',
         galeryPhotos: [
             'https://t2.tudocdn.net/168354?w=1920',
             'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e882a30a-012e-476b-be99-5af57eaba6bd/dg7oajj-468a5b80-51fb-4515-85d4-d661a4413187.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4ODJhMzBhLTAxMmUtNDc2Yi1iZTk5LTVhZjU3ZWFiYTZiZFwvZGc3b2Fqai00NjhhNWI4MC01MWZiLTQ1MTUtODVkNC1kNjYxYTQ0MTMxODcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.76DIjeH-PuGVLg2StuFW6fOGP_vwaJuX_ERePMhiqxI',
@@ -735,7 +752,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/smile.jpg',
         descricao: `Pokémon Smile is a mobile spin-off game from the Pokémon franchise. The game uses an augmented reality system to teach children how to brush their teeth. It was released in June 2020 by The Pokémon Company and is available as a free app for Android and iOS devices.`,
         logoPokemon: './logos/smile.png',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        trailer: './videos/smile.mp4',
         galeryPhotos: [
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/misc/pokemon-smile/pokemon-smile-169.jpg',
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_smile/screenshots/01.jpg',
@@ -752,7 +769,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/sleep.webp',
         descricao: `Pokémon Sleep is a mobile game for Android and iOS that rewards players with Pokémon based on the quality of their sleep.`,
         logoPokemon: './logos/sleep.webp',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        trailer: './videos/sleep.mp4',
         galeryPhotos: [
             'https://i.scdn.co/image/ab67616d0000b273aa3a06503e00761a045fa062', 
             'https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24772876/Pokemon_Sleep_Styles_EN.jpg?q=50&fit=crop&w=825&dpr=1.5',
@@ -769,7 +786,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/master.webp',
         descricao: `Pokémon Masters EX is a free mobile game for Android and iOS developed and published by DeNA. It is based on the Pokémon media franchise. Set on the artificial island of Pasio, the game allows players to battle and recruit various prominent Pokémon Trainers from the main series games.`,
         logoPokemon: './logos/master.webp',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/detectivePikachuReturn.mp4',
+        trailer: './videos/master.mp4',
         galeryPhotos: [
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_masters/pokemon-masters-ex-169.jpg', 
             'https://s2-techtudo.glbimg.com/2U4Q2tEF_J-eeWT7wH07DMeGMXA=/400x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2019/09/02/captura-de-tela-2019-08-30-as-09.10.59.png',
@@ -837,13 +854,13 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/pocket.webp',
         descricao: `Pokémon GO is a free-to-play augmented reality mobile game. It is developed and published by Niantic, Inc., in collaboration with Nintendo and The Pokémon Company for iOS and Android platforms.`,
         logoPokemon: './logos/pocket.png',
-        trailer: './videos/go.mp4',
+        trailer: './videos/pocket.mp4',
         galeryPhotos: [
             'https://storage.googleapis.com/dena-com-official-prod-gcp.appspot.com/upload/CnyrtA8tT93_rytF-YZHi.png', 
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/tcg-pocket/2025/10/13/pokemon-tcg-pocket-169-en.png', 
             'https://tcgpocket.pokemon.com/_images/announcement/cardspread_header.png',
             'https://assets-prd.ignimgs.com/2024/11/07/poke-swag-1730983015863.jpg',
-            'https://www.pokebeach.com/news/2024/02/Charizard-ex-3D-Card.gif'
+            'https://www.pokemythology.net/wp-content/uploads/2024/08/charizard_video_fallback_en-2x.webp'
         ],
         linkGoogle: "https://www.google.com/search?q=Pokemon+TCG+Pocket",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+TCG+Pocket&p=1&cat=all&sort=df',
@@ -854,7 +871,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/live.jpg',
         descricao: `Pokémon TCG Live is the official digital version of the Pokémon Trading Card Game. Players can collect, trade, and battle with hundreds of Pokémon cards online. Build your decks, test strategies against opponents worldwide, and experience the excitement of the TCG in a dynamic digital format.`,
         logoPokemon: './logos/live.png',
-        trailer: './videos/go.mp4',
+        trailer: './videos/live.mp4',
         galeryPhotos: [
             'https://www.pokemon.com/static-assets/content-assets/cms2-pt-br/img/video-games/video-games/pokemon_tcg_live/pokemon-tcg-live-169-br.png',
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/tcgl/pokemon-tcg-live-169-us.jpg',
@@ -871,7 +888,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/online.png',
         descricao: `Step into the world of Pokémon TCG Online, where you can build, customize, and battle with your own Pokémon Trading Card Decks! Play against friends or Trainers worldwide in fast-paced online matches, test your strategies, and climb the rankings.<br><br>Collect cards from across the Pokémon universe, unlock new booster packs, and expand your collection to create powerful decks. Whether you’re a beginner learning the rules or a veteran mastering complex strategies, Pokémon TCG Online offers endless hours of competitive and casual gameplay for every Pokémon fan.`,
         logoPokemon: './logos/online.png',
-        trailer: './videos/',
+        trailer: './videos/online.mp4',
         galeryPhotos: [
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/tcgo/generic/tcgo-generic-169-en.jpg', 
             'https://i0.wp.com/www.pokemythology.net/wp-content/uploads/2017/10/pokemon_tcg_online.jpg?fit=1200%2C675&ssl=1',
@@ -888,7 +905,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/rush.webp',
         descricao: `Pokémon Rumble Rush is a free-to-play mobile game formerly active, developed by Ambrella and published by The Pokémon Company. It is the fifth entry in the Pokémon Rumble series. The game was available from its release in the spring of 2019 until its shutdown on July 22, 2020.`,
         logoPokemon: './logos/rumbleRush.png',
-        trailer: './videos/',
+        trailer: './videos/rush.mp4',
         galeryPhotos: [
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_rumble_rush/pokemon-rumble-rush-169.jpg',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8irXucOqvcwbcXh4RsXprixXx2lIhlzYE4w&s',
@@ -905,10 +922,10 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/mobile.png',
         descricao: `Pokémon Shuffle is a freemium puzzle video game developed by Genius Sonority and published by Nintendo and The Pokémon Company for the Nintendo 3DS. The game is a spin-off of the Pokémon series and features gameplay similar to Pokémon Battle Trozei.`,
         logoPokemon: './logos/shuffleMobile.png',
-        trailer: './videos/',
+        trailer: './videos/mobile.mp4',
         galeryPhotos: [
-            'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/81/95/40/8195401a-b8eb-2f3c-9015-721c09a5dde9/9ae81442-fb41-4e5b-8c92-cc3aa4145540_en__U30bf_U30a4_U30c8_U30eb__U30d0_U30ca_U30fc_U6d88_U3057.png/300x0w.jpg', 
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/pokemon-shuffle/pokemon-shuffle-mobile-launch-169.jpg',
+            'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/81/95/40/8195401a-b8eb-2f3c-9015-721c09a5dde9/9ae81442-fb41-4e5b-8c92-cc3aa4145540_en__U30bf_U30a4_U30c8_U30eb__U30d0_U30ca_U30fc_U6d88_U3057.png/300x0w.jpg', 
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_shuffle_mobile/top-slider-2.jpg',
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_shuffle_mobile/top-slider-1.jpg', 
             'https://mobilemarketingreads.com/wp-content/uploads/2021/12/pokemon-shuffle-mobile.png',
@@ -922,7 +939,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/tretta.webp',
         descricao: `Pokémon Tretta is a Japanese arcade game that evolved from Pokémon Battrio. Players use collectible Tretta tiles to summon Pokémon and battle in 3-on-3 matches. Each tile stores data like type, strength, and capture status, allowing players to build and customize their teams. The game also lets players catch Pokémon during battles and receive new Tretta tiles as rewards. With colorful visuals and interactive gameplay, Pokémon Tretta became a popular arcade experience for both kids and collectors.`,
         logoPokemon: './logos/tretta.webp',
-        trailer: './videos/',
+        trailer: './videos/tretta.mp4',
         galeryPhotos: [
             'https://i.ebayimg.com/images/g/NSEAAOSwanVjBag2/s-l400.jpg',
             'https://media.karousell.com/media/photos/products/2022/12/10/pokemon_tettra_1670658316_ba8238f8_progressive.jpg',
@@ -939,13 +956,13 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/Battrio.jpeg',
         descricao: `Pokémon Battrio is a Japan-exclusive arcade game developed by Takara Tomy and AQ Interactive. Players use physical discs called Battrio pucks to summon Pokémon for 3-on-3 battles on a touch-sensitive table. Each puck has unique stats like type, power, and speed, encouraging collection and strategy. The game’s fast-paced and tactical system inspired later arcade titles such as Pokémon Tretta and Pokémon Ga-Olé.`,
         logoPokemon: './logos/battrio.png',
-        trailer: './videos/',
+        trailer: './videos/battrio.mp4',
         galeryPhotos: [
             'https://images.gog.com/635e624a998942ebf206c5a2b7b837f8a3acee11c8c367b72fd1474cfcf717ad_glx_vertical_cover.webp?namespace=gamesdb',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ERRQvV1HzxnKgR3gY_bLJ7MbSejeDjlbhg&s',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7_e8g5vr_sd3UF0Fv4YX7ywp9R48QP6Ocw&s', 
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa81b6gCXHASy96ANlM8IvNtM-Ts15mI0ak4bOtx1sKvyfvc45rqMAWB3Wra54UJk1vVc&usqp=CAU', 
-            'https://archives.bulbagarden.net/media/upload/thumb/5/5f/BattrioVAttack.jpg/220px-BattrioVAttack.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1P1yZTWFT6DLnwGyE68JbQ9Oj-99BVGQDFA&s',
         ],
         linkGoogle: "https://www.google.com/search?q=Pokemon+Battrio",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Battrio&p=1&cat=all&sort=df',
@@ -956,7 +973,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/champions.jpeg',
         descricao: `Battle with Pokémon, including Mega-Evolved forms like Mega Dragonite, against other players in Pokémon™ Champions. Starting in 2026, Pokémon Champions will be the official game of the Pokémon World Championships! Engage in single and double battles using familiar mechanics such as Pokémon types, Abilities, and moves to create diverse strategies. Compete in Ranked Matches worldwide, enjoy Casual Battles, or play Private Battles with friends and family.<br><br>Recruit and train Pokémon to strengthen your team, improve stats like Attack and Defense, and customize Abilities and moves for varied strategies. Pokémon Champions is compatible with Pokémon HOME, allowing you to bring select Pokémon from past games and Pokémon GO into your team for even more battle options.`,
         logoPokemon: './logos/champions.png',
-        trailer: './videos/',
+        trailer: './videos/champions.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch/70010000004519/f43ebd5cdac98ed79b9e15c399b87e2c0d354757906f90eb3bd02aa01edc01e8',
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_champions/screenshots/01.png',
@@ -973,7 +990,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/unite.png',
         descricao: `Pokémon UNITE is a free-to-play online multiplayer battle game developed by TiMi Studios and published by The Pokémon Company. Announced during Pokémon Presents in 2020 and released in 2021, the game allows players to team up in strategic 5-on-5 battles, using their favorite Pokémon to score points, defeat opponents, and dominate the battlefield in fast-paced, action-packed matches.`,
         logoPokemon: './logos/unite.png',
-        trailer: './videos/',
+        trailer: './videos/unite.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/a4d0a9eb884cacb780324d953f7da1835d69669c602b71f99ca948dcbbba7cfb',
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/b9bf0b6fa28685bce9818d75e57ac0a90398441dfd36430cec617e5169412fb4',
@@ -1058,7 +1075,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/home.jpeg',
         descricao: `Pokémon Home is a free mobile and Nintendo Switch application developed by ILCA and published by The Pokémon Company, part of the Pokémon series, released in February 2020. Its primary function is to provide cloud-based storage for Pokémon, allowing Trainers to safely store, manage, and transfer their Pokémon across compatible games with ease.`,
         logoPokemon: './logos/home.png',
-        trailer: './videos/',
+        trailer: './videos/home.mp4',
         galeryPhotos: [
             'https://s2.glbimg.com/RyWd50E46bdRaZMlKb5R9UvUSFg=/600x0/filters:quality(70)/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/Q/p/KtKnCfSnKdEabEmkhgFw/2020-01-31-captura-de-tela-2020-01-31-as-15.08.57-1.png',
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000028523/4ebfd3fbe35e4ae3aad74128f854821cd96fe8fa77f34eb82ccaae6576540b88',
@@ -1075,7 +1092,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/dx.webp',
         descricao: `Introducing the first Pokémon title for the Nintendo Switch! Control one of 21 award-winning Pokémon fighters and take on other Pokémon in intense arena battles. Summon support Pokémon to aid you in combat, then unleash your fighter’s special attacks to climb the rankings. With all-new modes and fresh ways to battle friends, this is your chance to become the champion of the Ferrum Region!`,
         logoPokemon: './logos/dx.png',
-        trailer: './videos/',
+        trailer: './videos/dx.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/99ea536904d37f1660c2f7f27c945db223a7579630fdf0c578a220deb6abc03d',
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/939b1e60805ea2a95aa51e3faad99b0ec8af0408b39f4af40abe25d3d1c3ee1d',
@@ -1092,7 +1109,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/tournament.webp',
         descricao: `Developed in collaboration with The Pokémon Company and BANDAI NAMCO Entertainment, the studio behind the legendary TEKKEN fighting series, Pokkén Tournament delivers high-definition gameplay and impressive control in thrilling, never-before-seen Pokémon battles. Its intuitive controls make it accessible to all kinds of players, even those new to fighting or action games.<br><br>Pokkén Tournament’s battles reach a whole new level with a diverse cast of Pokémon characters. Use Pikachu’s electric power and quick movements to outsmart your opponents, crush enemies in close combat with Machamp’s brute strength, or scorch rivals with Charizard’s blazing attacks.`,
         logoPokemon: './logos/tournament.webp',
-        trailer: './videos/',
+        trailer: './videos/tournament.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_01_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_06_TM_Standard.jpg',
@@ -1126,7 +1143,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/superMystery.jpg',
         descricao: `Choose from 20 different Pokémon and set off on an adventure to encounter nearly every known Pokémon, including Legendary and Mythical ones. With the help of your partner Pokémon, uncover the cause behind the mysterious incidents turning Pokémon into stone and put an end to this crisis!<br><br>As a Pokémon yourself, your home is in the peaceful Serene Village. However, before long, you and your partner set out to join the Expedition Society—a team dedicated to exploring and charting the world—leading you into dungeons filled with countless Pokémon and new discoveries.`,
         logoPokemon: './logos/superMystery.png',
-        trailer: './videos/',
+        trailer: './videos/superMystery.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_01_TM_Standard.png',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_08_TM_Standard.png',
@@ -1211,7 +1228,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/1000.jpg',
         descricao: `Pokémon: The Thieves and the 1000 Pokémon is a special downloadable Nintendo 3DS game released to celebrate the movie Pokémon the Movie: Diancie and the Cocoon of Destruction. In this fast-paced adventure, you play as a thief on a mission to collect as many Pokémon as possible using the 3DS’s motion controls to sneak, gather treasures, and avoid capture. The more Pokémon you collect, the stronger your team becomes, and you can even use StreetPass to borrow Pokémon from other players. With its quick action and unique connection to the Pokémon movie, this game offers an exciting and fresh Pokémon experience.`,
         logoPokemon: './logos/1000.png',
-        trailer: './videos/',
+        trailer: './videos/1000.mp4',
         galeryPhotos: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUXtc-bMsvXG8RY0UOemsbJrApMrWeFjW2A&s',
             'https://www.serebii.net/bandofthieves/7.jpg',
@@ -1228,7 +1245,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/art.jpg',
         descricao: `The Art Academy series debuted on the Nintendo DS in 2009, offering a comprehensive fine arts studio with a variety of drawing and painting tools. In the two titles released so far, aspiring artists can create true works of art, with the stylus on the Touch Screen acting as a pencil or paintbrush. With its step-by-step guidance, led by a friendly instructor, seemingly complex images are broken down into easy-to-follow lessons.<br><br>While previous Art Academy titles focused on traditional drawing and painting techniques, Pokémon Art Academy lets you take your first steps into illustration. Here, Professor Andy teaches you how to draw and refine your skills, starting with beginner Pokémon and working your way up to creating legendary masterpieces.`,
         logoPokemon: './logos/art.webp',
-        trailer: './videos/',
+        trailer: './videos/art.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcademy_enGB_01_TM_Standard.png',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcademy_enGB_05_TM_Standard.png',
@@ -1262,7 +1279,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/bank.jpg',
         descricao: `Store, manage, and transfer your Pokémon like never before with Pokémon Bank for Nintendo 3DS! This online cloud service lets you safely deposit and organize up to 3,000 Pokémon across multiple boxes, making it the perfect tool for dedicated Trainers who want to keep their collection secure and accessible.<br><br>Easily transfer your Pokémon from Pokémon X, Pokémon Y, Omega Ruby, Alpha Sapphire, and even from previous generations through Poké Transporter. Move your Pokémon between compatible titles and bring your old partners along for new adventures!`,
         logoPokemon: './logos/bank.png',
-        trailer: './videos/',
+        trailer: './videos/bank.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_3ds_download_software_7/SI_3DSDS_PokemonBank_enGB_image1600w.jpg',
             'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_bank/pokemon-bank-diagram-ultra-sun-ultra-moon-en.jpg',
@@ -1276,10 +1293,10 @@ const dadosJogosPokemonSpinOff = [
     // Pokemon Tretta Lab
     {
         id: 35,
-        capasPokemon: './capas/tretta.webp',
+        capasPokemon: './capas/lab.webp',
         descricao: `Experience the excitement of Pokémon Tretta Lab for Nintendo 3DS, where the world of arcade Pokémon battles comes to life in your hands! Use the special Tretta Scanner accessory to read real Tretta discs and bring your Pokémon into the game in stunning 3D detail.<br><br>Analyze your Tretta Pokémon, check their battle types, compare strengths, and even watch them face off in thrilling automated battles! Each scan reveals a new layer of strategy, letting you build your ideal Pokémon team and study their stats like a real Pokémon Professor.`,
-        logoPokemon: './logos/tretta.webp',
-        trailer: './videos/',
+        logoPokemon: './logos/lab.webp',
+        trailer: './videos/trettaLab.mp4',
         galeryPhotos: [
             'https://i.ytimg.com/vi/8DITWF44DCs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBNhNQqBwLZeQFPsYlLamNQmwkzgw', 
             'https://i.ytimg.com/vi/ge2uNMIZKqM/maxresdefault.jpg',
@@ -1296,7 +1313,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/infinity.png',
         descricao: `Explore over 20 thrilling dungeons, each filled with all kinds of Pokémon, treasures, and surprises! Every dungeon has its own unique characteristics when it comes to the Pokémon you encounter, the type of terrain, and the number of floors. However, their layout changes every time you enter, meaning the number of dungeons to explore is infinite! Moreover, the items and treasures found within each dungeon can help you progress through the game, as well as some of the Pokémon you battle, since you can recruit them to join you on your mission.<br><br>In addition to the dungeons from the main story of Pokémon Mystery Dungeon: Gates to Infinity, you can also discover the Magnagates—gateways to a special type of dungeon accessible through the outer cameras of your Nintendo 3DS. With these, you can "scan" any round object you find in the real world, which will open a new entrance to a unique place where no Pokémon has ever been before!`,
         logoPokemon: './logos/infinity.webp',
-        trailer: './videos/',
+        trailer: './videos/infinity.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_01_TM_Standard.png',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_07_TM_Standard.png',
@@ -1313,7 +1330,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/3dpro.webp',
         descricao: `Become the ultimate Pokémon Trainer! Learn everything about Pokémon with the new Pokédex 3D Pro for the Nintendo 3DS and Nintendo 3DS XL consoles. It’s the perfect companion for Pokémon Black Version 2 and Pokémon White Version 2, and it’s quick and easy to download from the Nintendo eShop.<br><br>This enhanced version includes detailed statistics and information on over 640 Pokémon from throughout the series’ history. With this tool, you can check each Pokémon’s evolutions, access a list of moves each Pokémon can learn, and gain knowledge you can take with you wherever you go! The Pokémon Challenge also lets you test your newly acquired Pokémon knowledge to see if you’re already a Pokémon expert!`,
         logoPokemon: './logos/3d.webp',
-        trailer: './videos/',
+        trailer: './videos/3dpro.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_3ds_download_software_7/SI_3DSDS_Pokedex3DPro_image1600w.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_3ds_15/3dsdownloadsoftware_pokedex3dpro_eses/P05_02_TM_Standard.jpg',
@@ -1330,7 +1347,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/radar.webp',
         descricao: `The game invites you to take on the role of an assistant working for Professor Burnet, a scientist studying the Interdream Zone. Move your Nintendo 3DS in all directions in this action game controlled by the player’s movements, and try to hit the Dream Clouds with your light beam to earn rewards!<br><br>Fun and accessible for everyone, this game is the perfect fact-filled companion for Pokémon Black Version 2 and Pokémon White Version 2. Any Pokémon or items caught in Pokémon Dream Radar can be transferred to Pokémon Black Version 2 and Pokémon White Version 2, which is especially useful since the Pokémon you catch may have hidden abilities not available in those games, as well as items you wouldn’t normally find. Try to complete your Pokédex!`,
         logoPokemon: './logos/radar.webp',
-        trailer: './videos/',
+        trailer: './videos/radar.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/1DreamCloudFloatSceneCenter_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/1DreamCloudFloatSceneLeft_TM_Standard.jpg',
@@ -1344,19 +1361,19 @@ const dadosJogosPokemonSpinOff = [
     // Pokemon Pokedex 3D
     {
         id: 39,
-        capasPokemon: './capas/',
-        descricao: ``,
-        logoPokemon: './logos/',
-        trailer: './videos/',
+        capasPokemon: './capas/3d.jpg',
+        descricao: `Pokédex 3D lets you uncover information about all the new Pokémon from Pokémon Black Version and Pokémon White Version, without needing to own a copy of either game. Pokédex 3D is the most detailed and comprehensive Pokédex ever seen in a video game, bringing Pokémon to life by allowing you to view them from any angle, in various poses, and with fun animations — all in 3D.`,
+        logoPokemon: './logos/pokedex.webp',
+        trailer: './videos/3d.mp4',
         galeryPhotos: [
-            '',
-            '',
-            '', 
-            '', 
-            '',
+            'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_3ds_download_software_7/SI_3DSDS_Pokedex3D_image1600w.jpg',
+            'https://www.nintendoworldreport.com/media/26459/1/9.jpg',
+            'https://www.serebii.net/pokedex3d/photosticker.jpg', 
+            'https://img.pokemondb.net/images/pokedex3d/hydreigon.jpg', 
+            'https://media.pocketgamer.com/artwork/na-qzt/pokedex_3d_pro1.jpg',
         ],
-        linkGoogle: "https://www.google.com/search?q=Pokemon+TCG+Live",
-        linkNintendo: '',
+        linkGoogle: "https://www.google.com/search?q=Pokédex+3D",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Noticias/2011/Pokedex-3D-gratis-os-Pokemon-ganham-vida-em-3D--252920.html',
     },
     // Pokemon Rumble Blast
     {
@@ -1398,7 +1415,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/tempest.jpg',
         descricao: `Pokémon Mystery Dungeon: Let’s Go! Light Adventure Squad! takes you on an exciting journey through mysterious dungeons filled with wild Pokémon and hidden treasures. Team up with friends, explore ever-changing environments, and complete missions to help Pokémon in need. Solve puzzles, battle foes, and strengthen your bonds as you uncover the secrets of the Pokémon world in this thrilling adventure!`,
         logoPokemon: './logos/tempest.png',
-        trailer: './videos/',
+        trailer: './videos/tempest.mp4',
         galeryPhotos: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDJLwrNr1oYXAh5NTql0arx6sw4MtawCPYQ&s',
             'https://images.igdb.com/igdb/image/upload/t_720p/sc8af8.jpg',
@@ -1415,7 +1432,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/radiant.jpg',
         descricao: `Pokémon Mystery Dungeon: Let’s Go! Light Adventure Squad! takes you on an exciting journey through mysterious dungeons filled with wild Pokémon and hidden treasures. Team up with friends, explore ever-changing environments, and complete missions to help Pokémon in need. Solve puzzles, battle foes, and strengthen your bonds as you uncover the secrets of the Pokémon world in this thrilling adventure!`,
         logoPokemon: './logos/radiant.png',
-        trailer: './videos/',
+        trailer: './videos/radiant.mp4',
         galeryPhotos: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFoevEHTHnHConsl1AIQCkiKy54iiATouBw&s',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXMLOXSAPaNnlcEt7II3ddDK5qwtIZNqc1g&s',
@@ -1432,7 +1449,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/blazing.png',
         descricao: `Pokémon Mystery Dungeon: Keep Going! Wildfire Adventure Squad takes you on an exciting journey through dangerous dungeons filled with wild Pokémon and unexpected challenges. Assemble your team, explore ever-changing environments, and complete missions to help Pokémon in need. With strategic battles, evolving friendships, and thrilling adventures at every turn, it’s up to you and your squad to face the heat and overcome the wildfires threatening the Pokémon world!`,
         logoPokemon: './logos/wildFire.png',
-        trailer: './videos/',
+        trailer: './videos/wildfire.mp4',
         galeryPhotos: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiFSyr7I9v6mmmTGQE-7byG6wCMilqctyoA&s',
             'https://images.igdb.com/igdb/image/upload/t_1080p_2x/sc8aep.webp',
@@ -1449,7 +1466,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/pokepark.jpg',
         descricao: `In PokéPark Wii: Pikachu’s Adventure, it’s up to you to protect the PokéPark from danger by collecting pieces of the precious Sky Prism and ensuring the park’s safety. But the Sky Prism pieces are scattered across all kinds of environments, and you’ll only be able to obtain them by completing challenging tasks… Saving the day won’t be easy!<br><br>The adventure begins when Pikachu and some Pokémon friends are drawn into a mysterious tunnel that turns out to be an entrance to a place known as PokéPark. This world features vast beaches, snowy landscapes, underground mines, and — above all — an endless variety of fun games to enjoy!`,
         logoPokemon: './logos/pokepark.png',
-        trailer: './videos/',
+        trailer: './videos/pokepark.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_01_TM_Standard.png',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_03_TM_Standard.png',
@@ -1483,7 +1500,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/ranch.webp',
         descricao: `The Pokémon phenomenon makes its debut on the WiiWare digital service with My Pokémon™ Ranch. Watch Pokémon and Mii characters interact with each other for the very first time! Enjoy the relaxing ranch life by watching your ranch and its Pokémon, or by taking photos and sending them to your friends. The more Pokémon and Mii characters you bring to your ranch, the more fun you’ll have!<br><br>My Pokémon™ Ranch can be connected to Pokémon Diamond and Pokémon Pearl Nintendo DS game cards, allowing you to bring the Pokémon you’ve caught in those games to your ranch! You can place up to 1,000 Pokémon from as many as eight different game cards! Liven up your ranch and have fun with your friends and family.`,
         logoPokemon: './logos/ranch.png',
-        trailer: './videos/',
+        trailer: './videos/ranch.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_15_1_UKV_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_10_1_UKV_TM_Standard.jpg',
@@ -1500,7 +1517,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/revolution.png',
         descricao: `Jump into action and prove that when it comes to training Pokémon, you’re a true world-class leader! Pokémon Battle Revolution lets you copy the Pokémon you’ve caught and raised in Pokémon Diamond and Pokémon Pearl on your Nintendo DS to the Wii for epic 3D battles against Trainers from all around the world!<br><br>Pokémon Battle Revolution begins as you enter Pokétopia, a theme park made up of ten different Colosseums built for Pokémon battles. As you explore Pokétopia, you’ll be able to customize your Trainer’s appearance, uncover secrets, and watch your favorite Pokémon battle in spectacular style against opponents from across the globe.`,
         logoPokemon: './logos/revolution.png',
-        trailer: './videos/',
+        trailer: './videos/revolution.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_12_en_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_7_en_TM_Standard.jpg',
@@ -1517,15 +1534,15 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/tcg.png',
         descricao: `Pokémon Trading Card Game, or Pokémon Estampas Ilustradas in Brazil, is a collectible card game developed by Creatures Inc., based on the Japanese Pokémon franchise.`,
         logoPokemon: './logos/tradingCard.png',
-        trailer: './videos/',
+        trailer: './videos/tcg.mp4',
         galeryPhotos: [
-            'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/tcg_product_gallery_169_en.jpg',
-            'https://assetsio.gnwcdn.com/pokemon-trading-card-game-online-screenshot-1.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp',
-            'https://www.wargamer.com/wp-content/sites/wargamer/2021/04/pokemon-tcg-digital-game-cards-screenshot.jpg', 
-            'https://tcg.pokemon.com/assets/img/news/items/en-us/tcg_cube_deck_101_169_en.png', 
-            'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/how-to-play/tcg-how-to-play-34-en.jpg',
+            'https://gonintendo.com/attachments/image/64563/file/medium-bc218b561d85620875395e735612a2dc.webp',
+            'https://i.ebayimg.com/images/g/XfIAAOSwoeZoIDZW/s-l225.jpg',
+            'https://http2.mlstatic.com/D_NQ_NP_875541-MLA89157790471_082025-O.webp',
+            'https://assetsio.gnwcdn.com/White-Flare.webp?width=2048&height=2048&fit=bounds&quality=85&format=jpg&auto=webp',
+            'https://totalcards.net/cdn/shop/articles/black-bolt-white-flare-englishFacebook_98ae1c11-308a-40ea-92e9-d190dd759962.png?v=1752832589&width=800'    
         ],
-        linkGoogle: "https://www.google.com/search?q=Pokemon+Trading+Card+Game",
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Trading+Card+Game",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Trading+Card+Game&p=1&cat=all&sort=df',
     },
     // Pokemon Conquest
@@ -1551,7 +1568,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/typing.webp',
         descricao: `Typing Adventure, known in Japan as Battle & Get! Pokémon Typing DS, is an educational typing video game and a Pokémon spin-off title.`,
         logoPokemon: './logos/typing.png',
-        trailer: './videos/',
+        trailer: './videos/typing.mp4',
         galeryPhotos: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5PJnsPmVanM_JvP9EHEH0GSXrXFFUGynBg&s',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_DP402FKTcJcbXGerRBBeBL9nNykUiLRJw&s',
@@ -1585,7 +1602,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/darkness.jpg',
         descricao: `When you wake up on a strange island and discover that you’ve turned into a Pokémon, many questions will cross your mind — questions that can only be answered once you set off on an epic journey of discovery. Along the way, you’ll embark on missions to recover lost items, chase down fugitives, and take part in the search for a precious artifact stolen by a time-traveling Pokémon!<br><br>Of course, for such a challenging adventure, you’ll need some help. Building a trustworthy Pokémon Exploration Team to travel alongside you through dangerous dungeons will be vital for your survival. And don’t forget to train your team before heading out on any mission — teach them the skills they’ll need to ensure victory in the many Pokémon battles that lie ahead!`,
         logoPokemon: './logos/darkness.png',
-        trailer: './videos/',
+        trailer: './videos/timeDark.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon05_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon09_TM_Standard.jpg',
@@ -1602,7 +1619,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/time.jpg',
         descricao: `When you wake up on a strange island and discover that you’ve turned into a Pokémon, many questions will cross your mind — questions that can only be answered once you set off on an epic journey of discovery. Along the way, you’ll embark on missions to recover lost items, chase down fugitives, and take part in the search for a precious artifact stolen by a time-traveling Pokémon!<br><br>Of course, for such a challenging adventure, you’ll need some help. Building a trustworthy Pokémon Exploration Team to travel alongside you through dangerous dungeons will be vital for your survival. And don’t forget to train your team before heading out on any mission — teach them the skills they’ll need to ensure victory in the many Pokémon battles that lie ahead!`,
         logoPokemon: './logos/time.webp',
-        trailer: './videos/',
+        trailer: './videos/timeDark.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon01_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon02_TM_Standard.jpg',
@@ -1704,7 +1721,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/dash.jpg',
         descricao: `Faster than a speeding Latios, here comes Pikachu! The Pokémon Dash Grand Prix is taking place across the Pokémon Islands, and there’s one yellow Pokémon determined to take the top prize! <br><br>In Pokémon Dash, you use the Touch Screen to propel your Pokémon toward the finish line. Simply use the stylus to rub the screen in the direction you want Pikachu to move. When you rub the screen more frantically, Pikachu will tear across the level with that much more zip.`,
         logoPokemon: './logos/dash.avif',
-        trailer: './videos/',
+        trailer: './videos/dash.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_3_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_4_TM_Standard.jpg',
@@ -1721,7 +1738,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/xd.png',
         descricao: `Embark on a brand-new and glorious Pokémon odyssey — in the Orre region! Uncover the mystery of Shadow Lugia in this full-length role-playing adventure for the GameCube.<br><br>Start with just an Eevee, but you’ll be able to capture more Pokémon as you explore various towns and locations, Snagging and Purifying the Shadow Pokémon of rival Trainers. An engaging storyline and stunning 3D graphics come together to create an adventure no Pokémon fan will want to miss.`,
         logoPokemon: './logos/xd.png',
-        trailer: './videos/',
+        trailer: './videos/xd.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_4_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_TM_Standard.jpg',
@@ -1823,7 +1840,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/league.jpg',
         descricao: `Test your Pokémon battling and puzzle-solving skills against the best Trainers in Puzzle League Village! To succeed, you’ll need quick thinking and fast fingers to clear puzzle pieces by matching blocks of the same color. The more pieces you clear at once, the more points you’ll score.<br><br>Create huge combos or chain reactions to launch powerful attacks against your opponent — whether it’s the computer or a friend — and earn badges from rival Trainers to become the Pokémon Puzzle Master!`,
         logoPokemon: './logos/league.png',
-        trailer: './videos/',
+        trailer: './videos/league.mp4',
         galeryPhotos: [
             'https://bdjogos.com.br/capas/3944-Pokemon-Puzzle-League-Nintendo-64-capa-1.jpg',
             'https://http2.mlstatic.com/D_NQ_NP_761121-MLB82939493437_032025-O.webp',
@@ -1891,7 +1908,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/snap64.jpg',
         descricao: `Have you ever wondered what Pikachu looks like in its natural habitat? In the spectacular game Pokémon Snap, you can capture many Pokémon in the wild — not with a Poké Ball, but with a camera!<br><br>Some photos will be easy to take, like catching Pikachu relaxing on the beach. Others, however, will be much more challenging — for example, managing to photograph Pikachu riding on the back of a rare flying Pokémon! In Pokémon Snap, you’ll be working under the supervision of Professor Oak, the world-famous Pokémon professor. He needs various photos taken on Pokémon Island, where you’ll explore six fascinating regions in search of every Pokémon you can find.`,
         logoPokemon: './logos/snap.png',
-        trailer: './videos/',
+        trailer: './videos/snap.mp4',
         galeryPhotos: [
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_01_TM_Standard.jpg',
             'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_02_TM_Standard.jpg',
@@ -1993,24 +2010,24 @@ const addGame = () => {
     const games = document.querySelector('.games');
     const gamesSpinOff = document.querySelector('.gamesSpinOff');
 
-    // for (let i = 0; i < dadosJogosPokemon.length; i++) {    
-    //     games.innerHTML += `
-    //         <div class="center over gameImage animate-on-scroll opacity" data-animation="zoomInDown">
-    //             <img id="${dadosJogosPokemon[i].id}" src="${dadosJogosPokemon[i].capasPokemon}" alt="Pokemon Image">
-    //         </div>`
-    // }
+    for (let i = 0; i < dadosJogosPokemon.length; i++) {    
+        games.innerHTML += `
+            <div class="center over gameImage animate-on-scroll opacity" data-animation="zoomInDown">
+                <img id="${dadosJogosPokemon[i].id}" src="${dadosJogosPokemon[i].capasPokemon}" alt="Pokemon Image">
+            </div>`
+    }
 
     for (let x = 0; x < dadosJogosPokemonSpinOff.length; x++) {
         gamesSpinOff.innerHTML += `
         <div class="center over gameImage animate-on-scroll opacity spin-off" data-animation="zoomInDown">
-            <img id="${dadosJogosPokemonSpinOff[x].id}" src="${dadosJogosPokemonSpinOff[x].capasPokemon}" alt="Pokemon Image">
+            <img id="${dadosJogosPokemonSpinOff[x].id}" src="${dadosJogosPokemonSpinOff[x].capasPokemon}" draggable="false" alt="Pokemon Image">
         </div>`
     }
 }
 
 addGame()
 
-const gameImage = document.querySelectorAll('.gameImage');
+const gameImage = document.querySelectorAll('.gameImage img');
 
 gameImage.forEach((e) => {
     e.addEventListener('click', (element) => {

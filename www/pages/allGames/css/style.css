@@ -50,8 +50,8 @@ body {
 
 .logoPokemon {
     width: auto;
-    height: 120px;
-    
+    height: auto;
+    max-width: 100%;
 }
 
 .mainBaseGame > h1 {
