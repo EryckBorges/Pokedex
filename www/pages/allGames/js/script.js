@@ -684,7 +684,7 @@ const dadosJogosPokemonSpinOff = [
         capasPokemon: './capas/friends.jpg',
         descricao: `Relax with puzzles in Pokémon™ Friends! Solve sets of three randomly selected puzzles to unwind your mind, then place the yarn you’ve collected into the Plush-O-Matic: a special machine that creates Pokémon plush in the game! As you try to make them all, keep track of every plush you’ve already created with the catalog. You can also follow your progress by marking a stamp in your calendar for each day you played, and later go back to practice the puzzles you played on those days.`,
         logoPokemon: './logos/friends.webp',
-        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/arceus.mp4',
+        trailer: 'https://raw.githubusercontent.com/EryckBorges/Pokedex/main/www/pages/allGames/videos/friends.mp4',
         galeryPhotos: [
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000102052/c5f2e3f5a5432679d3618afed006a4e146ca8a38ccc795e6253a6fa722e77d17', 
             'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000102052/5e0a2a6a8e82dffd394cd484c499971c21a7ea85a0ad7a539d6c84a8e59a412c', 
@@ -712,7 +712,7 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: 'https://www.google.com/search?tbm=shop&q=Pokemon+Detective+Pikachu+Returns',
         linkNintendo: 'https://www.nintendo.com/pt-br/store/products/detective-pikachu-returns-switch/?srsltid=AfmBOoowE1Czkud3SzzVd4DL_Xo1QTu-I4lapZRg59dQ4DTFM4qoYJwT',
     },
-    // Pokemon Camp - 
+    // Pokemon Camp
     {
         id: 2,
         capasPokemon: './capas/camp.jpg',
@@ -729,7 +729,7 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: 'https://www.google.com/search?q=Pokemon+Camp',
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOool_SXvXsNQhG-ifX2CM8MmTSujQcqlPpgaxnToDpPz9gzN7yFz&slug=detective-pikachu-returns-switch#q=Pokemon+Camp&p=1&cat=all&sort=df',
     },
-    // Pokemon Smile -
+    // Pokemon Smile
     {
         id: 3,
         capasPokemon: './capas/smile.jpg',
@@ -746,7 +746,7 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: 'https://www.google.com/search?q=Pokemon+Smile',
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOool_SXvXsNQhG-ifX2CM8MmTSujQcqlPpgaxnToDpPz9gzN7yFz&slug=detective-pikachu-returns-switch#q=Pokemon+Smile&p=1&cat=all&sort=df',
     },
-    // Pokemon Sleep -
+    // Pokemon Sleep
     {
         id: 4,
         capasPokemon: './capas/sleep.webp',
@@ -763,7 +763,7 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: 'https://www.google.com/search?q=Pokemon+Sleep',
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+Sleep&p=1&cat=all&sort=df',
     },
-    // Pokemon Master -
+    // Pokemon Master
     {
         id: 5,
         capasPokemon: './capas/master.webp',
@@ -831,10 +831,10 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+Go",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Go&p=1&cat=all&sort=df',
     },
-    // Pokemon TCG Pocket -
+    // Pokemon TCG Pocket
     {
         id: 9,
-        capasPokemon: './capas/pocket.png',
+        capasPokemon: './capas/pocket.webp',
         descricao: `Pokémon GO is a free-to-play augmented reality mobile game. It is developed and published by Niantic, Inc., in collaboration with Nintendo and The Pokémon Company for iOS and Android platforms.`,
         logoPokemon: './logos/pocket.png',
         trailer: './videos/go.mp4',
@@ -848,7 +848,7 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+TCG+Pocket",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+TCG+Pocket&p=1&cat=all&sort=df',
     },
-    // Pokemon TCG Live -
+    // Pokemon TCG Live
     {
         id: 10,
         capasPokemon: './capas/live.jpg',
@@ -866,22 +866,127 @@ const dadosJogosPokemonSpinOff = [
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOopUosLiKqq0CjNlaxBjXVxuBrRJR9gNiqOasU7ul6KcW7fepq0F#q=Pokemon+TCG+Live&p=1&cat=all&sort=df',
     },
     // Pokemon TCG Online
-
+    {
+        id: 11,
+        capasPokemon: './capas/online.png',
+        descricao: `Step into the world of Pokémon TCG Online, where you can build, customize, and battle with your own Pokémon Trading Card Decks! Play against friends or Trainers worldwide in fast-paced online matches, test your strategies, and climb the rankings.<br><br>Collect cards from across the Pokémon universe, unlock new booster packs, and expand your collection to create powerful decks. Whether you’re a beginner learning the rules or a veteran mastering complex strategies, Pokémon TCG Online offers endless hours of competitive and casual gameplay for every Pokémon fan.`,
+        logoPokemon: './logos/online.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/tcgo/generic/tcgo-generic-169-en.jpg', 
+            'https://i0.wp.com/www.pokemythology.net/wp-content/uploads/2017/10/pokemon_tcg_online.jpg?fit=1200%2C675&ssl=1',
+            'https://img.utdstc.com/screen/ae4/eb3/ae4eb3487409becb27302f16badbbd23134ddd8284cba3ae8d09c79b7f302ba9:600',
+            'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJRubjY9FvQqL62TX1IOuuWFamd9cHECzeILlCxGC53sapP_C5NhA_KhYVNwSnAmk4eRJdWC6R8xBHMBrGw19DTgUP5bnXJX10T7qKCRmCMs87F9RoEWsslldHLzwlcYyXVbgbYTimh1ErwCV5jICgTknzzr_sizHyZWVCTQatb5VBN1yYy4d99Ns1/s776/pokemon-tcg-online-jogo.jpg', 
+            'https://img.tapimg.net/market/images/b86ab1f89e265438b487bfb4c8e6bffe.jpg?imageView2/2/w/1080/h/1080/q/80/format/jpg/interlace/1/ignore-error/1&t=1',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokémon+TCG+Online",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+TCG+Online&p=1&cat=all&sort=df',
+    },
     // Pokemon Rumble Rush
-
+    {
+        id: 12,
+        capasPokemon: './capas/rush.webp',
+        descricao: `Pokémon Rumble Rush is a free-to-play mobile game formerly active, developed by Ambrella and published by The Pokémon Company. It is the fifth entry in the Pokémon Rumble series. The game was available from its release in the spring of 2019 until its shutdown on July 22, 2020.`,
+        logoPokemon: './logos/rumbleRush.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_rumble_rush/pokemon-rumble-rush-169.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8irXucOqvcwbcXh4RsXprixXx2lIhlzYE4w&s',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWNLwwHPLao9sZRjUc5qTPfTP6Pb5e4qspPA&s',
+            'https://images.nintendolife.com/screenshots/96495/large.jpg', 
+            'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisiA-rdWmWHE5IgqSOXv6mYOfP7kuU7TdZ-lFP06EKDAWS4_PTcnEjyiZeMbsSq0XrAIur-b_uFwdqGSaxoGkKL1iBEpqXk2z8Ldp4cy_xnV6M9WFqrf5GZIqt5_riG5dcxzfyeB7dTSw/s1271/pokemon-Rumble-Rush.png', 
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Rumble+Rush",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Rumble+Rush&p=1&cat=all&sort=df',
+    },
     // Pokemon Shuffle Mobile
-
+    {
+        id: 13,
+        capasPokemon: './capas/mobile.png',
+        descricao: `Pokémon Shuffle is a freemium puzzle video game developed by Genius Sonority and published by Nintendo and The Pokémon Company for the Nintendo 3DS. The game is a spin-off of the Pokémon series and features gameplay similar to Pokémon Battle Trozei.`,
+        logoPokemon: './logos/shuffleMobile.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/81/95/40/8195401a-b8eb-2f3c-9015-721c09a5dde9/9ae81442-fb41-4e5b-8c92-cc3aa4145540_en__U30bf_U30a4_U30c8_U30eb__U30d0_U30ca_U30fc_U6d88_U3057.png/300x0w.jpg', 
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/pokemon-shuffle/pokemon-shuffle-mobile-launch-169.jpg',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_shuffle_mobile/top-slider-2.jpg',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_shuffle_mobile/top-slider-1.jpg', 
+            'https://mobilemarketingreads.com/wp-content/uploads/2021/12/pokemon-shuffle-mobile.png',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Shuffle+Mobile",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Shuffle+Mobile&p=1&cat=all&sort=df',
+    },
     // Pokemon Tretta
-
+    {
+        id: 14,
+        capasPokemon: './capas/tretta.webp',
+        descricao: `Pokémon Tretta is a Japanese arcade game that evolved from Pokémon Battrio. Players use collectible Tretta tiles to summon Pokémon and battle in 3-on-3 matches. Each tile stores data like type, strength, and capture status, allowing players to build and customize their teams. The game also lets players catch Pokémon during battles and receive new Tretta tiles as rewards. With colorful visuals and interactive gameplay, Pokémon Tretta became a popular arcade experience for both kids and collectors.`,
+        logoPokemon: './logos/tretta.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://i.ebayimg.com/images/g/NSEAAOSwanVjBag2/s-l400.jpg',
+            'https://media.karousell.com/media/photos/products/2022/12/10/pokemon_tettra_1670658316_ba8238f8_progressive.jpg',
+            'https://media.karousell.com/media/photos/products/2021/6/19/pokemon_tretta_1624094397_0de8f5c3_progressive.jpg', 
+            'https://u-mercari-images.mercdn.net/photos/m67950341220_1.jpg?width=2560&quality=75&_=1751067180', 
+            'https://http2.mlstatic.com/D_NQ_NP_872314-MLM84308516775_052025-O.webp',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Tretta",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Tretta&p=1&cat=all&sort=df',
+    },
     // Pokemon Battrio
-
+    {
+        id: 15,
+        capasPokemon: './capas/Battrio.jpeg',
+        descricao: `Pokémon Battrio is a Japan-exclusive arcade game developed by Takara Tomy and AQ Interactive. Players use physical discs called Battrio pucks to summon Pokémon for 3-on-3 battles on a touch-sensitive table. Each puck has unique stats like type, power, and speed, encouraging collection and strategy. The game’s fast-paced and tactical system inspired later arcade titles such as Pokémon Tretta and Pokémon Ga-Olé.`,
+        logoPokemon: './logos/battrio.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://images.gog.com/635e624a998942ebf206c5a2b7b837f8a3acee11c8c367b72fd1474cfcf717ad_glx_vertical_cover.webp?namespace=gamesdb',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ERRQvV1HzxnKgR3gY_bLJ7MbSejeDjlbhg&s',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7_e8g5vr_sd3UF0Fv4YX7ywp9R48QP6Ocw&s', 
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa81b6gCXHASy96ANlM8IvNtM-Ts15mI0ak4bOtx1sKvyfvc45rqMAWB3Wra54UJk1vVc&usqp=CAU', 
+            'https://archives.bulbagarden.net/media/upload/thumb/5/5f/BattrioVAttack.jpg/220px-BattrioVAttack.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Battrio",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Battrio&p=1&cat=all&sort=df',
+    },
     // Pokemon Champions
-
+    {
+        id: 16,
+        capasPokemon: './capas/champions.jpeg',
+        descricao: `Battle with Pokémon, including Mega-Evolved forms like Mega Dragonite, against other players in Pokémon™ Champions. Starting in 2026, Pokémon Champions will be the official game of the Pokémon World Championships! Engage in single and double battles using familiar mechanics such as Pokémon types, Abilities, and moves to create diverse strategies. Compete in Ranked Matches worldwide, enjoy Casual Battles, or play Private Battles with friends and family.<br><br>Recruit and train Pokémon to strengthen your team, improve stats like Attack and Defense, and customize Abilities and moves for varied strategies. Pokémon Champions is compatible with Pokémon HOME, allowing you to bring select Pokémon from past games and Pokémon GO into your team for even more battle options.`,
+        logoPokemon: './logos/champions.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch/70010000004519/f43ebd5cdac98ed79b9e15c399b87e2c0d354757906f90eb3bd02aa01edc01e8',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_champions/screenshots/01.png',
+            'https://champions.pokemon.com/_images/global/battle-gallery/en/gallery-1.jpg', 
+            'https://champions.pokemon.com/_images/global/trailer/wcs_trailer_thumbnail.png', 
+            'https://pclabs.com.br/wp-content/uploads/2025/07/pokemon-champions-lancamento-2026.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Champions",
+        linkNintendo: 'https://www.nintendo.com/pt-br/store/products/pokemon-champions-switch/',
+    },
     // Pokemon Unite
-
+    {
+        id: 17,
+        capasPokemon: './capas/unite.png',
+        descricao: `Pokémon UNITE is a free-to-play online multiplayer battle game developed by TiMi Studios and published by The Pokémon Company. Announced during Pokémon Presents in 2020 and released in 2021, the game allows players to team up in strategic 5-on-5 battles, using their favorite Pokémon to score points, defeat opponents, and dominate the battlefield in fast-paced, action-packed matches.`,
+        logoPokemon: './logos/unite.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/a4d0a9eb884cacb780324d953f7da1835d69669c602b71f99ca948dcbbba7cfb',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/b9bf0b6fa28685bce9818d75e57ac0a90398441dfd36430cec617e5169412fb4',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/2416e42ddd1194f05dce43fe6a525a6b61c6549cb2fe0c182e98a940d9581b6d', 
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/2a47b51e68f2d3f038663f3fce26db3c91a9e7fa2863f671bf753573f14689ec', 
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000043292/94e5214877b2f50ba6cb708be712fcf393f4fc7fb0aa1ee9d28a62c4f389237b',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Unite",
+        linkNintendo: 'https://www.nintendo.com/pt-br/store/products/pokemon-unite-switch/',
+    },
     // Pokemon Café Mix
     {
-        id: 3,
+        id: 18,
         capasPokemon: './capas/cafe.jpg',
         descricao: `Match Pokémon icons to complete puzzles as you work to build your very own café in Pokémon Café ReMix, a free-to-start game on the Nintendo Switch™ system! Recruit Pokémon to help out at the café (in their stylish uniforms) by making friends as you expand your café options and menu through puzzle completion. Each Pokémon team member has a unique Café Skill that will come in handy for solving puzzles!`,
         logoPokemon: './logos/cafeMix.png',
@@ -898,7 +1003,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon New Snap
     {
-        id: 2,
+        id: 19,
         capasPokemon: './capas/snap.webp',
         descricao: `Search for and photograph Pokémon in their natural habitats in New Pokémon Snap™, available exclusively for the Nintendo Switch™ system! Take pictures with the NEO-ONE as you encounter and observe wild, energetic Pokémon. You might even witness unexpected expressions or behaviors—Pokémon patrolling their territory, playing, or hiding in remote spots.<br><br>Travel to the islands that make up the Lental region. In this region, certain Pokémon and vegetation appear to give off a special glow. Investigate these Pokémon alongside Professor Mirror as you explore dense jungles, vast deserts, and more! Your observations of Pokémon thriving in the wild may help uncover the truth behind the Illumina phenomenon. The Pokémon photos you take will be used to build your very own Pokémon Photodex!`,
         logoPokemon: './logos/newSnap.png',
@@ -915,7 +1020,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Mystery Dungeon Rescue Team DX
     {
-        id: 21,
+        id: 20,
         capasPokemon: './capas/mysteryDungeon.webp',
         descricao: `What if one day you woke up and found yourself transformed into a Pokémon? In this dungeon-filled adventure, you’ll be able to encounter and recruit over 400 Pokémon within their own world! Form a rescue team to take on mysterious dungeons that are constantly changing, and strategically plan your moves to make the Pokémon world a safer place… while discovering your true purpose along the way.`,
         logoPokemon: './logos/mysteryRescue.png',
@@ -932,7 +1037,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Quest
     {
-        id: 4,
+        id: 21,
         capasPokemon: './capas/quest.webp',
         descricao: `Begin an adventure in Pokémon™ Quest. Head out with your Pokémon friends on expeditions across Tumblecube Island and search for reward items in this free-to-start action-adventure game for the Nintendo Switch™ system. Customize your Pokémon friends with discovered Power Stones to build the best expedition team.<br><br>With cube-shaped designs, Pokémon™ Quest is unlike any Pokémon game you’ve seen before. Thanks to its simple gameplay, it’s easy to set out on expeditions and start exploring Tumblecube Island with the help of your Pokémon friends. Then, return to your base camp to use the items you’ve found on your adventure and befriend even more Pokémon. Attract a variety of Pokémon from the Kanto region to your base camp by cooking up dishes with the ingredients you’ve gathered! You can even decorate your base camp with fun items that grant useful bonuses, making your expeditions even more rewarding.`,
         logoPokemon: './logos/quest.webp',
@@ -947,16 +1052,60 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: 'https://www.google.com/search?&q=Pokemon+Quest',
         linkNintendo: 'https://www.nintendo.com/pt-br/store/products/pokemon-quest-switch/?srsltid=AfmBOoorCvjPXBP4YrU1KylbCEyFDPfGLQSJ9Ok0_pTLlpkj7prD-mVt',
     },
-
     // Pokemon Home
-
+    {
+        id: 22,
+        capasPokemon: './capas/home.jpeg',
+        descricao: `Pokémon Home is a free mobile and Nintendo Switch application developed by ILCA and published by The Pokémon Company, part of the Pokémon series, released in February 2020. Its primary function is to provide cloud-based storage for Pokémon, allowing Trainers to safely store, manage, and transfer their Pokémon across compatible games with ease.`,
+        logoPokemon: './logos/home.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://s2.glbimg.com/RyWd50E46bdRaZMlKb5R9UvUSFg=/600x0/filters:quality(70)/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/Q/p/KtKnCfSnKdEabEmkhgFw/2020-01-31-captura-de-tela-2020-01-31-as-15.08.57-1.png',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000028523/4ebfd3fbe35e4ae3aad74128f854821cd96fe8fa77f34eb82ccaae6576540b88',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000028523/7ff8980fb4ef3cc4b6354011994b89930d75773800c7ed4fce73e7c98f2e39e7',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000028523/04be250477ae850375d045461109cbf21c999c8a2c3ea4786188ab86eab66fae', 
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000028523/c2ac0ced5cd938469107ffe55ae64444e84cd07bebca749323031250a1406bb8', 
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Home",
+        linkNintendo: 'https://www.nintendo.com/pt-br/store/products/pokemon-home-switch/',
+    },
     // Pokemon Tournament DX
-
+    {
+        id: 23,
+        capasPokemon: './capas/dx.webp',
+        descricao: `Introducing the first Pokémon title for the Nintendo Switch! Control one of 21 award-winning Pokémon fighters and take on other Pokémon in intense arena battles. Summon support Pokémon to aid you in combat, then unleash your fighter’s special attacks to climb the rankings. With all-new modes and fresh ways to battle friends, this is your chance to become the champion of the Ferrum Region!`,
+        logoPokemon: './logos/dx.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/99ea536904d37f1660c2f7f27c945db223a7579630fdf0c578a220deb6abc03d',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/939b1e60805ea2a95aa51e3faad99b0ec8af0408b39f4af40abe25d3d1c3ee1d',
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/bb6899542024907f8fe6abb113b82a27412034c74bb63ac42e08fd71876e166f', 
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/8324b602b4541c74702430e1602149c2211cda006f9d381a36da93f4dfa18061', 
+            'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/store/software/switch/70010000001132/a1a292120816697625b637275682e6fb59a333ef8975532f20c6b98c41bcd323',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokkén+Tournament+DX",
+        linkNintendo: 'https://www.nintendo.com/pt-br/store/products/pokken-tournament-dx-switch/',
+    },
     // Pokemon Tournament
-
+    {
+        id: 24,
+        capasPokemon: './capas/tournament.webp',
+        descricao: `Developed in collaboration with The Pokémon Company and BANDAI NAMCO Entertainment, the studio behind the legendary TEKKEN fighting series, Pokkén Tournament delivers high-definition gameplay and impressive control in thrilling, never-before-seen Pokémon battles. Its intuitive controls make it accessible to all kinds of players, even those new to fighting or action games.<br><br>Pokkén Tournament’s battles reach a whole new level with a diverse cast of Pokémon characters. Use Pikachu’s electric power and quick movements to outsmart your opponents, crush enemies in close combat with Machamp’s brute strength, or scorch rivals with Charizard’s blazing attacks.`,
+        logoPokemon: './logos/tournament.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_01_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_06_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_17_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_20.jpg', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wiiu_7/wiiu_pokkentournament_engb/WiiU_PokkenTournament_enGB_12.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokkén+Tournament",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Wii-U/Pokken-Tournament-1086374.html',
+    },
     // Pokemon Rumble U
     {
-        id: 13,
+        id: 25,
         capasPokemon: './capas/rumbleU.jpg',
         descricao: `Pokémon Rumble U tells the story of the greatest adventure of the Toy Pokémon: after an accident at the Toy Pokémon Shop, some Pokémon Capsules are carried away by the river’s current and end up on a strange shore. As our heroes set out to find their way back to the Toy Pokémon Shop, they realize that something is wrong. Can you help them discover why the Toy Pokémon are fighting each other and what the enemy Pokémon are plotting?<br><br>You and up to three friends can take part in multiplayer battles, with the chance to cooperate and defeat the strongest enemies through teamwork.`,
         logoPokemon: './logos/rumbleU.png',
@@ -971,12 +1120,26 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+Rumble+U",
         linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Wii-U/Pokemon-Rumble-U-790523.html?srsltid=AfmBOorCinWWe7xbyzixwlhvgybaOzmTTMoJeKjUtEsYmdsXphMeJDVl',
     },
-
     // Pokemon Super Mystery Dungeon
-
+    {
+        id: 26,
+        capasPokemon: './capas/superMystery.jpg',
+        descricao: `Choose from 20 different Pokémon and set off on an adventure to encounter nearly every known Pokémon, including Legendary and Mythical ones. With the help of your partner Pokémon, uncover the cause behind the mysterious incidents turning Pokémon into stone and put an end to this crisis!<br><br>As a Pokémon yourself, your home is in the peaceful Serene Village. However, before long, you and your partner set out to join the Expedition Society—a team dedicated to exploring and charting the world—leading you into dungeons filled with countless Pokémon and new discoveries.`,
+        logoPokemon: './logos/superMystery.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_01_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_08_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_07_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_10_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonsupermysterydungeon/3DS_PokemonSuperMysteryDungeon_03_TM_Standard.png',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Super+Mystery+Dungeon",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-3DS/Pokemon-Super-Mystery-Dungeon-1021842.html',
+    },
     // Pokemon Picross
     {
-        id: 9,
+        id: 27,
         capasPokemon: './capas/picross.jpg',
         descricao: `Pokémon Picross is a freemium puzzle video game featuring Pokémon characters, developed by Jupiter Corporation and published by Nintendo and The Pokémon Company for the Nintendo 3DS.<br><br>The Pokémon you collect can help you solve puzzles through a variety of abilities. For example, Eevee’s Rising Reveal ability reveals squares vertically, centered around an activation square, while Lucario’s Hyper Scan ability scans the grid and corrects incorrect squares. Squirtle’s Blue Force changes the color of the numbers next to the rows with squares you can actually fill, turning them blue. When certain Pokémon use their ability, even just once, they run out of energy after you finish the level. However, they will recover their energy over time. In total, there are 12 abilities, each with different effects.`,
         logoPokemon: './logos/picross.webp',
@@ -993,7 +1156,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Detective Pikachu 3ds
     {
-        id: 5,
+        id: 28,
         capasPokemon: './capas/detectivePikachu.jpg',
         descricao: `Detective Pikachu is an adventure game developed by Creatures Inc., published by The Pokémon Company, and distributed by Nintendo for the Nintendo 3DS family of systems. The game is a spin-off of the Pokémon franchise, in which the player teams up with a talking Pikachu to solve various mysteries.`,
         logoPokemon: './logos/detectivePikachu.png',
@@ -1010,7 +1173,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Rumble World
     {
-        id: 10,
+        id: 29,
         capasPokemon: './capas/rumbleWorld.jpg',
         descricao: `The governor of the Toy Kingdom has entrusted you with the mission of finding as many Toy Pokémon as possible. Ride hot-air balloons to different areas to discover all kinds of Toy Pokémon, including Pokémon from Pokémon Red and Pokémon Blue or from Pokémon Omega Ruby and Pokémon Alpha Sapphire – some even capable of Mega Evolving. Where you land depends on the type of hot-air balloon you use, though you’ll never know exactly where in the territory you’ll touch down.<br><br>When you land, you’ll face hordes of wild Toy Pokémon in real-time battles, using toys from your own collection, and at the end of each stage you’ll encounter giant bosses you shouldn’t underestimate! Attacking is as simple as pressing a button, and each Toy Pokémon can have up to two moves. You can switch between any Toy Pokémon in your collection at any time, so make sure to use those with a type advantage over your opponents to defeat them.`,
         logoPokemon: './logos/rumbleWord.webp',
@@ -1027,7 +1190,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Shuffle
     {
-        id: 11,
+        id: 30,
         capasPokemon: './capas/shuffle.jpg',
         descricao: `Pokémon Shuffle is a freemium puzzle video game developed by Genius Sonority and published by Nintendo and The Pokémon Company for the Nintendo 3DS. The game is a spin-off of the Pokémon series and features gameplay similar to Pokémon Battle Trozei.`,
         logoPokemon: './logos/shuffle.png',
@@ -1042,14 +1205,43 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+Shuffle",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Shuffle&p=1&cat=all&sort=df',
     },
-
-    // Pokemon The Thives & 1000 Pokemon
-
-    // Pokemon Art Academy 
-
+    // Pokemon The Thieves & 1000 Pokemon
+    {
+        id: 31,
+        capasPokemon: './capas/1000.jpg',
+        descricao: `Pokémon: The Thieves and the 1000 Pokémon is a special downloadable Nintendo 3DS game released to celebrate the movie Pokémon the Movie: Diancie and the Cocoon of Destruction. In this fast-paced adventure, you play as a thief on a mission to collect as many Pokémon as possible using the 3DS’s motion controls to sneak, gather treasures, and avoid capture. The more Pokémon you collect, the stronger your team becomes, and you can even use StreetPass to borrow Pokémon from other players. With its quick action and unique connection to the Pokémon movie, this game offers an exciting and fresh Pokémon experience.`,
+        logoPokemon: './logos/1000.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUXtc-bMsvXG8RY0UOemsbJrApMrWeFjW2A&s',
+            'https://www.serebii.net/bandofthieves/7.jpg',
+            'https://www.serebii.net/bandofthieves/18.jpg', 
+            'https://www.serebii.net/bandofthieves/stages/4.jpg', 
+            'https://www.nintenderos.com/wp-content/uploads/2014/05/The-Band-of-Thieves-and-1000-Pokemon4-300x177.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+The+Thieves+and+1000+Pokemons",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+The+Thieves+%26+1000+Pokemons&p=1&cat=all&sort=df',
+    },
+    // Pokemon Art Academy
+    {
+        id: 32,
+        capasPokemon: './capas/art.jpg',
+        descricao: `The Art Academy series debuted on the Nintendo DS in 2009, offering a comprehensive fine arts studio with a variety of drawing and painting tools. In the two titles released so far, aspiring artists can create true works of art, with the stylus on the Touch Screen acting as a pencil or paintbrush. With its step-by-step guidance, led by a friendly instructor, seemingly complex images are broken down into easy-to-follow lessons.<br><br>While previous Art Academy titles focused on traditional drawing and painting techniques, Pokémon Art Academy lets you take your first steps into illustration. Here, Professor Andy teaches you how to draw and refine your skills, starting with beginner Pokémon and working your way up to creating legendary masterpieces.`,
+        logoPokemon: './logos/art.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcademy_enGB_01_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcademy_enGB_05_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcademy_enGB_07_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcadamy_enGB_03_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonartacademy_engb/3DS_PokemonArtAcadamy_enGB_02_TM_Standard.png',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Art+Academy",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-3DS/Pokemon-Art-Academy-881830.html',
+    },
     // Pokemon Link Battle
     {
-        id: 12,
+        id: 33,
         capasPokemon: './capas/linkBattle.webp',
         descricao: `In Pokémon Link: Battle! you must make matches of the same Pokémon from among all the many Pokémon that fill your Link Box – the large field of Pokémon on the lower screen. The Pokémon that appears on the top screen is the wild Pokémon that you are facing in battle. Line up three Pokémon in a row to clear your Pokémon from the box, and to attack and reduce the HP of the wild Pokémon that you face. When its HP reaches zero, you will be able to Link that Pokémon!<br><br>As time passes, the wild Pokémon will also lash out to attack you in return. When you’re attacked by a wild Pokémon, the Link Box will lose some of its energy. The wild Pokémon you face may even try to get in your way! If the Link Box’s energy reaches zero, it’s game over.`,
         logoPokemon: './logos/linkBattle.png',
@@ -1064,22 +1256,111 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+Link+Battle",
         linkNintendo: 'https://www.nintendo.com/en-gb/Games/Nintendo-3DS-download-software/Pokemon-Link-Battle--861968.html?srsltid=AfmBOor44pJ8oy-2lMKHZisO-furWJFeBt8DyPZ_GjVnBCsgKj5HFwul',
     },
-
     // Pokemon Bank / Poke Transporter
-
+    {
+        id: 34,
+        capasPokemon: './capas/bank.jpg',
+        descricao: `Store, manage, and transfer your Pokémon like never before with Pokémon Bank for Nintendo 3DS! This online cloud service lets you safely deposit and organize up to 3,000 Pokémon across multiple boxes, making it the perfect tool for dedicated Trainers who want to keep their collection secure and accessible.<br><br>Easily transfer your Pokémon from Pokémon X, Pokémon Y, Omega Ruby, Alpha Sapphire, and even from previous generations through Poké Transporter. Move your Pokémon between compatible titles and bring your old partners along for new adventures!`,
+        logoPokemon: './logos/bank.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_3ds_download_software_7/SI_3DSDS_PokemonBank_enGB_image1600w.jpg',
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_bank/pokemon-bank-diagram-ultra-sun-ultra-moon-en.jpg',
+            'https://u-mercari-images.mercdn.net/photos/m61337527656_1.jpg', 
+            'https://s2-techtudo.glbimg.com/XWCJaISbbUZyq_K6R-VrKCITJ_8=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/C/k/XF7MLWRzAzNJcW87iLmg/2017-01-26-pokemon-sun-moon-bank-4.jpg', 
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27Bo1Nc61HIyQOl2deSCH7278YtHupqkWlA&s',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Bank",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Bank&p=1&cat=all&sort=df',
+    },
     // Pokemon Tretta Lab
-
+    {
+        id: 35,
+        capasPokemon: './capas/tretta.webp',
+        descricao: `Experience the excitement of Pokémon Tretta Lab for Nintendo 3DS, where the world of arcade Pokémon battles comes to life in your hands! Use the special Tretta Scanner accessory to read real Tretta discs and bring your Pokémon into the game in stunning 3D detail.<br><br>Analyze your Tretta Pokémon, check their battle types, compare strengths, and even watch them face off in thrilling automated battles! Each scan reveals a new layer of strategy, letting you build your ideal Pokémon team and study their stats like a real Pokémon Professor.`,
+        logoPokemon: './logos/tretta.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://i.ytimg.com/vi/8DITWF44DCs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBNhNQqBwLZeQFPsYlLamNQmwkzgw', 
+            'https://i.ytimg.com/vi/ge2uNMIZKqM/maxresdefault.jpg',
+            'https://cdns.app/kTz9GfxgqW1d/assets/image/big/080274ee4c23c7383b2b0cd3dbf159f5_1721877521.jpg',
+            'https://cdns.app/kTz9GfxgqW1d/assets/image/big/d308764f2324087b2caa9d4ca278c6c3_1721877521.jpg', 
+            'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgfswBUYsomUruewJPdRj45tqbfhAJZho9AtqbuVeEkCSaXhKebYs3ZQd13s63N8dQdtIvp3n7H8Wn0wrSzscmAjfbZCOOztMPhN5vIdy-xb7IljELX2cuprHJ6D9We1FbSRJSIHuxFy0/s1600/Pok%C3%A9mon+Tretta.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Tretta+Lab",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Tretta+Lab&p=1&cat=all&sort=df',
+    },
     // Pokemon Mystery Dungeon Gates to Infinity
-
+    {
+        id: 36,
+        capasPokemon: './capas/infinity.png',
+        descricao: `Explore over 20 thrilling dungeons, each filled with all kinds of Pokémon, treasures, and surprises! Every dungeon has its own unique characteristics when it comes to the Pokémon you encounter, the type of terrain, and the number of floors. However, their layout changes every time you enter, meaning the number of dungeons to explore is infinite! Moreover, the items and treasures found within each dungeon can help you progress through the game, as well as some of the Pokémon you battle, since you can recruit them to join you on your mission.<br><br>In addition to the dungeons from the main story of Pokémon Mystery Dungeon: Gates to Infinity, you can also discover the Magnagates—gateways to a special type of dungeon accessible through the outer cameras of your Nintendo 3DS. With these, you can "scan" any round object you find in the real world, which will open a new entrance to a unique place where no Pokémon has ever been before!`,
+        logoPokemon: './logos/infinity.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_01_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_07_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_12_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_22_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_7/3ds_pokemonmysterydungeongti_engb/3DS_PokemonMysteryDungeonGTI_enGB_54_TM_Standard.png',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Mystery+Dungeon+Gates+To+Infinity",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-3DS/Pokemon-Mystery-Dungeon-Gates-to-Infinity-729310.html',
+    },
     // Pokemon Pokedex 3D pro
-
+    {
+        id: 37,
+        capasPokemon: './capas/3dpro.webp',
+        descricao: `Become the ultimate Pokémon Trainer! Learn everything about Pokémon with the new Pokédex 3D Pro for the Nintendo 3DS and Nintendo 3DS XL consoles. It’s the perfect companion for Pokémon Black Version 2 and Pokémon White Version 2, and it’s quick and easy to download from the Nintendo eShop.<br><br>This enhanced version includes detailed statistics and information on over 640 Pokémon from throughout the series’ history. With this tool, you can check each Pokémon’s evolutions, access a list of moves each Pokémon can learn, and gain knowledge you can take with you wherever you go! The Pokémon Challenge also lets you test your newly acquired Pokémon knowledge to see if you’re already a Pokémon expert!`,
+        logoPokemon: './logos/3d.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_3ds_download_software_7/SI_3DSDS_Pokedex3DPro_image1600w.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_3ds_15/3dsdownloadsoftware_pokedex3dpro_eses/P05_02_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_3ds_15/3dsdownloadsoftware_pokedex3dpro_eses/P05_03_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_3ds_15/3dsdownloadsoftware_pokedex3dpro_eses/P05_05_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_3ds_15/3dsdownloadsoftware_pokedex3dpro_eses/P05_06_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokédex+3D+Pro",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-3DS/Pokedex-3D-Pro-523668.html',
+    },
     // Pokemon Dream Radar
-
+    {
+        id: 38,
+        capasPokemon: './capas/radar.webp',
+        descricao: `The game invites you to take on the role of an assistant working for Professor Burnet, a scientist studying the Interdream Zone. Move your Nintendo 3DS in all directions in this action game controlled by the player’s movements, and try to hit the Dream Clouds with your light beam to earn rewards!<br><br>Fun and accessible for everyone, this game is the perfect fact-filled companion for Pokémon Black Version 2 and Pokémon White Version 2. Any Pokémon or items caught in Pokémon Dream Radar can be transferred to Pokémon Black Version 2 and Pokémon White Version 2, which is especially useful since the Pokémon you catch may have hidden abilities not available in those games, as well as items you wouldn’t normally find. Try to complete your Pokédex!`,
+        logoPokemon: './logos/radar.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/1DreamCloudFloatSceneCenter_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/1DreamCloudFloatSceneLeft_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/1DreamCloudFloatSceneRight_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/2DreamCloudShootingScene_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_3ds_download_software_2/3dsdownloadsoftware_pokemon_dream_radar/4ThundurusShootingScene_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Dream+Radar",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-3DS/Pokemon-Dream-Radar-523679.html',
+    },
     // Pokemon Pokedex 3D
-
+    {
+        id: 39,
+        capasPokemon: './capas/',
+        descricao: ``,
+        logoPokemon: './logos/',
+        trailer: './videos/',
+        galeryPhotos: [
+            '',
+            '',
+            '', 
+            '', 
+            '',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+TCG+Live",
+        linkNintendo: '',
+    },
     // Pokemon Rumble Blast
     {
-        id: 15,
+        id: 40,
         capasPokemon: './capas/rumbleBlast.png',
         descricao: `Pokémon Rumble Blast, known in Europe and Australia as Super Pokémon Rumble, and in Japan as Super Pokémon Scramble, is a Pokémon video game for the Nintendo 3DS.`,
         logoPokemon: './logos/rumbleBlast.webp',
@@ -1096,7 +1377,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon PokePark 2 Wonders Beyond
     {
-        id: 16,
+        id: 41,
         capasPokemon: './capas/pokepark2.jpg',
         descricao: `In PokéPark 2: Wonders Beyond, you control one of four Pokémon characters: Pikachu and the Unova starter Pokémon—Oshawott, Snivy, and Tepig. Each of them has unique abilities that are essential for rescuing lost Pokémon. Pikachu’s electric moves can help activate devices along the way; Oshawott can move through water; Snivy moves quickly and can jump higher than any other Pokémon; and Tepig can destroy obstacles.<br><br>This wide variety of abilities allows Pikachu and his companions to adapt to almost any environment or situation, with easy-to-use controls that make PokéPark 2: Wonders Beyond enjoyable for both Pokémon beginners and fans, as well as veteran PokéPark players.`,
         logoPokemon: './logos/pokePark2.webp',
@@ -1111,18 +1392,77 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+PokePark+2+Wonders+Beyond",
         linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Wii/PokePark-2-Wonders-Beyond-282640.html?srsltid=AfmBOopeuHt3n2nvbo9ki_btkfaFT5Bp1Q6dwLyru4PZB4IL1rQ-i-Pz',
     },
-
-    // Pokemon Mystery Dungeon Go For It! Stormy Adventure Squad!
-
-    // Pokemon Mystery Dungeon Let´s Go! Light Adventure Squad!
-
-    // Pokemon Mystery Dungeon Keep Going! Blazing Adventure Squad!
-
+    // Pokemon Mystery Dungeon Let's Go Tempest Adventure Squad!
+    {
+        id: 42,
+        capasPokemon: './capas/tempest.jpg',
+        descricao: `Pokémon Mystery Dungeon: Let’s Go! Light Adventure Squad! takes you on an exciting journey through mysterious dungeons filled with wild Pokémon and hidden treasures. Team up with friends, explore ever-changing environments, and complete missions to help Pokémon in need. Solve puzzles, battle foes, and strengthen your bonds as you uncover the secrets of the Pokémon world in this thrilling adventure!`,
+        logoPokemon: './logos/tempest.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDJLwrNr1oYXAh5NTql0arx6sw4MtawCPYQ&s',
+            'https://images.igdb.com/igdb/image/upload/t_720p/sc8af8.jpg',
+            'https://images.igdb.com/igdb/image/upload/t_1080p_2x/sc8af1.webp', 
+            'https://www.siliconera.com/wp-content/uploads/2020/05/wiiware-pmd.jpg?fit=710%2C400', 
+            'https://images.gog.com/fa309ec902791f3f3ce0ce90dc96d0128e32b2473c1c70c3ae4e7a535ab5fd1a.webp?namespace=gamesdb',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Mystery+Dungeon+Lets+Go+Tempest+Adventure+Squad",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Mystery+Dungeon+Lets+Go+Tempest+Adventure+Squad&p=1&cat=all&sort=df',
+    },
+    // Pokemon Mystery Dungeon Let´s Go! Radiant Adventure Squad!
+    {
+        id: 43,
+        capasPokemon: './capas/radiant.jpg',
+        descricao: `Pokémon Mystery Dungeon: Let’s Go! Light Adventure Squad! takes you on an exciting journey through mysterious dungeons filled with wild Pokémon and hidden treasures. Team up with friends, explore ever-changing environments, and complete missions to help Pokémon in need. Solve puzzles, battle foes, and strengthen your bonds as you uncover the secrets of the Pokémon world in this thrilling adventure!`,
+        logoPokemon: './logos/radiant.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFoevEHTHnHConsl1AIQCkiKy54iiATouBw&s',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXMLOXSAPaNnlcEt7II3ddDK5qwtIZNqc1g&s',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57V09ml2x1OsZ9TKBcbI2Blv7qHmX13_7yg&s', 
+            'https://cdn.gamebezz.com/games/games/screenshot/pokemon-mystery-dungeon-go-for-it-radiant-adventure-squad/pokemon-mystery-dungeon-go-for-it-radiant-adventure-squad-screenshots-386723-gamebezz-com.jpg', 
+            'https://cdn.gamebezz.com/games/games/screenshot/pokemon-mystery-dungeon-go-for-it-radiant-adventure-squad/pokemon-mystery-dungeon-go-for-it-radiant-adventure-squad-screenshots-386730-gamebezz-com.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Mystery+Dungeon+Go+For+It+Radiant+Adventure+Squad",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Mystery+Dungeon+Go+For+It+Radiant+Adventure+Squad&p=1&cat=all&sort=df',
+    },
+    // Pokemon Mystery Dungeon Keep Going! Wildfire Adventure Squad!
+    {
+        id: 44,
+        capasPokemon: './capas/blazing.png',
+        descricao: `Pokémon Mystery Dungeon: Keep Going! Wildfire Adventure Squad takes you on an exciting journey through dangerous dungeons filled with wild Pokémon and unexpected challenges. Assemble your team, explore ever-changing environments, and complete missions to help Pokémon in need. With strategic battles, evolving friendships, and thrilling adventures at every turn, it’s up to you and your squad to face the heat and overcome the wildfires threatening the Pokémon world!`,
+        logoPokemon: './logos/wildFire.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiFSyr7I9v6mmmTGQE-7byG6wCMilqctyoA&s',
+            'https://images.igdb.com/igdb/image/upload/t_1080p_2x/sc8aep.webp',
+            'https://images.igdb.com/igdb/image/upload/t_1080p_2x/sc8aeq.webp', 
+            'https://images.igdb.com/igdb/image/upload/t_1080p_2x/sc8aen.webp', 
+            'https://images.igdb.com/igdb/image/upload/t_1080p_2x/sc8aes.webp',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Mystery+Dungeon+Keep+Going+Wildfire+Adventure+Squad",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon++Mystery+Dungeon+Keep+Going%21+Blazing+Adventure+Squad%21&p=1&cat=all&sort=df',
+    },
     // PokePark Pikachu
-
+    {
+        id: 45,
+        capasPokemon: './capas/pokepark.jpg',
+        descricao: `In PokéPark Wii: Pikachu’s Adventure, it’s up to you to protect the PokéPark from danger by collecting pieces of the precious Sky Prism and ensuring the park’s safety. But the Sky Prism pieces are scattered across all kinds of environments, and you’ll only be able to obtain them by completing challenging tasks… Saving the day won’t be easy!<br><br>The adventure begins when Pikachu and some Pokémon friends are drawn into a mysterious tunnel that turns out to be an entrance to a place known as PokéPark. This world features vast beaches, snowy landscapes, underground mines, and — above all — an endless variety of fun games to enjoy!`,
+        logoPokemon: './logos/pokepark.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_01_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_03_TM_Standard.png',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_04_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_13_TM_Standard.png', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/wii_7/wii_pokeparkwiipikachusadventure/Wii_PokeParkWiiPikachusAdventure_16_TM_Standard.png',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=PokePark+Pikachu+Adventure",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Wii/PokePark-Wii-Pikachu-s-Adventure-282651.html',
+    },
     // Pokemon Rumble
     {
-        id: 18,
+        id: 46,
         capasPokemon: './capas/rumble.jpg',
         descricao: `Discover a new type of Pokémon challenge – exclusive to WiiWare! Pokémon Rumble is an action game where you control Toy Pokémon and fight waves of enemy Pokémon to become the victorious Pokémon!<br><br>Defeated Toy Pokémon can be added to your collection. Switch between collected Pokémon and use their abilities to defeat the strongest Pokémon, and even compete in the Battle Royale to test your skills against many Pokémon at once.`,
         logoPokemon: './logos/rumble.png',
@@ -1137,16 +1477,60 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?q=Pokemon+Rumble+WiiWare",
         linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/WiiWare/Pokemon-Rumble--286239.html?srsltid=AfmBOorrANlxEawoNxLi0JGA2Zlr6aPX2D55AiynpdC_iYzL3AWauCSm',
     },
-
     // Pokemon Ranch
-
+    {
+        id: 47,
+        capasPokemon: './capas/ranch.webp',
+        descricao: `The Pokémon phenomenon makes its debut on the WiiWare digital service with My Pokémon™ Ranch. Watch Pokémon and Mii characters interact with each other for the very first time! Enjoy the relaxing ranch life by watching your ranch and its Pokémon, or by taking photos and sending them to your friends. The more Pokémon and Mii characters you bring to your ranch, the more fun you’ll have!<br><br>My Pokémon™ Ranch can be connected to Pokémon Diamond and Pokémon Pearl Nintendo DS game cards, allowing you to bring the Pokémon you’ve caught in those games to your ranch! You can place up to 1,000 Pokémon from as many as eight different game cards! Liven up your ranch and have fun with your friends and family.`,
+        logoPokemon: './logos/ranch.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_15_1_UKV_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_10_1_UKV_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_15_2_UKV_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_17_9_UKV_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wiiware_7/pokemonranch/WBMP_13_2_ukv_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+My+Ranch",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/WiiWare/My-Pokemon-Ranch-285986.html',
+    },
     // Pokemon Battle Revolution
-
+    {
+        id: 48,
+        capasPokemon: './capas/revolution.png',
+        descricao: `Jump into action and prove that when it comes to training Pokémon, you’re a true world-class leader! Pokémon Battle Revolution lets you copy the Pokémon you’ve caught and raised in Pokémon Diamond and Pokémon Pearl on your Nintendo DS to the Wii for epic 3D battles against Trainers from all around the world!<br><br>Pokémon Battle Revolution begins as you enter Pokétopia, a theme park made up of ten different Colosseums built for Pokémon battles. As you explore Pokétopia, you’ll be able to customize your Trainer’s appearance, uncover secrets, and watch your favorite Pokémon battle in spectacular style against opponents from across the globe.`,
+        logoPokemon: './logos/revolution.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_12_en_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_7_en_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_1_en_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_5_en_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/wii_13/pokemon_battle_revolution_wii_en/pokemon_battle_revolution_wii_10_en_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Battle+Revolution",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Wii/Pokemon-Battle-Revolution-282629.html',
+    },
     // Pokemon TCG
-
+    {
+        id: 49,
+        capasPokemon: './capas/tcg.png',
+        descricao: `Pokémon Trading Card Game, or Pokémon Estampas Ilustradas in Brazil, is a collectible card game developed by Creatures Inc., based on the Japanese Pokémon franchise.`,
+        logoPokemon: './logos/tradingCard.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/tcg_product_gallery_169_en.jpg',
+            'https://assetsio.gnwcdn.com/pokemon-trading-card-game-online-screenshot-1.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp',
+            'https://www.wargamer.com/wp-content/sites/wargamer/2021/04/pokemon-tcg-digital-game-cards-screenshot.jpg', 
+            'https://tcg.pokemon.com/assets/img/news/items/en-us/tcg_cube_deck_101_169_en.png', 
+            'https://www.pokemon.com/static-assets/content-assets/cms2/img/trading-card-game/_tiles/how-to-play/tcg-how-to-play-34-en.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?q=Pokemon+Trading+Card+Game",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Trading+Card+Game&p=1&cat=all&sort=df',
+    },
     // Pokemon Conquest
     {
-        id: 14,
+        id: 50,
         capasPokemon: './capas/conquest.jpg',
         descricao: `In Pokémon Conquest, players take on the role of a young warlord who is paired with a Pokémon. Together, they set out on a journey to recruit warriors to defend their growing kingdom. Along the way, they encounter not only various Pokémon but also warriors and warlords inspired by figures from medieval Japan. The game features nearly 200 Pokémon, including many from the recently released Pokémon Black Version and Pokémon White Version.<br><br>On the battlefields of Pokémon Conquest, players must carefully choose the best Pokémon types to deal maximum damage to their opponents. During turn-based battles with two teams of six Pokémon each, players need to adapt their tactical decisions to circumstances that can change every turn. This keeps every battle exciting right up to the very last move.`,
         logoPokemon: './logos/conquest.png',
@@ -1161,12 +1545,26 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Conquest",
         linkNintendo: 'https://www.nintendo.com/nl-nl/Games/Nintendo-DS/Pokemon-Conquest-523602.html#Overzicht',
     },
-
     // Pokemon Typing Adventure
-
+    {
+        id: 51,
+        capasPokemon: './capas/typing.webp',
+        descricao: `Typing Adventure, known in Japan as Battle & Get! Pokémon Typing DS, is an educational typing video game and a Pokémon spin-off title.`,
+        logoPokemon: './logos/typing.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5PJnsPmVanM_JvP9EHEH0GSXrXFFUGynBg&s',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_DP402FKTcJcbXGerRBBeBL9nNykUiLRJw&s',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/learnwithpokemontypingadventure_engb/PomemonTypingKidsEx3DS.jpg',
+            'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDJXN4lqooXKINth7LRK2Qyl3KtfiutV6iY1yAFvV9F9cBbFG_t9YlxEuEk3-A2MKh6e4P9HomNhhgn_7g1RRTO7D_Ww5kp7IX3c-ksJtvMPkoVB8BtxbEppzU2XA1tQDqjIUSnp-75HE/s1497/Pokemon-Typing-Adventure-Tutorial.jpg', 
+            'https://i.ytimg.com/vi/AV49Kmhh7iw/maxresdefault.jpg', 
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Typing+Adventure",
+        linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Typing+Adventure&p=1&cat=all&sort=df',
+    },
     // Pokemon Mystery Dungeon Explorers of Sky
     {
-        id: 19,
+        id: 52,
         capasPokemon: './capas/mysterySky.jpg',
         descricao: `Become a Pokémon and experience the world in a completely different way. Embark on a spectacular adventure to save the Pokémon world!<br><br>Play as one of 19 different Pokémon. Discover which one you will become and interact with over 490 Pokémon on your journey!`,
         logoPokemon: './logos/mysterySky.webp',
@@ -1181,14 +1579,43 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Mystery+Dungeon+Explorers+of+Sky",
         linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Nintendo-DS/Pokemon-Mystery-Dungeon-Explorers-of-Sky-272409.html?srsltid=AfmBOoqrRY_X3gWTyvy6c5m4HWhkqlyokvvVwZftHfAicuN60aqXhsLV',
     },
-
     // Pokemon Mystery Dungeon Explorers of Darkness
-
+    {
+        id: 53,
+        capasPokemon: './capas/darkness.jpg',
+        descricao: `When you wake up on a strange island and discover that you’ve turned into a Pokémon, many questions will cross your mind — questions that can only be answered once you set off on an epic journey of discovery. Along the way, you’ll embark on missions to recover lost items, chase down fugitives, and take part in the search for a precious artifact stolen by a time-traveling Pokémon!<br><br>Of course, for such a challenging adventure, you’ll need some help. Building a trustworthy Pokémon Exploration Team to travel alongside you through dangerous dungeons will be vital for your survival. And don’t forget to train your team before heading out on any mission — teach them the skills they’ll need to ensure victory in the many Pokémon battles that lie ahead!`,
+        logoPokemon: './logos/darkness.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon05_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon09_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon08_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon06_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon02_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Mystery+Dungeon+Explorers+Of+Darkness",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Nintendo-DS/Pokemon-Mystery-Dungeon-Explorers-Of-Darkness-272398.html',
+    },
     // Pokemon Mystery Dungeon Explorers of Time
-
+    {
+        id: 54,
+        capasPokemon: './capas/time.jpg',
+        descricao: `When you wake up on a strange island and discover that you’ve turned into a Pokémon, many questions will cross your mind — questions that can only be answered once you set off on an epic journey of discovery. Along the way, you’ll embark on missions to recover lost items, chase down fugitives, and take part in the search for a precious artifact stolen by a time-traveling Pokémon!<br><br>Of course, for such a challenging adventure, you’ll need some help. Building a trustworthy Pokémon Exploration Team to travel alongside you through dangerous dungeons will be vital for your survival. And don’t forget to train your team before heading out on any mission — teach them the skills they’ll need to ensure victory in the many Pokémon battles that lie ahead!`,
+        logoPokemon: './logos/time.webp',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon01_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon02_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon05_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon04_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokemonmysterydungeon/pokemonmysterydungeon07_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Mystery+Dungeon+Explorers+Of+Time",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Nintendo-DS/Pokemon-Mystery-Dungeon-Explorers-Of-Time-272420.html',
+    },
     // Pokemon Mystery Dungeon Blue Rescue Team
     {
-        id: 25,
+        id: 55,
         capasPokemon: './capas/mysteryBlue.jpeg',
         descricao: `In Pokémon Mystery Dungeon: Blue Rescue Team, you wake up in a world entirely inhabited by Pokémon. What’s more, you yourself are a Pokémon, with no memory of how you got there or how to return to human form.<br><br>But perhaps there’s a reason for your arrival! Now that you understand the language of Pokémon, you discover that a series of natural disasters is threatening the community. Soon, you befriend another Pokémon, and together you form a rescue team to help Pokémon in need.`,
         logoPokemon: './logos/mysteryBlue.webp',
@@ -1205,7 +1632,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Ranger Guardian
     {
-        id: 17,
+        id: 56,
         capasPokemon: './capas/rangerGuardian.jpg',
         descricao: `Take on the role of a Pokémon Ranger tasked with protecting local people and wild Pokémon from the evil Pokémon Pinchers with the help of your partner, Ukulele Pichu. To save the land from the powers of darkness, join forces with the Legendary Pokémon and stop the Pokémon Pinchers from carrying out their evil plans!<br><br>Capture and befriend Pokémon by circling them with the Capture Styler on the Touch Screen. The Pokémon you befriend will support you on your adventure by using their abilities to remove obstacles in your path or by helping you capture even stronger Pokémon. For the first time in the series, you can call Pokémon to aid you by drawing the Ranger Sign on the Touch Screen. Many Pokémon are available to support you, including several Legendary Pokémon such as Raikou, Entei, and Suicune.`,
         logoPokemon: './logos/rangerGuardian.png',
@@ -1222,7 +1649,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Ranger Shadows of Almia
     {
-        id: 20,
+        id: 57,
         capasPokemon: './capas/rangerShadows.webp',
         descricao: `Become a Top Ranger and protect hundreds of different Pokémon species from a cruel organization in Pokémon Ranger: Shadows of Almia. This second game in the Pokémon Ranger series once again relies on you to capture Pokémon using the Touch Screen and then use their abilities to save the day. This time, however, you’ll encounter over 50 Pokémon that weren’t featured in the original game, including many from Pokémon Diamond and Pokémon Pearl.<br><br>As you begin your adventure at the Ranger School as a Ranger Apprentice, you’re filled with excitement at the prospect of one day becoming a Top Ranger and using your knowledge to protect Almia and its many Pokémon. What you don’t yet know is that shortly after completing your studies, you’ll put your skills to the test in an adventure that will determine the future of the region.`,
         logoPokemon: './logos/rangerShadows.webp',
@@ -1239,7 +1666,7 @@ const dadosJogosPokemonSpinOff = [
     },
     //Pokemon Ranger
     {
-        id: 23,
+        id: 58,
         capasPokemon: './capas/ranger.png',
         descricao: `In Pokémon Ranger, instead of playing as a Pokémon Trainer, you play as a Ranger and are responsible for protecting wild Pokémon. Capturing Pokémon is also done in a completely different way: you have to use a Capture Styler and draw circles around the Pokémon with your stylus.`,
         logoPokemon: './logos/ranger.webp',
@@ -1256,7 +1683,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Trozei
     {
-        id: 22,
+        id: 59,
         capasPokemon: './capas/trozei.png',
         descricao: `Pokémon Trozei! is a puzzle game from the Pokémon series made for the Nintendo DS. Very similar to Pokémon Puzzle Challenge and Pokémon Puzzle League, it uses Pokémon lined up in columns, requiring you to match four in a row horizontally or vertically to clear them.`,
         logoPokemon: './logos/trozei.webp',
@@ -1271,14 +1698,43 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Trozei",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/?srsltid=AfmBOoqGiFcEPUWIhNNpbz2x-admGZeyO7WwckkZiXbSRrOv9puxBIyJ#q=Pokemon+Trozei&p=1&cat=all&sort=df',
     },
-    
     // Pokemon Dash
-
+    {
+        id: 60,
+        capasPokemon: './capas/dash.jpg',
+        descricao: `Faster than a speeding Latios, here comes Pikachu! The Pokémon Dash Grand Prix is taking place across the Pokémon Islands, and there’s one yellow Pokémon determined to take the top prize! <br><br>In Pokémon Dash, you use the Touch Screen to propel your Pokémon toward the finish line. Simply use the stylus to rub the screen in the direction you want Pikachu to move. When you rub the screen more frantically, Pikachu will tear across the level with that much more zip.`,
+        logoPokemon: './logos/dash.avif',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_3_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_4_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_2_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/nintendo_ds_13/pokmon_dash/pokmon_dash_1_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Dash+Nintendo+Ds",
+        linkNintendo: 'https://www.nintendo.com/en-za/Games/Nintendo-DS/Pokemon-Dash-272343.html?srsltid=AfmBOoq3muTMaR8WSgsTndYORY6bUUyXdXd1ZKk0jaROsaO_Cb_TP3fp',
+    },
     // Pokemon XD
-
+    {
+        id: 61,
+        capasPokemon: './capas/xd.png',
+        descricao: `Embark on a brand-new and glorious Pokémon odyssey — in the Orre region! Uncover the mystery of Shadow Lugia in this full-length role-playing adventure for the GameCube.<br><br>Start with just an Eevee, but you’ll be able to capture more Pokémon as you explore various towns and locations, Snagging and Purifying the Shadow Pokémon of rival Trainers. An engaging storyline and stunning 3D graphics come together to create an adventure no Pokémon fan will want to miss.`,
+        logoPokemon: './logos/xd.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_4_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_5_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_1_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/migration/games_7/screenshots/gamecube_4/pokmon_xd_gale_of_darkness/pokmon_xd_gale_of_darkness_3_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+XD+Gales+Of+Darknes+Gamecube",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Nintendo-GameCube/Pokemon-XD-Gale-of-Darkness-268588.html',
+    },
     // Pokemon Box Ruby & Sapphire
     {
-        id: 26,
+        id: 62,
         capasPokemon: './capas/box.jpg',
         descricao: `Pokémon Box: Ruby and Sapphire is one of the Pokémon games for the Nintendo GameCube. It was released in Japan on May 30, 2003, and in North America on July 11, 2004, but only through the New York Pokémon Center and its online store. However, it is no longer available at either location.`,
         logoPokemon: './logos/box.webp',
@@ -1295,7 +1751,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Colosseum
     {
-        id: 28,
+        id: 63,
         capasPokemon: './capas/colosseum.png',
         descricao: `The Stadium has been conquered, enter a new arena - Pokémon Colosseum. In this innovative game, players can upload Pokémon from their Game Boy Advance games Pokémon Ruby and Pokémon Sapphire, and battle against friends on their televisions through Nintendo GameCube. With a collection of arenas to choose from, players can enter their Pokémon in a tournament or battle it out in four-player multi-battles, making each experience unlike the last. Players also can join with a friend to combine strengths in new two-on-two battles and demonstrate their Pokémon prowess as a team. Features include: A follow-up to the highly popular Pokémon Stadium and Pokémon Stadium 2 games for Nintendo 64, Pokémon Colosseum continues the fun and excitement in collecting a whole new batch of Pokémon characters. Completely compatible with Pokémon Ruby and Pokémon Sapphire, players can battle with more than 200 Pokémon from the two games on their Nintendo GameCube. Players simply insert their Pokémon Ruby or Sapphire game into the Game Boy Advance, connect to a Nintendo GameCube via the Nintendo GameCube Game Boy Advance cable, and Pokémon appear in Pokémon Colosseum! Up to four players, each with a Game Boy Advance system, can connect to Nintendo GameCube and battle their Pokémon against each other. Pokémon Masters must overpower the competition in various tournaments to become the best Pokémon trainer ever.`,
         logoPokemon: './logos/colosseum.webp',
@@ -1312,7 +1768,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Channel
     {
-        id: 29,
+        id: 64,
         capasPokemon: './capas/channel.webp',
         descricao: `Pokémon have taken over the airwaves! Players get to make great friends with Pikachu. Pokémon Channel is a highly innovative and diverse game that has enough substance to keep even the most avid Poké-maniac entertained for hours and hours.<br><br>In Pokémon Channel, the Pokémon television station has lost segments of their most popular show. Players must find and collect the clips and return them to the station. To aid them in their quest, players call upon the help of Pikachu. Once all the pieces are collected, the show will be restored and ready for broadcast.`,
         logoPokemon: './logos/channel.png',
@@ -1329,7 +1785,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Play It
     {
-        id: 30,
+        id: 65,
         capasPokemon: './capas/playIt.webp',
         descricao: `Pokémon Play It! is a Pokémon PC game that simulates the Pokémon Trading Card Game. It was released in 1999 in Europe and in February 2000 in North America. It was included in the 2-Player Starter Set CD-ROM.`,
         logoPokemon: './logos/playIt.webp',
@@ -1346,7 +1802,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Hey You Pikachu
     {
-        id: 36,
+        id: 66,
         capasPokemon: './capas/heyPikachu.jpg',
         descricao: `Hey You, Pikachu! is a Pokémon series game for the Nintendo 64. It is the first video game in history to use voice recognition through the Voice Recognition Unit, being one of only two N64 games to use this feature.`,
         logoPokemon: './logos/heyPikachu.webp',
@@ -1361,12 +1817,26 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Hey+You+Pikachu",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Hey+You+Pikachu&p=1&cat=all&sort=df',
     },
-    
     // Pokemon Puzzle League
-
+    {
+        id: 67,
+        capasPokemon: './capas/league.jpg',
+        descricao: `Test your Pokémon battling and puzzle-solving skills against the best Trainers in Puzzle League Village! To succeed, you’ll need quick thinking and fast fingers to clear puzzle pieces by matching blocks of the same color. The more pieces you clear at once, the more points you’ll score.<br><br>Create huge combos or chain reactions to launch powerful attacks against your opponent — whether it’s the computer or a friend — and earn badges from rival Trainers to become the Pokémon Puzzle Master!`,
+        logoPokemon: './logos/league.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://bdjogos.com.br/capas/3944-Pokemon-Puzzle-League-Nintendo-64-capa-1.jpg',
+            'https://http2.mlstatic.com/D_NQ_NP_761121-MLB82939493437_032025-O.webp',
+            'https://www.cubed3.com/wp-content/uploads/2025/03/pokemon-puzzle-league-nintendo-64-art-banner.jpg', 
+            'https://www.serebii.net/puzzleleague/1p/stage1.jpg', 
+            'https://miro.medium.com/1*c0sNL-iJzxsSkuj10sPIAw.jpeg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Puzzle+League+Nintendo+64",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Consola-Virtual-Wii-/Pokemon-Puzzle-League-278579.html',
+    },
     // Pokemon Stadium 2
     {
-        id: 31,
+        id: 68,
         capasPokemon: './capas/stadium2.jpg',
         descricao: `Pokémon Stadium 2 is a Pokémon series game for the Nintendo 64. It features the 251 Pokémon available at the time and supported the use of the Mobile System in the Japanese version with Pokémon Crystal.`,
         logoPokemon: './logos/stadium2.webp',
@@ -1383,7 +1853,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Stadium
     {
-        id: 32,
+        id: 69,
         capasPokemon: './capas/pokémonStadium.jpg',
         descricao: `Pokémon Stadium is a strategy game in the Pokémon series for the Nintendo 64. It’s a Pokémon battle game where the player can fight against the CPU or other players using the Nintendo 64 Transfer Pak with Pokémon Red, Blue, & Yellow inserted.`,
         logoPokemon: './logos/stadium.png',
@@ -1400,7 +1870,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Stadium JPN
     {
-        id: 35,
+        id: 70,
         capasPokemon: './capas/stadiumJpn.png',
         descricao: `Pokémon Stadium (Japanese: ポケモンスタジアム, subtitled Pocket Monsters' Stadium) is the first game in the Pokémon Stadium series. It was released exclusively in Japan on August 1, 1998.`,
         logoPokemon: './logos/stadiumJpn.png',
@@ -1415,12 +1885,26 @@ const dadosJogosPokemonSpinOff = [
         linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Stadium+Japan",
         linkNintendo: 'https://www.nintendo.com/pt-br/search/#q=Pokemon+Stadium+Japan&p=1&cat=all&sort=df',
     },
-
     // Pokemon Snap
-
+    {
+        id: 71,
+        capasPokemon: './capas/snap64.jpg',
+        descricao: `Have you ever wondered what Pikachu looks like in its natural habitat? In the spectacular game Pokémon Snap, you can capture many Pokémon in the wild — not with a Poké Ball, but with a camera!<br><br>Some photos will be easy to take, like catching Pikachu relaxing on the beach. Others, however, will be much more challenging — for example, managing to photograph Pikachu riding on the back of a rare flying Pokémon! In Pokémon Snap, you’ll be working under the supervision of Professor Oak, the world-famous Pokémon professor. He needs various photos taken on Pokémon Island, where you’ll explore six fascinating regions in search of every Pokémon you can find.`,
+        logoPokemon: './logos/snap.png',
+        trailer: './videos/',
+        galeryPhotos: [
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_01_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_02_TM_Standard.jpg',
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_03_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_05_TM_Standard.jpg', 
+            'https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_pokemonsnap/WiiUVC_PokemonSnap_07_TM_Standard.jpg',
+        ],
+        linkGoogle: "https://www.google.com/search?tbm=shop&q=Pokemon+Snap+Nintendo+64",
+        linkNintendo: 'https://www.nintendo.com/pt-pt/Jogos/Nintendo-64/Pokemon-Snap-269668.html',
+    },
     // Pokemon Mystery Dungeon Red Rescue Team
     {
-        id: 24,
+        id: 72,
         capasPokemon: './capas/mysteryRed.jpeg',
         descricao: `In Pokémon Mystery Dungeon: Red Rescue Team, you wake up in a world entirely inhabited by Pokémon. What’s more, you yourself are a Pokémon, with no memory of how you got there or how to return to human form.<br><br>But perhaps there’s a reason for your arrival! Now that you understand the language of Pokémon, you discover that a series of natural disasters is threatening the community. Soon, you befriend another Pokémon, and together you form a rescue team to help Pokémon in need.`,
         logoPokemon: './logos/mysteryRed.webp',
@@ -1437,7 +1921,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Puzzle Challenge
     {
-        id: 33,
+        id: 73,
         capasPokemon: './capas/puzzleChallenge.png',
         descricao: `Travel to Johto to face an innovative Pokémon challenge. Test your mental skills by competing against the great Gym Leaders! Classic Pokémon like Pikachu, Chikorita, Totodile, and Pichu will help you defeat opponents and rival Pokémon. Use your quick reflexes to clear pieces and create chains and combos to increase your score.<br><br>Choose from six exciting modes, including Marathon, Challenge, Time Zone, Line Clear, Puzzle, and the fascinating Garbage mode, as you try to achieve the highest score while pieces keep falling nonstop.`,
         logoPokemon: './logos/puzzle.png',
@@ -1454,7 +1938,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Pinball Ruby & Sapphire
     {
-        id: 27,
+        id: 74,
         capasPokemon: './capas/pinballRuby.jpg',
         descricao: `Combine the craziness of pinball action with the thrill of catching Pokémon! In Pokémon Pinball: Ruby and Sapphire, control the flippers and hit the Poké Ball at themed targets on two challenging tables based on Pokémon Ruby and Pokémon Sapphire.<br><br>Rack up all the possible points while trying to catch over 200 Pokémon, including your favorite characters from the classic Hoenn Pokédex. You can also enjoy bonus levels and even get Pokémon to evolve. Pokémon Pinball is packed with references that will leave fans completely flipping out!`,
         logoPokemon: './logos/pinball.webp',
@@ -1471,7 +1955,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Pinball
     {
-        id: 34,
+        id: 75,
         capasPokemon: './capas/pinball.jpg',
         descricao: `Pokémon Pinball is a pinball game in the Pokémon series based on Pokémon Red & Blue. Released for the Game Boy Color, it is one of the handheld games that features a rumble function, where the cartridge vibrates according to the action.`,
         logoPokemon: './logos/pinball1.png',
@@ -1488,7 +1972,7 @@ const dadosJogosPokemonSpinOff = [
     },
     // Pokemon Trading Card Game
     {
-        id: 37,
+        id: 76,
         capasPokemon: './capas/tradingCard.png',
         descricao: `Based on the incredibly popular Pokémon Trading Card Game, this Game Boy Color version was a hit with both players and card collectors.<br><br>Explore the game world to face opponents and gather information. Learn to build and manage decks, win battles to earn expansion packs, and challenge the eight Club Masters. Your goal: impress the Great Masters so you can inherit their Legendary Pokémon Cards!<br><br>This game includes over 200 Pokémon Trading Cards based on the original decks, as well as new cards exclusive to this game.`,
         logoPokemon: './logos/tradingCard.png',
