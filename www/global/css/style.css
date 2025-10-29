@@ -148,6 +148,7 @@ header {
     border-radius: 20px;
     min-height: 40%;
     min-width: 60%;
+    padding: 10px;
 }
 
 /* Fim do Estilo do Header */

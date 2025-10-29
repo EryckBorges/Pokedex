@@ -39,7 +39,7 @@ const constructorNewPokemon = (pokemon) => {
                     ${typesPokemons(pokemon.types).join('')}
                 </div>
                 <div class="center over pokemon heigth">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png" draggable="false" alt="${pokemon.name}">
+                    <img src="./sprites/official-artwork/${pokemon.id}.png" draggable="false" alt="${pokemon.name}">
                 </div>
             </div>`
 
