@@ -153,35 +153,46 @@ select {
 /* Detalhes do pokemon */
 
 .detailsPokemon {
+    display: none;
+    flex-direction: column;
     position: fixed;
     top: 0;
-    flex-direction: column;
-    display: none;
+    height: 100%;
+    overflow-y: auto !important;
+}
+
+.detailsPokemon.actived {
+    display: block;
+}
+
+.detailsPokemon::-webkit-scrollbar {
+    width: 0px;
+    height: 0px; 
 }
 
 .pokemonDados {
-    align-items: baseline !important;
-    height: 40%;
-    flex-direction: column;
     position: relative;
+    align-items: baseline !important;
+    flex-direction: column;
+    height: 40vh;
 }
 
 .backgroundPokemon {
-    height: 90%;
-    align-items: baseline !important;
-    flex-direction: column;
     position: absolute;
     top: 0;
+    align-items: baseline !important;
+    flex-direction: column;
+    height: 90%;
 }
 
 .namePokemon {
-    height: 30%;
-    top: 0;
     position: absolute;
+    top: 0;
+    height: 30%;
 }
 
 .namePokemon > h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: var(--branco);
 }
 
@@ -200,33 +211,60 @@ select {
 }
 
 .pokedexDados {
-    height: 20%;
     position: absolute;
     bottom: 0;
     justify-content: left !important;
+    height: 20%;
     padding-inline: 10px;
     font-weight: bold;
     color: var(--branco);
 }
 
-.pokemonImage {
-    height: auto;
+.shinyBtn {
+    width: 50px;
+    height: 50px;
+    background: url('../element/star.png') center / cover no-repeat;
     position: absolute;
     bottom: 0;
+    right: 2vw;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.pokemonImage > img {
+.pokemonImage {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+
+#imagePokemons {
     object-fit: cover;
+    height: auto;
     width: 30%;
+}
+
+.pokemonImage.shiny::before {
+    content: '';
+    min-height: 300px;
+    min-width: 100px;
+    background: url('../element/shiny_effect.gif') center / contain no-repeat;
+    display: block;
+    position: absolute;
+    animation: fadeIn 1s;
 }
 
 /* Parte onde contém todos os detalhes do pokemon */
 
+.titleDados {
+    font-size: 1.2em;
+    color: var(--cinzaText);
+}
+
 .dadosPokemon {
     margin-top: 30px;
-    height: 70%;
+    height: auto;
     width: 100%;
-    background-color: var(--branco);
+    background-color: rgba(255, 255, 255, 0.048);
     justify-content: left !important;
 }
 
@@ -255,7 +293,7 @@ select {
     align-items: center !important;
 }
 
-.topics, .mov {
+.topics, .moviments {
     height: auto;
     padding: 10px 0px;
     padding-inline: 10px;
@@ -275,15 +313,35 @@ select {
     color: var(--preto);
 }
 
-.infoPokemon, .evolutionPokemon, .forms, .statistic {
-    display: none;
-    height: 80%;
+.infoPokemon {
+    height: auto;
+    display: flex !important;
     flex-direction: column;
     justify-content: left !important;
+    position: relative !important;
+}
+
+/* Formas */
+
+.formasPokemon {
+    flex-direction: column;
+    align-items: baseline !important;
+    padding: 10px;
 }
 
 .forms {
-    background-color: blue;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: left !important;
+    flex-direction: column;
+    height: auto;
+}
+
+.forms > img {
+    width: 100%;
+    height: auto;
 }
 
 .descPokemons {
@@ -293,18 +351,14 @@ select {
     gap: 10px;
 }
 
-.descPokemons > h1, .mov > h1 {
-    color: var(--cinzaText);
-    font-size: 1.2em;
-}
-
 .descPokemons > p {
     overflow-y: auto;
     font-size: 1em;
     height: 80px;
 }
 
-.mov {
+.moviments {
+    padding: 10px;
     height: 60%;
     justify-content: left !important; 
 }
@@ -312,7 +366,6 @@ select {
 .movs {
     height: auto;
     display: grid;
-    overflow-y: scroll;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr); 
 }
@@ -327,22 +380,19 @@ select {
     display: flex ;
 }
 
-.activedDados {
-    display: flex !important;
-}
-
 /* Statistics */
 
 .statistic {
-    display: none;
+    flex-direction: column;
+    height: auto;
     padding: 20px;
     gap: 15px;
-    justify-content: center !important;
     align-items: baseline !important;
     font-size: 1em;
     color: var(--preto);
     font-weight: bold;
 }
+
 
 .statusStatistics > progress{
     position: absolute;
@@ -353,7 +403,9 @@ select {
 /* Evolutions */
 
 .evolutionPokemon {
-    position: relative;
+    height: auto;
+    flex-direction: column;
+    align-items: baseline !important;
     padding: 5px;
 }
 

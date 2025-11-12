@@ -301,9 +301,11 @@ class ShowPokemonDetails {
     constructor(pokemon, id) {
         this.pokemon = pokemon;
         this.id = id;
+        this.controller;
     }
 
-    addTypePokemon(types) {
+    // Adiciona / Substitui os tipos do Pokemon
+    addTypePokemon(types) {        
         return types.map((typesForPokemons) => `
             <div class="center over column type">
                 <img src="./element/types/${typesForPokemons.type.name}.ico" draggable="false" alt="Icone ${typesForPokemons.type.name}">
@@ -314,22 +316,33 @@ class ShowPokemonDetails {
         `).join('')
     }
 
+    // Adiciona os Movimentos do Pokemon
     addMovsPokemon(moves) {
-        return moves.moves.map((movsForPokemons) => `
-            <span>${movsForPokemons.move.name.charAt(0).toUpperCase() + movsForPokemons.move.name.slice(1)}</span>
-        `).join('')
+        const movs = document.querySelector('.movs');
+
+        // Adiciona os Movimentos do Pokemon
+        if (moves.moves.length > 0) {
+            movs.innerHTML = moves.moves.map((movsForPokemons) => `
+                <span>${movsForPokemons.move.name.charAt(0).toUpperCase() + movsForPokemons.move.name.slice(1)}</span>
+            `).join('')
+        }else {
+            movs.innerHTML = "This Pokémon's moves are the same as the base form, only Dynamaxed/Gigantamaxed."
+        }
     }
 
+    // Adiciona a descrição do Pokemon
     addDescription(description) {
+        const descPokemons = document.querySelector('.descPokemons p');
         let i = 0;
 
         while (description.flavor_text_entries[i].language.name != "en") {
             i++
         }
 
-        return description.flavor_text_entries[i].flavor_text
+        descPokemons.innerHTML = description.flavor_text_entries[i].flavor_text
     }
 
+    // Evoluções do Pokemon
     evolutionToPokemon(id) {
         const url = id;
 
@@ -368,7 +381,7 @@ class ShowPokemonDetails {
 
                     return `
                         <div class="evo-card" style="text-align:center;">
-                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokeId}.png" alt="${evo.name}">
+                            <img src="./sprites/official-artwork/${pokeId}.png" alt="${evo.name}">
                             <p style="font-weight:bold;">${evo.name}</p>
                             ${levelText}
                         </div>
@@ -376,6 +389,7 @@ class ShowPokemonDetails {
                 }).join('');
 
                 const div = `
+                    <h1 class="titleDados center over">Evolutions</h1>
                     <div class="center over evolutions width">
                         ${evolves}
                     </div>
@@ -394,6 +408,73 @@ class ShowPokemonDetails {
                 return Promise.all(requests);
             };
     }
+
+    // Status do Pokemon
+    addStats(stats) {
+        // Seleciona os elementos presentes no html
+        const hp = document.querySelector('.hp progress');
+        const attack = document.querySelector('.attack progress');
+        const defense = document.querySelector('.defense progress');
+        const specialAttack = document.querySelector('.specialAttack progress');
+        const specialDefense = document.querySelector('.specialDefense progress');
+        const speed = document.querySelector('.speed progress');
+
+        // Adiciona / Substitui os dados
+        hp.value = stats[0].base_stat;
+        attack.value = stats[1].base_stat;
+        defense.value = stats[2].base_stat;
+        specialAttack.value = stats[3].base_stat;
+        specialDefense.value = stats[4].base_stat;
+        speed.value = stats[5].base_stat;
+    }
+
+    formsPokemons(pokemonDados) { 
+        console.log(pokemonDados);
+        
+        if (this.controller) this.controller.abort(); 
+        this.controller = new AbortController(); 
+        const signal = this.controller.signal; 
+        const containerForms = document.querySelector('.forms'); 
+        containerForms.innerHTML = ''; 
+        for (const variety of pokemonDados.varieties) {
+            fetch(variety.pokemon.url, { signal }) 
+            .then(res => res.json()) .then(poke => { 
+                const img = `<img src="./sprites/official-artwork/${poke.id}.png" id="${poke.name}">`;
+                containerForms.innerHTML += img;
+                const imgFormPokemon = document.querySelectorAll('.forms img')
+                imgFormPokemon.forEach((pokemon) => {
+                    pokemon.addEventListener('click', (e) => {
+                        let namePokemon = e.target.id;
+                        this.formsShowDados(namePokemon);
+                    })
+                })
+                }) .catch(err => { if (err.name !== 'AbortError') console.error(err); 
+            }); 
+        } 
+    }
+
+    formsShowDados(pokemon) {
+        console.log(pokemon);
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}/`) 
+        .then((resultPokemon) => resultPokemon.json())
+        .then((detailsFormPokemon) => {
+            console.log(detailsFormPokemon);
+            const imagePokemons = document.getElementById('imagePokemons');
+            const heightPokemon = document.querySelector('.heightPokemon span');
+            const weightPokemon = document.querySelector('.weight span');
+            const typesDetails = document.querySelector('.typesDetails');
+            const pokemonName = document.querySelector('.pokemonName');
+            
+            imagePokemons.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${detailsFormPokemon.id}.gif`
+            heightPokemon.innerHTML = `${detailsFormPokemon.height / 10}M`;
+            weightPokemon.innerHTML = `${detailsFormPokemon.weight / 10}Kg`;
+            typesDetails.innerHTML = this.addTypePokemon(detailsFormPokemon.types);
+            this.addStats(detailsFormPokemon.stats);
+            this.addMovsPokemon(detailsFormPokemon);
+            pokemonName.innerHTML = detailsFormPokemon.name.charAt(0).toUpperCase() + detailsFormPokemon.name.slice(1);
+        })       
+    }
+    
 
     createPageDetails() {
         const urlForPokemon = `https://pokeapi.co/api/v2/pokemon-species/${this.id}/`;
@@ -422,66 +503,10 @@ class ShowPokemonDetails {
                         const weight = document.querySelector('.weight span');
                         const typesDetails = document.querySelector('.typesDetails');
                         const heightPokemon = document.querySelector('.heightPokemon span');
-                        const descPokemons = document.querySelector('.descPokemons p');
-                        const movs = document.querySelector('.movs');
                         const body = document.querySelector('body');
-                        const hp = document.querySelector('.hp progress');
-                        const attack = document.querySelector('.attack progress');
-                        const defense = document.querySelector('.defense progress');
-                        const specialAttack = document.querySelector('.specialAttack progress');
-                        const specialDefense = document.querySelector('.specialDefense progress');
-                        const speed = document.querySelector('.speed progress');
-                        const evolutionPokemon = document.querySelector('.evolutionPokemon');
-                        const infoPokemon = document.querySelector('.infoPokemon');
-                        const forms = document.querySelector('.forms');
-                        const statistic = document.querySelector('.statistic');
-
-                        // Função para mostrar as estatisticas di pokemon
-
-                        const info = document.querySelector(".info");
-                        const esta = document.querySelector(".esta");
-                        const form = document.querySelector(".form");
-                        const evol = document.querySelector(".evol");
-
-                        const verificaActive = (indice) => {
-                            if (indice == 'info') {
-                                esta.classList.remove('active');
-                                form.classList.remove('active');
-                                evol.classList.remove('active');
-                                statistic.classList.remove('animate__fadeIn', 'activedDados');
-                                forms.classList.remove('animate__fadeIn', 'activedDados');
-                                evolutionPokemon.classList.remove('animate__fadeIn', 'activedDados');
-                                info.classList.add('active');
-                                infoPokemon.classList.add('animate__fadeIn', 'activedDados');
-                            } else if (indice == 'esta') {
-                                infoPokemon.classList.remove('animate__fadeIn', 'activedDados');
-                                forms.classList.remove('animate__fadeIn', 'activedDados');
-                                evolutionPokemon.classList.remove('animate__fadeIn', 'activedDados');
-                                info.classList.remove('active');
-                                form.classList.remove('active');
-                                evol.classList.remove('active');
-                                esta.classList.add('active');
-                                statistic.classList.add('animate__fadeIn', 'activedDados');
-                            }else if (indice == 'form') {
-                                infoPokemon.classList.remove('animate__fadeIn', 'activedDados');
-                                statistic.classList.remove('animate__fadeIn', 'activedDados');
-                                evolutionPokemon.classList.remove('animate__fadeIn', 'activedDados');
-                                esta.classList.remove('active');
-                                info.classList.remove('active');
-                                evol.classList.remove('active');
-                                form.classList.add('active');
-                                forms.classList.add('animate__fadeIn', 'activedDados');
-                            }else if (indice == 'evol') {
-                                infoPokemon.classList.remove('animate__fadeIn', 'activedDados');
-                                forms.classList.remove('animate__fadeIn', 'activedDados');
-                                statistic.classList.remove('animate__fadeIn', 'activedDados');
-                                esta.classList.remove('active');
-                                form.classList.remove('active');
-                                info.classList.remove('active');
-                                evol.classList.add('active');
-                                evolutionPokemon.classList.add('animate__fadeIn', 'activedDados');
-                            }
-                        }
+                        
+                        this.evolutionToPokemon(details.evolution_chain.url);
+                        this.formsPokemons(details)
 
                         body.style.overflow = "hidden";
                         detailsPokemon.classList.remove('animate__animated', 'animate__fadeOutRight');
@@ -495,19 +520,16 @@ class ShowPokemonDetails {
                         backgroundPokemon.classList.add(jsonDetails.types[0].type.name);
                         pokemonName.innerHTML = details.name.charAt(0).toUpperCase() + details.name.slice(1);
                         pokedexDados.innerHTML = this.id;
-                        pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${this.id}.gif`;     
-                        hp.value = jsonDetails.stats[0].base_stat;
-                        attack.value = jsonDetails.stats[1].base_stat;
-                        defense.value = jsonDetails.stats[2].base_stat;
-                        specialAttack.value = jsonDetails.stats[3].base_stat;
-                        specialDefense.value = jsonDetails.stats[4].base_stat;
-                        speed.value = jsonDetails.stats[5].base_stat;
+                        pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${this.id}.gif`;   
+
+                        this.addStats(jsonDetails.stats);  
 
                         weight.innerHTML = jsonDetails.weight / 10 + "Kg";
                         typesDetails.innerHTML = this.addTypePokemon(jsonDetails.types);
                         heightPokemon.innerHTML = jsonDetails.height / 10 + "M";
-                        descPokemons.innerHTML = this.addDescription(details);
-                        movs.innerHTML = this.addMovsPokemon(jsonDetails);
+                        this.addDescription(details);
+
+                        this.addMovsPokemon(jsonDetails);
                         
                         // Funcionalidade Para quando o usuário quiser voltar para a tela anterior
                         history.pushState(null, "", location.href);
@@ -523,7 +545,6 @@ class ShowPokemonDetails {
                             const evolutions = document.querySelector('.evolutions');
                             const evoCard = document.querySelector('.evo-card');
                             evolutions.removeChild(evoCard)
-                            verificaActive('info')
                             setTimeout(() => {
                                 detailsPokemon.classList.remove('actived');
                             }, 1000);
@@ -533,48 +554,47 @@ class ShowPokemonDetails {
                         // Funcionalidade para mostrar o próximo pokemon ou pokemon anterior
                         const nextBtnPokemon = document.querySelector('.nextPokemon');
                         const backBtnPokemon = document.querySelector('.backPokemon');
+
                         // Adiciona os listeners apenas uma vez, fora da função createPageDetails
-nextBtnPokemon.addEventListener('click', handleNextPokemon);
-backBtnPokemon.addEventListener('click', handleBackPokemon);
+                        nextBtnPokemon.addEventListener('click', handleNextPokemon);
+                        backBtnPokemon.addEventListener('click', handleBackPokemon);
 
-// Funções de clique
-function handleNextPokemon() {
-    const nextId = jsonDetails.id + 1; // currentPokemon deve ser global ou acessível
-    jsonDetails = new ShowPokemonDetails(jsonDetails.data, nextId);
-    jsonDetails.createPageDetails();
-}
+                        // Passa para o Pokemon Sussesor
+                        function handleNextPokemon() {
+                            const nextId = jsonDetails.id + 1; // currentPokemon deve ser global ou acessível
+                            jsonDetails = new ShowPokemonDetails(jsonDetails.data, nextId);
+                            jsonDetails.createPageDetails();
+                        }
 
-function handleBackPokemon() {
-    const backId = jsonDetails.id - 1;
-    jsonDetails = new ShowPokemonDetails(jsonDetails.data, backId);
-    jsonDetails.createPageDetails();
-}
+                        // Volta para o Pokemon anterior
+                        function handleBackPokemon() {
+                            const backId = jsonDetails.id - 1;
+                            jsonDetails = new ShowPokemonDetails(jsonDetails.data, backId);
+                            jsonDetails.createPageDetails();
+                        }
 
-
+                        // Exibe o audio do Pokemon quando clica no próprio Pokemon
                         pokemonImage.addEventListener('click', () => {
                             audio.play()
                         })
 
-                        info.addEventListener('click', () => {
-                            verificaActive('info');
-                        })
-
-                        form.addEventListener('click', () => {
-                            verificaActive('form');
-                        })
-
-                        evol.addEventListener('click', () => {
-                            verificaActive('evol');
-                            console.log(details);
-                            
-                            this.evolutionToPokemon(details.evolution_chain.url)
-                        })
-
-                        esta.addEventListener('click', () => {
-                            verificaActive('esta');
+                        // Troca a Imagem do Pokemon para sua versão shiny
+                        const shiny = document.querySelector('.shinyBtn');
+                        const idPokemon = document.querySelector('.idPokemon').innerHTML;
+                        const containerPokemonImage = document.querySelector('.pokemonImage');
+                        const audioShiny = new Audio('./element/audio/shiny-pokemon.mp3');
+                        
+                        shiny.addEventListener('click', () => {
+                            audioShiny.play();
+                            containerPokemonImage.classList.add('shiny');
+                            setTimeout(() => {
+                                containerPokemonImage.classList.remove('shiny');
+                            }, 2000);
+                            pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/${idPokemon}.gif`
                         })
                     })
             })
-    }
+    }      
+
 }
 

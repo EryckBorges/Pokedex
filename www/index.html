@@ -131,7 +131,7 @@
             </ul>
         </nav>
     </section>
-    <section class="detailsPokemon center over animate__animated width height">
+    <section class="detailsPokemon center over animate__animated width">
         <div class="center over pokemonDados width">
             <div class="center over backgroundPokemon width">
                 <div class="center over namePokemon width">
@@ -147,9 +147,10 @@
                     <img src="./global/icons/pokedex.svg" draggable="false" alt="Pokedex Icon">
                     <span class="idPokemon center over"></span>
                 </div>
+                <button class="button center over shinyBtn animate-on-scroll opacity" data-animation="fadeIn"></button>
             </div>
             <div class="pokemonImage center over width">
-                <img src="" draggable="false" alt="Pokemon">
+                <img id="imagePokemons" src="" draggable="false" alt="Pokemon">
             </div>
         </div>
         <div class="center over dadosPokemon width column">
@@ -164,48 +165,47 @@
                     <span></span>
                 </div>
             </div> 
-            <div class="center over topics width animate__animated">
-                <div class="center over info active">Information</div>
-                <div class="center over esta">Statistics</div>
-                <div class="center over form">Forms</div>
-                <div class="center over evol">Evolutions</div>
-            </div>
-            <div class="center over infoPokemon width activedDados animate__animated animate__fadeIn opacity">
+            <div class="center over infoPokemon width animate__animated animate__fadeIn opacity">
                 <div class="center over desc width column descPokemons">
-                    <h1 class="descPokemon center over">Pokédex Description</h1>
+                    <h1 class="titleDados center over">Pokédex Description</h1>
                     <p></p>
                 </div>
-                <div class="center over mov width column">
-                    <h1 class="descPokemon center">Movements</h1>
+                <div class="center over evolutionPokemon width animate__animated">
+                    <h1 class="titleDados center over">Pokédex Description</h1>
+                </div>
+                <div class="center over statistic width animate__animated" id="statistic">
+                    <h1 class="titleDados center">Statistics</h1>
+                    <div class="center over hp statusStatistics">
+                        <p>HP</p><progress value="0" max="255"></progress>
+                    </div>
+                    <div class="center over attack statusStatistics">
+                        <p>Attack</p><progress value="0" max="255"></progress>
+                    </div>
+                    <div class="center over defense statusStatistics">
+                        <p>Defense</p><progress value="0" max="255"></progress>
+                    </div>
+                    <div class="center over specialAttack statusStatistics">
+                        <p>Special-Attack</p><progress value="0" max="255"></progress>
+                    </div>
+                    <div class="center over specialDefense statusStatistics">
+                        <p>Special-Defense</p><progress value="0" max="255"></progress>
+                    </div>
+                    <div class="center over hp speed statusStatistics">
+                        <p>Speed</p><progress value="0" max="255"></progress>
+                    </div>
+                </div>
+                <div class="center over formasPokemon width animate__animated">
+                    <h1 class="titleDados center over">Forms</h1>
+                    <div class="center over forms width animate__animated">
+                    </div>
+                </div>
+                <div class="center over moviments width column">
+                    <h1 class="titleDados center">Movements</h1>
                     <div class="center over movs width"></div>
                 </div> 
             </div>
-            <div class="center over statistic width animate__animated opacity">
-                <div class="center over hp statusStatistics">
-                    <p>HP</p><progress value="0" max="255"></progress>
-                </div>
-                <div class="center over attack statusStatistics">
-                    <p>Attack</p><progress value="0" max="255"></progress>
-                </div>
-                <div class="center over defense statusStatistics">
-                    <p>Defense</p><progress value="0" max="255"></progress>
-                </div>
-                <div class="center over specialAttack statusStatistics">
-                    <p>Special-Attack</p><progress value="0" max="255"></progress>
-                </div>
-                <div class="center over specialDefense statusStatistics">
-                    <p>Special-Defense</p><progress value="0" max="255"></progress>
-                </div>
-                <div class="center over hp speed statusStatistics">
-                    <p>Speed</p><progress value="0" max="255"></progress>
-                </div>
-            </div>
-            <div class="center over forms width animate__animated opacity">
-
-            </div>
-            <div class="center over evolutionPokemon width animate__animated opacity">
-            </div>
         </div>
+    </div>
     </section>
     <footer class="footer width center over">
 
