@@ -428,6 +428,17 @@ class ShowPokemonDetails {
         speed.value = stats[5].base_stat;
     }
 
+    // Toca o Som do Pokemon
+    criePokemon(crie) {
+        const audio = new Audio(crie);
+        audio.play();
+    }
+
+    shinyPokemon(id) {
+        const pokemonImage = document.querySelector('.pokemonImage img')
+        pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/${id}.gif`
+    }
+
     formsPokemons(pokemonDados) { 
         console.log(pokemonDados);
         
@@ -459,12 +470,17 @@ class ShowPokemonDetails {
         .then((resultPokemon) => resultPokemon.json())
         .then((detailsFormPokemon) => {
             console.log(detailsFormPokemon);
+            localStorage.setItem('idPokemon', detailsFormPokemon.id)
+            localStorage.setItem('crie', detailsFormPokemon.cries.latest);
+            let crieForm = localStorage.getItem('crie')
+            
             const imagePokemons = document.getElementById('imagePokemons');
             const heightPokemon = document.querySelector('.heightPokemon span');
             const weightPokemon = document.querySelector('.weight span');
             const typesDetails = document.querySelector('.typesDetails');
             const pokemonName = document.querySelector('.pokemonName');
             
+            this.criePokemon(crieForm);
             imagePokemons.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${detailsFormPokemon.id}.gif`
             heightPokemon.innerHTML = `${detailsFormPokemon.height / 10}M`;
             weightPokemon.innerHTML = `${detailsFormPokemon.weight / 10}Kg`;
@@ -489,9 +505,9 @@ class ShowPokemonDetails {
                     .then((jsonDetails) => {
                         console.log(jsonDetails);
                         
-                        const criePokemon = jsonDetails.cries.latest;
-                        const audio = new Audio(criePokemon);
-                        audio.play()
+                        localStorage.setItem('crie', jsonDetails.cries.latest);
+                        let crie = localStorage.getItem('crie');
+                        this.criePokemon(crie);
 
                         const main = document.querySelector('main');
                         const header = document.querySelector('header');
@@ -575,22 +591,25 @@ class ShowPokemonDetails {
 
                         // Exibe o audio do Pokemon quando clica no próprio Pokemon
                         pokemonImage.addEventListener('click', () => {
-                            audio.play()
+                            let cries = localStorage.getItem('crie');
+                            this.criePokemon(cries);
                         })
 
                         // Troca a Imagem do Pokemon para sua versão shiny
                         const shiny = document.querySelector('.shinyBtn');
-                        const idPokemon = document.querySelector('.idPokemon').innerHTML;
-                        const containerPokemonImage = document.querySelector('.pokemonImage');
-                        const audioShiny = new Audio('./element/audio/shiny-pokemon.mp3');
+                        localStorage.setItem('idPokemon', jsonDetails.id)
                         
                         shiny.addEventListener('click', () => {
+                            let idPokemon = localStorage.getItem('idPokemon')
+                            const containerPokemonImage = document.querySelector('.pokemonImage');
+                            const audioShiny = new Audio('./element/audio/shiny-pokemon.mp3');
+                            
                             audioShiny.play();
                             containerPokemonImage.classList.add('shiny');
                             setTimeout(() => {
                                 containerPokemonImage.classList.remove('shiny');
                             }, 2000);
-                            pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/${idPokemon}.gif`
+                            this.shinyPokemon(idPokemon);
                         })
                     })
             })
