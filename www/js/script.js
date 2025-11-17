@@ -1,7 +1,7 @@
 const btnMorePokemons = document.querySelector('.buttonMore');
 const linePokemon = document.querySelector('.linePokemon');
 
-const geracoesLimit = [0, 151, 251, 386, 493, 649, 721, 809, 905];
+const geracoesLimit = [0, 151, 251, 386, 493, 649, 721, 809, 905, 1025];
 const limit = 30;
 
 let geracaoAtual;
@@ -436,7 +436,7 @@ class ShowPokemonDetails {
 
     shinyPokemon(id) {
         const pokemonImage = document.querySelector('.pokemonImage img')
-        pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/${id}.gif`
+        pokemonImage.src = `https://raw.githubusercontent.com/EryckBorges/SpritesPokemon/refs/heads/main/shiny/${this.id}.gif`
     }
 
     formsPokemons(pokemonDados) { 
@@ -481,7 +481,7 @@ class ShowPokemonDetails {
             const pokemonName = document.querySelector('.pokemonName');
             
             this.criePokemon(crieForm);
-            imagePokemons.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${detailsFormPokemon.id}.gif`
+            imagePokemons.src = `https://raw.githubusercontent.com/EryckBorges/SpritesPokemon/refs/heads/main/${detailsFormPokemon.id}.gif`
             heightPokemon.innerHTML = `${detailsFormPokemon.height / 10}M`;
             weightPokemon.innerHTML = `${detailsFormPokemon.weight / 10}Kg`;
             typesDetails.innerHTML = this.addTypePokemon(detailsFormPokemon.types);
@@ -536,7 +536,7 @@ class ShowPokemonDetails {
                         backgroundPokemon.classList.add(jsonDetails.types[0].type.name);
                         pokemonName.innerHTML = details.name.charAt(0).toUpperCase() + details.name.slice(1);
                         pokedexDados.innerHTML = this.id;
-                        pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${this.id}.gif`;   
+                        pokemonImage.src = `https://raw.githubusercontent.com/EryckBorges/SpritesPokemon/refs/heads/main/${this.id}.gif`;   
 
                         this.addStats(jsonDetails.stats);  
 
@@ -551,13 +551,16 @@ class ShowPokemonDetails {
                         history.pushState(null, "", location.href);
                         window.addEventListener('popstate', () => {
                             history.pushState(null, "", location.href);
-                            body.style.overflow = "scroll";
+                            body.style.overflow = "auto";
+
                             main.classList.remove('animate__animated', 'animate__fadeOutLeft');
                             header.classList.remove('animate__animated', 'animate__fadeOutLeft');
                             detailsPokemon.classList.remove('animate__animated', 'animate__fadeInRight');
+                            backgroundPokemon.classList.remove(jsonDetails.types[0].type.name);
                             detailsPokemon.classList.add('animate__animated', 'animate__fadeOutRight');
                             main.classList.add('animate__animated', 'animate__fadeInLeft');
                             header.classList.add('animate__animated', 'animate__fadeInLeft');
+
                             const evolutions = document.querySelector('.evolutions');
                             const evoCard = document.querySelector('.evo-card');
                             evolutions.removeChild(evoCard)
@@ -577,6 +580,13 @@ class ShowPokemonDetails {
 
                         // Passa para o Pokemon Sussesor
                         function handleNextPokemon() {
+                            backBtnPokemon.setAttribute('disabled', '');
+                            nextBtnPokemon.setAttribute('disabled', '');
+                            setTimeout(() => {
+                                backBtnPokemon.removeAttribute('disabled');
+                                nextBtnPokemon.removeAttribute('disabled');
+                            }, 2000);
+                            backgroundPokemon.classList.remove(jsonDetails.types[0].type.name);
                             const nextId = jsonDetails.id + 1; // currentPokemon deve ser global ou acessível
                             jsonDetails = new ShowPokemonDetails(jsonDetails.data, nextId);
                             jsonDetails.createPageDetails();
@@ -584,9 +594,16 @@ class ShowPokemonDetails {
 
                         // Volta para o Pokemon anterior
                         function handleBackPokemon() {
+                            setTimeout(() => {
+                                backBtnPokemon.removeAttribute('disabled');
+                                nextBtnPokemon.removeAttribute('disabled');
+                            }, 2000);
+                            backgroundPokemon.classList.remove(jsonDetails.types[0].type.name);
                             const backId = jsonDetails.id - 1;
                             jsonDetails = new ShowPokemonDetails(jsonDetails.data, backId);
                             jsonDetails.createPageDetails();
+                            backBtnPokemon.setAttribute('disabled', '');
+                            nextBtnPokemon.setAttribute('disabled', '');
                         }
 
                         // Exibe o audio do Pokemon quando clica no próprio Pokemon
