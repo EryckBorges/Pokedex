@@ -153,12 +153,6 @@ header {
 
 /* Fim do Estilo do Header */
 
-.footer {
-    background-color: var(--preto);
-    height: 60vh;
-    margin-top: 20px;
-}
-
 /* Inicio dos estilos do menu */
 
 .menu {

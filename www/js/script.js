@@ -308,7 +308,7 @@ class ShowPokemonDetails {
     addTypePokemon(types) {        
         return types.map((typesForPokemons) => `
             <div class="center over column type">
-                <img src="./element/types/${typesForPokemons.type.name}.ico" draggable="false" alt="Icone ${typesForPokemons.type.name}">
+                <img src="./element/types/${typesForPokemons.type.name.charAt(0).toUpperCase() + typesForPokemons.type.name.slice(1)}.ico" draggable="false" alt="Icone ${typesForPokemons.type.name}">
                 <span>
                     ${typesForPokemons.type.name.charAt(0).toUpperCase() + typesForPokemons.type.name.slice(1)}
                 </span>
@@ -436,7 +436,7 @@ class ShowPokemonDetails {
 
     shinyPokemon(id) {
         const pokemonImage = document.querySelector('.pokemonImage img')
-        pokemonImage.src = `https://raw.githubusercontent.com/EryckBorges/SpritesPokemon/refs/heads/main/shiny/${this.id}.gif`
+        pokemonImage.src = `https://raw.githubusercontent.com/EryckBorges/SpritesPokemon/refs/heads/main/shiny/${id}.gif`
     }
 
     formsPokemons(pokemonDados) { 
@@ -450,6 +450,7 @@ class ShowPokemonDetails {
         for (const variety of pokemonDados.varieties) {
             fetch(variety.pokemon.url, { signal }) 
             .then(res => res.json()) .then(poke => { 
+                const imagePokemons = document.getElementById('imagePokemons');
                 const img = `<img src="./sprites/official-artwork/${poke.id}.png" id="${poke.name}">`;
                 containerForms.innerHTML += img;
                 const imgFormPokemon = document.querySelectorAll('.forms img')
@@ -457,6 +458,10 @@ class ShowPokemonDetails {
                     pokemon.addEventListener('click', (e) => {
                         let namePokemon = e.target.id;
                         this.formsShowDados(namePokemon);
+                        imagePokemons.classList.remove('minusculo', 'pequeno', 'medio', 'grande', 'dinamax')                   
+                        console.log(poke.height / 10);
+                        
+                        this.heightPokemon(poke.height / 10);
                     })
                 })
                 }) .catch(err => { if (err.name !== 'AbortError') console.error(err); 
@@ -491,6 +496,22 @@ class ShowPokemonDetails {
         })       
     }
     
+    heightPokemon(tamanho) {
+        const imagePokemons = document.getElementById('imagePokemons');
+        console.log(tamanho);
+        
+        if(tamanho < 0.5) {
+            imagePokemons.classList.add('minusculo');
+        }else if(tamanho < 1) {
+            imagePokemons.classList.add('pequeno');
+        }else if(tamanho >= 1 && tamanho < 1.5) {
+            imagePokemons.classList.add('medio');
+        }else if(tamanho > 1.5 && tamanho < 3) {
+            imagePokemons.classList.add('grande');
+        }else if(tamanho > 3) {
+            imagePokemons.classList.add('dinamax');
+        }
+    }
 
     createPageDetails() {
         const urlForPokemon = `https://pokeapi.co/api/v2/pokemon-species/${this.id}/`;
@@ -520,6 +541,7 @@ class ShowPokemonDetails {
                         const typesDetails = document.querySelector('.typesDetails');
                         const heightPokemon = document.querySelector('.heightPokemon span');
                         const body = document.querySelector('body');
+                        const imagePokemons = document.getElementById('imagePokemons');
                         
                         this.evolutionToPokemon(details.evolution_chain.url);
                         this.formsPokemons(details)
@@ -543,6 +565,9 @@ class ShowPokemonDetails {
                         weight.innerHTML = jsonDetails.weight / 10 + "Kg";
                         typesDetails.innerHTML = this.addTypePokemon(jsonDetails.types);
                         heightPokemon.innerHTML = jsonDetails.height / 10 + "M";
+
+                        this.heightPokemon(jsonDetails.height / 10)
+
                         this.addDescription(details);
 
                         this.addMovsPokemon(jsonDetails);
@@ -553,6 +578,7 @@ class ShowPokemonDetails {
                             history.pushState(null, "", location.href);
                             body.style.overflow = "auto";
 
+                            imagePokemons.classList.remove('minusculo', 'pequeno', 'medio', 'grande', 'dinamax')
                             main.classList.remove('animate__animated', 'animate__fadeOutLeft');
                             header.classList.remove('animate__animated', 'animate__fadeOutLeft');
                             detailsPokemon.classList.remove('animate__animated', 'animate__fadeInRight');
@@ -573,6 +599,7 @@ class ShowPokemonDetails {
                         // Funcionalidade para mostrar o próximo pokemon ou pokemon anterior
                         const nextBtnPokemon = document.querySelector('.nextPokemon');
                         const backBtnPokemon = document.querySelector('.backPokemon');
+                        const load = document.querySelector('.load');
 
                         // Adiciona os listeners apenas uma vez, fora da função createPageDetails
                         nextBtnPokemon.addEventListener('click', handleNextPokemon);
@@ -580,20 +607,30 @@ class ShowPokemonDetails {
 
                         // Passa para o Pokemon Sussesor
                         function handleNextPokemon() {
-                            backBtnPokemon.setAttribute('disabled', '');
-                            nextBtnPokemon.setAttribute('disabled', '');
+                            load.style.animation = 'fadeIn 0.5s';
+                            load.classList.remove('opacity');
                             setTimeout(() => {
-                                backBtnPokemon.removeAttribute('disabled');
-                                nextBtnPokemon.removeAttribute('disabled');
-                            }, 2000);
-                            backgroundPokemon.classList.remove(jsonDetails.types[0].type.name);
-                            const nextId = jsonDetails.id + 1; // currentPokemon deve ser global ou acessível
-                            jsonDetails = new ShowPokemonDetails(jsonDetails.data, nextId);
-                            jsonDetails.createPageDetails();
+                                imagePokemons.classList.remove('minusculo', 'pequeno', 'medio', 'grande', 'dinamax');
+                                backBtnPokemon.setAttribute('disabled', '');
+                                nextBtnPokemon.setAttribute('disabled', '');
+                                setTimeout(() => {
+                                    backBtnPokemon.removeAttribute('disabled');
+                                    nextBtnPokemon.removeAttribute('disabled');
+                                }, 2000);
+                                backgroundPokemon.classList.remove(jsonDetails.types[0].type.name);
+                                const nextId = jsonDetails.id + 1; // currentPokemon deve ser global ou acessível
+                                jsonDetails = new ShowPokemonDetails(jsonDetails.data, nextId);
+                                jsonDetails.createPageDetails();
+                                setTimeout(() => {
+                                    load.style.animation = 'fadeOut 0.5s';
+                                    load.classList.add('opacity');
+                                }, 500);
+                            }, 800);
                         }
 
                         // Volta para o Pokemon anterior
                         function handleBackPokemon() {
+                            imagePokemons.classList.remove('minusculo','pequeno', 'medio', 'grande', 'dinamax');
                             setTimeout(() => {
                                 backBtnPokemon.removeAttribute('disabled');
                                 nextBtnPokemon.removeAttribute('disabled');

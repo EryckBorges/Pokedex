@@ -24,7 +24,7 @@
 
 .dados {
     height: 20%;
-    font-size: 0.8em;
+    font-size: 1em;
     color: var(--branco);
     font-weight: bold;
     position: relative;
@@ -62,7 +62,7 @@
 }
 
 .types > span {
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-align: center;
     padding: 6px 6px;
     border-radius: 20px;
@@ -195,7 +195,7 @@ select {
 }
 
 .namePokemon > h1 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: var(--branco);
 }
 
@@ -203,6 +203,7 @@ select {
     position: absolute;
     width: 50px;
     height: 50px;
+    z-index: 10;
 }
 
 .nextPokemon {
@@ -213,14 +214,30 @@ select {
     left: 2vw;
 }
 
+.nextPokemon > img, .backPokemon > img {
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+}
+
 .pokedexDados {
     position: absolute;
     bottom: 0;
     justify-content: left !important;
     height: 20%;
+    gap: 10px;
     padding-inline: 10px;
     font-weight: bold;
     color: var(--branco);
+}
+
+.pokedexDados > img {
+    height: 30px;
+    width: 30px;
+}
+
+.idPokemon {
+    font-size: 1.4em;
 }
 
 .shinyBtn {
@@ -242,12 +259,6 @@ select {
     padding: 15px;
 }
 
-#imagePokemons {
-    object-fit: cover;
-    height: auto;
-    width: 30%;
-}
-
 .pokemonImage.shiny::before {
     content: '';
     min-height: 300px;
@@ -261,7 +272,8 @@ select {
 /* Parte onde contém todos os detalhes do pokemon */
 
 .titleDados {
-    font-size: 1.2em;
+    padding-block: 10px;
+    font-size: 1.4em;
     color: var(--cinzaText);
 }
 
@@ -274,11 +286,19 @@ select {
 }
 
 .heightPokemon, .weight, .typesDetails {
-    width: 35%;
+    font-size: 1.4em;
     padding-block: 10px;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+}
+
+.heightPokemon, .weight {
+    width: 25%;
+}
+
+.typesDetails {
+    width: 50%;
 }
 
 .typesDetails {
@@ -288,34 +308,14 @@ select {
 }
 
 .typesDetails > .type > img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 .type {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-}
-
-.topics, .moviments {
-    height: auto;
-    padding: 10px 0px;
-    padding-inline: 10px;
-    gap: 10px;
-    font-weight: bold;
-    color: var(--cinzaText);
-}
-
-.topics > div {
-    cursor: pointer;
-}
-
-.topics > div.active {
-    background: var(--cinza);
-    padding: 5px 8px;
-    border-radius: 20px;
-    color: var(--preto);
 }
 
 .infoPokemon {
@@ -358,7 +358,7 @@ select {
 
 .descPokemons > p {
     overflow-y: auto;
-    font-size: 1em;
+    font-size: 1.3em;
     height: 80px;
 }
 
@@ -380,6 +380,7 @@ select {
     padding: 5px 6px;
     background: var(--cinza);
     border-radius: 50px;
+    font-size: 1.2em;
 }
 
 .actived {
@@ -394,7 +395,7 @@ select {
     padding: 20px;
     gap: 15px;
     align-items: baseline !important;
-    font-size: 1em;
+    font-size: 1.2em;
     color: var(--preto);
     font-weight: bold;
 }
@@ -418,15 +419,112 @@ select {
 .evolutions {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px;
     width: 100%;
     padding-block: 20px;
 }
 
 .evo-card > img {
     width: auto;
-    height: 100px;
+    min-height: 100px;
+    max-height: 110px;
     object-fit: cover;
+}
+
+/* Load */
+
+.load {
+    top: 0;
+    background-color: var(--preto);
+    position: absolute;
+    z-index: 99;
+}
+
+.load.opacity {
+    display: none;
+}
+
+.load > img {
+    animation: rotateAnimation 1s infinite;
+    width: auto;
+    height: 20%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--preto);
+    height: 40vh;
+    margin-top: 20px;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+}
+
+.headerFooter {
+    height: 25%;
+}
+
+.headerFooter > img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bodyFooter {
+    height: 55%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contentFooter {
+    width: 40%;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 20px;
+    justify-content: left !important;
+    align-items: baseline !important;
+}
+
+.contentFooter > a {
+    font-size: 1.4em;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.bottomFooter {
+    height: 20%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    color: var(--darkClaro);
+}
+
+/* Tamanho dos Pokemons */
+
+#imagePokemons {
+    object-fit: cover;
+    height: auto;
+}
+
+#imagePokemons.minusculo {
+    width:20%;
+}
+
+#imagePokemons.pequeno {
+    width:30%;
+}
+
+#imagePokemons.medio {
+    width:40%;
+}
+
+#imagePokemons.grande {
+    width: 60%;
+}
+
+#imagePokemons.dinamax {
+    width: 70%;
 }
 
 /* Animações */
